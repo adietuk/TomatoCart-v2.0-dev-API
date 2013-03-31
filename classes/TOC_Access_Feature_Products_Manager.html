@@ -1,0 +1,430 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \TOC_Access_Feature_Products_Manager</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Default constructor"><span class="description">Default constructor</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_group" title="get_group :: Get group"><span class="description">Get group</span><pre>get_group()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_group_title" title="get_group_title :: Get group title"><span class="description">Get group title</span><pre>get_group_title()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_icon" title="get_icon :: Get icon"><span class="description">Get icon</span><pre>get_icon()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_levels" title="get_levels :: Get all modules"><span class="description">Get all modules</span><pre>get_levels()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_module" title="get_module :: Get group title"><span class="description">Get group title</span><pre>get_module()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_sort_order" title="get_sort_order :: Get sort order"><span class="description">Get sort order</span><pre>get_sort_order()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_sub_groups" title="get_sub_groups :: Get sub groups"><span class="description">Get sub groups</span><pre>get_sub_groups()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_title" title="get_title :: Get title"><span class="description">Get title</span><pre>get_title()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_user_levels" title="get_user_levels :: Get modules"><span class="description">Get modules</span><pre>get_user_levels()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property__group" title="$_group :: Menu Group"><span class="description"></span><pre>$_group</pre></a></li>
+<li class="property protected inherited"><a href="#property__icon" title="$_icon :: Icon"><span class="description"></span><pre>$_icon</pre></a></li>
+<li class="property protected inherited"><a href="#property__module" title="$_module :: Module"><span class="description"></span><pre>$_module</pre></a></li>
+<li class="property protected inherited"><a href="#property__sort_order" title="$_sort_order :: Sort Order"><span class="description"></span><pre>$_sort_order</pre></a></li>
+<li class="property protected inherited"><a href="#property__subgroups" title="$_subgroups :: Sub Group"><span class="description"></span><pre>$_subgroups</pre></a></li>
+<li class="property protected inherited"><a href="#property__title" title="$_title :: Title"><span class="description"></span><pre>$_title</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private inherited"><a href="#property__ci" title="$_ci :: Cached data"><span class="description"></span><pre>$_ci</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TOC_Access_Feature_Products_Manager"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Access_Feature_Products_Manager.html">TOC_Access_Feature_Products_Manager</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Default constructor</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_group"></a><div class="element clickable method public method_get_group" data-toggle="collapse" data-target=".method_get_group .collapse">
+<h2>Get group</h2>
+<pre>get_group() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_group()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_group_title"></a><div class="element clickable method public method_get_group_title" data-toggle="collapse" data-target=".method_get_group_title .collapse">
+<h2>Get group title</h2>
+<pre>get_group_title($group) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_group_title()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$group</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_icon"></a><div class="element clickable method public method_get_icon" data-toggle="collapse" data-target=".method_get_icon .collapse">
+<h2>Get icon</h2>
+<pre>get_icon() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_icon()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_levels"></a><div class="element clickable method public method_get_levels" data-toggle="collapse" data-target=".method_get_levels .collapse">
+<h2>Get all modules</h2>
+<pre>get_levels() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_levels()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_module"></a><div class="element clickable method public method_get_module" data-toggle="collapse" data-target=".method_get_module .collapse">
+<h2>Get group title</h2>
+<pre>get_module() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_module()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_sort_order"></a><div class="element clickable method public method_get_sort_order" data-toggle="collapse" data-target=".method_get_sort_order .collapse">
+<h2>Get sort order</h2>
+<pre>get_sort_order() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_sort_order()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_sub_groups"></a><div class="element clickable method public method_get_sub_groups" data-toggle="collapse" data-target=".method_get_sub_groups .collapse">
+<h2>Get sub groups</h2>
+<pre>get_sub_groups() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_sub_groups()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_title"></a><div class="element clickable method public method_get_title" data-toggle="collapse" data-target=".method_get_title .collapse">
+<h2>Get title</h2>
+<pre>get_title() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_title()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_user_levels"></a><div class="element clickable method public method_get_user_levels" data-toggle="collapse" data-target=".method_get_user_levels .collapse">
+<h2>Get modules</h2>
+<pre>get_user_levels() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::get_user_levels()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__group"> </a><div class="element clickable property protected property__group" data-toggle="collapse" data-target=".property__group .collapse">
+<h2></h2>
+<pre>$_group : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_group</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__icon"> </a><div class="element clickable property protected property__icon" data-toggle="collapse" data-target=".property__icon .collapse">
+<h2></h2>
+<pre>$_icon : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_icon</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__module"> </a><div class="element clickable property protected property__module" data-toggle="collapse" data-target=".property__module .collapse">
+<h2></h2>
+<pre>$_module : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_module</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__sort_order"> </a><div class="element clickable property protected property__sort_order" data-toggle="collapse" data-target=".property__sort_order .collapse">
+<h2></h2>
+<pre>$_sort_order : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_sort_order</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__subgroups"> </a><div class="element clickable property protected property__subgroups" data-toggle="collapse" data-target=".property__subgroups .collapse">
+<h2></h2>
+<pre>$_subgroups : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_subgroups</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__title"> </a><div class="element clickable property protected property__title" data-toggle="collapse" data-target=".property__title .collapse">
+<h2></h2>
+<pre>$_title : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_title</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__ci"> </a><div class="element clickable property private property__ci" data-toggle="collapse" data-target=".property__ci .collapse">
+<h2></h2>
+<pre>$_ci : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Access::$$_ci</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:06+07:00.<br></footer></div>
+</div>
+</body>
+</html>

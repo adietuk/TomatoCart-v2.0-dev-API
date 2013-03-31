@@ -1,0 +1,429 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \TOC_Google_Sitemap</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Class contructor"><span class="description">Class contructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method__createArticleSitemap" title="_createArticleSitemap :: "><span class="description">_createArticleSitemap()
+        </span><pre>_createArticleSitemap()</pre></a></li>
+<li class="method public "><a href="#method__createCategorySitemap" title="_createCategorySitemap :: "><span class="description">_createCategorySitemap()
+        </span><pre>_createCategorySitemap()</pre></a></li>
+<li class="method public "><a href="#method__createProductSitemap" title="_createProductSitemap :: "><span class="description">_createProductSitemap()
+        </span><pre>_createProductSitemap()</pre></a></li>
+<li class="method public "><a href="#method__hrefLink" title="_hrefLink :: "><span class="description">_hrefLink()
+        </span><pre>_hrefLink()</pre></a></li>
+<li class="method public "><a href="#method_generateSitemap" title="generateSitemap :: "><span class="description">generateSitemap()
+        </span><pre>generateSitemap()</pre></a></li>
+<li class="method public "><a href="#method_getSubmitURL" title="getSubmitURL :: "><span class="description">getSubmitURL()
+        </span><pre>getSubmitURL()</pre></a></li>
+<li class="method public "><a href="#method_initialize" title="initialize :: Initialize the user preferences"><span class="description">Initialize the user preferences</span><pre>initialize()</pre></a></li>
+<li class="method public "><a href="#method_setCompression" title="setCompression :: "><span class="description">setCompression()
+        </span><pre>setCompression()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__closeSitemapFile" title="_closeSitemapFile :: "><span class="description">_closeSitemapFile()
+        </span><pre>_closeSitemapFile()</pre></a></li>
+<li class="method protected "><a href="#method__createIndexSitemap" title="_createIndexSitemap :: "><span class="description">_createIndexSitemap()
+        </span><pre>_createIndexSitemap()</pre></a></li>
+<li class="method protected "><a href="#method__createSitemapFile" title="_createSitemapFile :: "><span class="description">_createSitemapFile()
+        </span><pre>_createSitemapFile()</pre></a></li>
+<li class="method protected "><a href="#method__createUrlElement" title="_createUrlElement :: "><span class="description">_createUrlElement()
+        </span><pre>_createUrlElement()</pre></a></li>
+<li class="method protected "><a href="#method__createXmlHeader" title="_createXmlHeader :: "><span class="description">_createXmlHeader()
+        </span><pre>_createXmlHeader()</pre></a></li>
+<li class="method protected "><a href="#method__recreateSitemap" title="_recreateSitemap :: "><span class="description">_recreateSitemap()
+        </span><pre>_recreateSitemap()</pre></a></li>
+<li class="method protected "><a href="#method__writeFile" title="_writeFile :: "><span class="description">_writeFile()
+        </span><pre>_writeFile()</pre></a></li>
+<li class="method protected "><a href="#method__writeSitemapFile" title="_writeSitemapFile :: "><span class="description">_writeSitemapFile()
+        </span><pre>_writeSitemapFile()</pre></a></li>
+<li class="method protected "><a href="#method_getTimestamp" title="getTimestamp :: "><span class="description">getTimestamp()
+        </span><pre>getTimestamp()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__articles_change_freq" title="$_articles_change_freq :: "><span class="description"></span><pre>$_articles_change_freq</pre></a></li>
+<li class="property protected "><a href="#property__articles_priority" title="$_articles_priority :: "><span class="description"></span><pre>$_articles_priority</pre></a></li>
+<li class="property protected "><a href="#property__base_url" title="$_base_url :: "><span class="description"></span><pre>$_base_url</pre></a></li>
+<li class="property protected "><a href="#property__categories_change_freq" title="$_categories_change_freq :: "><span class="description"></span><pre>$_categories_change_freq</pre></a></li>
+<li class="property protected "><a href="#property__categories_priority" title="$_categories_priority :: "><span class="description"></span><pre>$_categories_priority</pre></a></li>
+<li class="property protected "><a href="#property__compression" title="$_compression :: "><span class="description"></span><pre>$_compression</pre></a></li>
+<li class="property protected "><a href="#property__file_array" title="$_file_array :: "><span class="description"></span><pre>$_file_array</pre></a></li>
+<li class="property protected "><a href="#property__file_name" title="$_file_name :: "><span class="description"></span><pre>$_file_name</pre></a></li>
+<li class="property protected "><a href="#property__max_entries" title="$_max_entries :: "><span class="description"></span><pre>$_max_entries</pre></a></li>
+<li class="property protected "><a href="#property__max_file_size" title="$_max_file_size :: "><span class="description"></span><pre>$_max_file_size</pre></a></li>
+<li class="property protected "><a href="#property__products_change_freq" title="$_products_change_freq :: "><span class="description"></span><pre>$_products_change_freq</pre></a></li>
+<li class="property protected "><a href="#property__products_priority" title="$_products_priority :: "><span class="description"></span><pre>$_products_priority</pre></a></li>
+<li class="property protected "><a href="#property__save_path" title="$_save_path :: "><span class="description"></span><pre>$_save_path</pre></a></li>
+<li class="property protected "><a href="#property__sefu" title="$_sefu :: "><span class="description"></span><pre>$_sefu</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_ci" title="$ci :: Reference to CodeIgniter instance"><span class="description"></span><pre>$ci</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TOC_Google_Sitemap"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Google_Sitemap.html">TOC_Google_Sitemap</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Class contructor</h2>
+<pre>__construct($config) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$config</h4></div>
+</div></div>
+</div>
+<a id="method__createArticleSitemap"></a><div class="element clickable method public method__createArticleSitemap" data-toggle="collapse" data-target=".method__createArticleSitemap .collapse">
+<h2>_createArticleSitemap()
+        </h2>
+<pre>_createArticleSitemap() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__createCategorySitemap"></a><div class="element clickable method public method__createCategorySitemap" data-toggle="collapse" data-target=".method__createCategorySitemap .collapse">
+<h2>_createCategorySitemap()
+        </h2>
+<pre>_createCategorySitemap() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__createProductSitemap"></a><div class="element clickable method public method__createProductSitemap" data-toggle="collapse" data-target=".method__createProductSitemap .collapse">
+<h2>_createProductSitemap()
+        </h2>
+<pre>_createProductSitemap() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__hrefLink"></a><div class="element clickable method public method__hrefLink" data-toggle="collapse" data-target=".method__hrefLink .collapse">
+<h2>_hrefLink()
+        </h2>
+<pre>_hrefLink($page, $parameters) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$page</h4></div>
+<div class="subelement argument"><h4>$parameters</h4></div>
+</div></div>
+</div>
+<a id="method_generateSitemap"></a><div class="element clickable method public method_generateSitemap" data-toggle="collapse" data-target=".method_generateSitemap .collapse">
+<h2>generateSitemap()
+        </h2>
+<pre>generateSitemap() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getSubmitURL"></a><div class="element clickable method public method_getSubmitURL" data-toggle="collapse" data-target=".method_getSubmitURL .collapse">
+<h2>getSubmitURL()
+        </h2>
+<pre>getSubmitURL() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+<h2>Initialize the user preferences</h2>
+<pre>initialize(array $config) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Accepts an associative array as input, containing display preferences</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code><p>config preferences</p></div>
+</div></div>
+</div>
+<a id="method_setCompression"></a><div class="element clickable method public method_setCompression" data-toggle="collapse" data-target=".method_setCompression .collapse">
+<h2>setCompression()
+        </h2>
+<pre>setCompression($compression) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$compression</h4></div>
+</div></div>
+</div>
+<a id="method__closeSitemapFile"></a><div class="element clickable method protected method__closeSitemapFile" data-toggle="collapse" data-target=".method__closeSitemapFile .collapse">
+<h2>_closeSitemapFile()
+        </h2>
+<pre>_closeSitemapFile($handle) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$handle</h4></div>
+</div></div>
+</div>
+<a id="method__createIndexSitemap"></a><div class="element clickable method protected method__createIndexSitemap" data-toggle="collapse" data-target=".method__createIndexSitemap .collapse">
+<h2>_createIndexSitemap()
+        </h2>
+<pre>_createIndexSitemap() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__createSitemapFile"></a><div class="element clickable method protected method__createSitemapFile" data-toggle="collapse" data-target=".method__createSitemapFile .collapse">
+<h2>_createSitemapFile()
+        </h2>
+<pre>_createSitemapFile($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method__createUrlElement"></a><div class="element clickable method protected method__createUrlElement" data-toggle="collapse" data-target=".method__createUrlElement .collapse">
+<h2>_createUrlElement()
+        </h2>
+<pre>_createUrlElement($url, $last_mod, $change_freq, $priority) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$url</h4></div>
+<div class="subelement argument"><h4>$last_mod</h4></div>
+<div class="subelement argument"><h4>$change_freq</h4></div>
+<div class="subelement argument"><h4>$priority</h4></div>
+</div></div>
+</div>
+<a id="method__createXmlHeader"></a><div class="element clickable method protected method__createXmlHeader" data-toggle="collapse" data-target=".method__createXmlHeader .collapse">
+<h2>_createXmlHeader()
+        </h2>
+<pre>_createXmlHeader() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__recreateSitemap"></a><div class="element clickable method protected method__recreateSitemap" data-toggle="collapse" data-target=".method__recreateSitemap .collapse">
+<h2>_recreateSitemap()
+        </h2>
+<pre>_recreateSitemap($handle, $filename, $num_of_file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$handle</h4></div>
+<div class="subelement argument"><h4>$filename</h4></div>
+<div class="subelement argument"><h4>$num_of_file</h4></div>
+</div></div>
+</div>
+<a id="method__writeFile"></a><div class="element clickable method protected method__writeFile" data-toggle="collapse" data-target=".method__writeFile .collapse">
+<h2>_writeFile()
+        </h2>
+<pre>_writeFile($handle, $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$handle</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+</div></div>
+</div>
+<a id="method__writeSitemapFile"></a><div class="element clickable method protected method__writeSitemapFile" data-toggle="collapse" data-target=".method__writeSitemapFile .collapse">
+<h2>_writeSitemapFile()
+        </h2>
+<pre>_writeSitemapFile($handle, $data, $num_of_entries, $num_of_files, $type) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$handle</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$num_of_entries</h4></div>
+<div class="subelement argument"><h4>$num_of_files</h4></div>
+<div class="subelement argument"><h4>$type</h4></div>
+</div></div>
+</div>
+<a id="method_getTimestamp"></a><div class="element clickable method protected method_getTimestamp" data-toggle="collapse" data-target=".method_getTimestamp .collapse">
+<h2>getTimestamp()
+        </h2>
+<pre>getTimestamp($date) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$date</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__articles_change_freq"> </a><div class="element clickable property protected property__articles_change_freq" data-toggle="collapse" data-target=".property__articles_change_freq .collapse">
+<h2></h2>
+<pre>$_articles_change_freq </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__articles_priority"> </a><div class="element clickable property protected property__articles_priority" data-toggle="collapse" data-target=".property__articles_priority .collapse">
+<h2></h2>
+<pre>$_articles_priority </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__base_url"> </a><div class="element clickable property protected property__base_url" data-toggle="collapse" data-target=".property__base_url .collapse">
+<h2></h2>
+<pre>$_base_url </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__categories_change_freq"> </a><div class="element clickable property protected property__categories_change_freq" data-toggle="collapse" data-target=".property__categories_change_freq .collapse">
+<h2></h2>
+<pre>$_categories_change_freq </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__categories_priority"> </a><div class="element clickable property protected property__categories_priority" data-toggle="collapse" data-target=".property__categories_priority .collapse">
+<h2></h2>
+<pre>$_categories_priority </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__compression"> </a><div class="element clickable property protected property__compression" data-toggle="collapse" data-target=".property__compression .collapse">
+<h2></h2>
+<pre>$_compression </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__file_array"> </a><div class="element clickable property protected property__file_array" data-toggle="collapse" data-target=".property__file_array .collapse">
+<h2></h2>
+<pre>$_file_array </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__file_name"> </a><div class="element clickable property protected property__file_name" data-toggle="collapse" data-target=".property__file_name .collapse">
+<h2></h2>
+<pre>$_file_name </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__max_entries"> </a><div class="element clickable property protected property__max_entries" data-toggle="collapse" data-target=".property__max_entries .collapse">
+<h2></h2>
+<pre>$_max_entries </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__max_file_size"> </a><div class="element clickable property protected property__max_file_size" data-toggle="collapse" data-target=".property__max_file_size .collapse">
+<h2></h2>
+<pre>$_max_file_size </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__products_change_freq"> </a><div class="element clickable property protected property__products_change_freq" data-toggle="collapse" data-target=".property__products_change_freq .collapse">
+<h2></h2>
+<pre>$_products_change_freq </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__products_priority"> </a><div class="element clickable property protected property__products_priority" data-toggle="collapse" data-target=".property__products_priority .collapse">
+<h2></h2>
+<pre>$_products_priority </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__save_path"> </a><div class="element clickable property protected property__save_path" data-toggle="collapse" data-target=".property__save_path .collapse">
+<h2></h2>
+<pre>$_save_path </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__sefu"> </a><div class="element clickable property protected property__sefu" data-toggle="collapse" data-target=".property__sefu .collapse">
+<h2></h2>
+<pre>$_sefu </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ci"> </a><div class="element clickable property private property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:05+07:00.<br></footer></div>
+</div>
+</body>
+</html>

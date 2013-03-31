@@ -1,0 +1,2050 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » TomatoCart</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/TomatoCart.html" title="TomatoCart"><i class="icon-folder-open"></i>TomatoCart</a><ul class="nav nav-list nav-packages">
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Admin</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>Core</span><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/TomatoCart.Admin.Core.Controllers.html" title="Controllers"><i class="icon-folder-open"></i>Controllers</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Admin.Core.Libraries.html" title="Libraries"><i class="icon-folder-open"></i>Libraries</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Frontend</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>Core</span><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Controllers.html" title="Controllers"><i class="icon-folder-open"></i>Controllers</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.html" title="Libraries"><i class="icon-folder-open"></i>Libraries</a><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Email%20Template.html" title="Email Template"><i class="icon-folder-open"></i>Email Template</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Order%20Total.html" title="Order Total"><i class="icon-folder-open"></i>Order Total</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Payment.html" title="Payment"><i class="icon-folder-open"></i>Payment</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Service.html" title="Service"><i class="icon-folder-open"></i>Service</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Shipping.html" title="Shipping"><i class="icon-folder-open"></i>Shipping</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_address_format" title="address_format :: Validates the format of an email address"><span class="description">Validates the format of an email address</span><pre>address_format</pre></a></li>
+<li class="function  "><a href="#function_call_config_func" title="call_config_func :: Call a function given in string format used by configuration set and use functions"><span class="description">Call a function given in string format used by configuration set and use functions</span><pre>call_config_func</pre></a></li>
+<li class="function  "><a href="#function_cart_item_count" title="cart_item_count :: "><span class="description">cart_item_count()
+        </span><pre>cart_item_count</pre></a></li>
+<li class="function  "><a href="#function_cfg_set_boolean_value" title="cfg_set_boolean_value :: "><span class="description">cfg_set_boolean_value()
+        </span><pre>cfg_set_boolean_value</pre></a></li>
+<li class="function  "><a href="#function_cfg_set_countries_pulldown_menu" title="cfg_set_countries_pulldown_menu :: "><span class="description">cfg_set_countries_pulldown_menu()
+        </span><pre>cfg_set_countries_pulldown_menu</pre></a></li>
+<li class="function  "><a href="#function_cfg_set_textarea_field" title="cfg_set_textarea_field :: "><span class="description">cfg_set_textarea_field()
+        </span><pre>cfg_set_textarea_field</pre></a></li>
+<li class="function  "><a href="#function_cfg_set_weight_classes_pulldown_menu" title="cfg_set_weight_classes_pulldown_menu :: "><span class="description">cfg_set_weight_classes_pulldown_menu()
+        </span><pre>cfg_set_weight_classes_pulldown_menu</pre></a></li>
+<li class="function  "><a href="#function_cfg_set_zones_pulldown_menu" title="cfg_set_zones_pulldown_menu :: "><span class="description">cfg_set_zones_pulldown_menu()
+        </span><pre>cfg_set_zones_pulldown_menu</pre></a></li>
+<li class="function  "><a href="#function_cfg_use_get_boolean_value" title="cfg_use_get_boolean_value :: "><span class="description">cfg_use_get_boolean_value()
+        </span><pre>cfg_use_get_boolean_value</pre></a></li>
+<li class="function  "><a href="#function_config" title="config :: Config"><span class="description">Config</span><pre>config</pre></a></li>
+<li class="function  "><a href="#function_config" title="config :: "><span class="description">config()
+        </span><pre>config</pre></a></li>
+<li class="function  "><a href="#function_create_random_string" title="create_random_string :: "><span class="description">create_random_string()
+        </span><pre>create_random_string</pre></a></li>
+<li class="function  "><a href="#function_currencies_add_tax_rate_to_price" title="currencies_add_tax_rate_to_price :: Add tax value to product price"><span class="description">Add tax value to product price</span><pre>currencies_add_tax_rate_to_price</pre></a></li>
+<li class="function  "><a href="#function_currencies_display_price" title="currencies_display_price :: Display total price for certain amount of products with currency symbol"><span class="description">Display total price for certain amount of products with currency symbol</span><pre>currencies_display_price</pre></a></li>
+<li class="function  "><a href="#function_currencies_display_price_with_tax_rate" title="currencies_display_price_with_tax_rate :: Display total price with tax value for certain amount of products with currency symbol"><span class="description">Display total price with tax value for certain amount of products with currency symbol</span><pre>currencies_display_price_with_tax_rate</pre></a></li>
+<li class="function  "><a href="#function_currencies_display_raw_price" title="currencies_display_raw_price :: Display raw price (without tax value) with symbol"><span class="description">Display raw price (without tax value) with symbol</span><pre>currencies_display_raw_price</pre></a></li>
+<li class="function  "><a href="#function_currencies_format" title="currencies_format :: Format currency value with currency symbol"><span class="description">Format currency value with currency symbol</span><pre>currencies_format</pre></a></li>
+<li class="function  "><a href="#function_currencies_format_raw" title="currencies_format_raw :: Format currency raw value without symbol"><span class="description">Format currency raw value without symbol</span><pre>currencies_format_raw</pre></a></li>
+<li class="function  "><a href="#function_currency_code" title="currency_code :: Get default currency code"><span class="description">Get default currency code</span><pre>currency_code</pre></a></li>
+<li class="function  "><a href="#function_currency_symbol_left" title="currency_symbol_left :: Get default currency left symbol"><span class="description">Get default currency left symbol</span><pre>currency_symbol_left</pre></a></li>
+<li class="function  "><a href="#function_currency_title" title="currency_title :: Get default currency title"><span class="description">Get default currency title</span><pre>currency_title</pre></a></li>
+<li class="function  "><a href="#function_dircopy" title="dircopy :: Copy file or folder from source to destination"><span class="description">Copy file or folder from source to destination</span><pre>dircopy</pre></a></li>
+<li class="function  "><a href="#function_directory_make" title="directory_make :: Create a Directory Make"><span class="description">Create a Directory Make</span><pre>directory_make</pre></a></li>
+<li class="function  "><a href="#function_display_tax_rate_value" title="display_tax_rate_value :: display tax rate value."><span class="description">display tax rate value.</span><pre>display_tax_rate_value</pre></a></li>
+<li class="function  "><a href="#function_draw_label" title="draw_label :: "><span class="description">draw_label()
+        </span><pre>draw_label</pre></a></li>
+<li class="function  "><a href="#function_encrypt_password" title="encrypt_password :: Encrypt password"><span class="description">Encrypt password</span><pre>encrypt_password</pre></a></li>
+<li class="function  "><a href="#function_encrypt_password" title="encrypt_password :: "><span class="description">encrypt_password()
+        </span><pre>encrypt_password</pre></a></li>
+<li class="function  "><a href="#function_format_friendly_url" title="format_friendly_url :: Format friendly url"><span class="description">Format friendly url</span><pre>format_friendly_url</pre></a></li>
+<li class="function  "><a href="#function_get_currencies" title="get_currencies :: Get all currencies"><span class="description">Get all currencies</span><pre>get_currencies</pre></a></li>
+<li class="function  "><a href="#function_get_date" title="get_date :: Get date part of a datetime"><span class="description">Get date part of a datetime</span><pre>get_date</pre></a></li>
+<li class="function  "><a href="#function_get_date" title="get_date :: "><span class="description">get_date()
+        </span><pre>get_date</pre></a></li>
+<li class="function  "><a href="#function_get_date_long" title="get_date_long :: Get long type date format"><span class="description">Get long type date format</span><pre>get_date_long</pre></a></li>
+<li class="function  "><a href="#function_get_date_long" title="get_date_long :: "><span class="description">get_date_long()
+        </span><pre>get_date_long</pre></a></li>
+<li class="function  "><a href="#function_get_date_now" title="get_date_now :: Get date now"><span class="description">Get date now</span><pre>get_date_now</pre></a></li>
+<li class="function  "><a href="#function_get_date_now" title="get_date_now :: "><span class="description">get_date_now()
+        </span><pre>get_date_now</pre></a></li>
+<li class="function  "><a href="#function_get_date_short" title="get_date_short :: Get short type date format"><span class="description">Get short type date format</span><pre>get_date_short</pre></a></li>
+<li class="function  "><a href="#function_get_date_short" title="get_date_short :: "><span class="description">get_date_short()
+        </span><pre>get_date_short</pre></a></li>
+<li class="function  "><a href="#function_get_ip_address" title="get_ip_address :: Fetch the IP Address"><span class="description">Fetch the IP Address</span><pre>get_ip_address</pre></a></li>
+<li class="function  "><a href="#function_get_languages" title="get_languages :: "><span class="description">get_languages()
+        </span><pre>get_languages</pre></a></li>
+<li class="function  "><a href="#function_get_product_id" title="get_product_id :: "><span class="description">get_product_id()
+        </span><pre>get_product_id</pre></a></li>
+<li class="function  "><a href="#function_get_product_id_string" title="get_product_id_string :: Generate a product ID string value containing its product variants combinations"><span class="description">Generate a product ID string value containing its product variants combinations</span><pre>get_product_id_string</pre></a></li>
+<li class="function  "><a href="#function_get_product_id_string" title="get_product_id_string :: "><span class="description">get_product_id_string()
+        </span><pre>get_product_id_string</pre></a></li>
+<li class="function  "><a href="#function_get_product_variants_string" title="get_product_variants_string :: "><span class="description">get_product_variants_string()
+        </span><pre>get_product_variants_string</pre></a></li>
+<li class="function  "><a href="#function_get_shopping_cart" title="get_shopping_cart :: "><span class="description">get_shopping_cart()
+        </span><pre>get_shopping_cart</pre></a></li>
+<li class="function  "><a href="#function_get_tax_rate" title="get_tax_rate :: Get tax rate"><span class="description">Get tax rate</span><pre>get_tax_rate</pre></a></li>
+<li class="function  "><a href="#function_get_tax_rate_description" title="get_tax_rate_description :: Get tax rate description"><span class="description">Get tax rate description</span><pre>get_tax_rate_description</pre></a></li>
+<li class="function  "><a href="#function_href_link_admin" title="href_link_admin :: Generate an internal URL address for the administration side"><span class="description">Generate an internal URL address for the administration side</span><pre>href_link_admin</pre></a></li>
+<li class="function  "><a href="#function_icon" title="icon :: Generate an icon(16x16) for the grid"><span class="description">Generate an icon(16x16) for the grid</span><pre>icon</pre></a></li>
+<li class="function  "><a href="#function_icon_status_url" title="icon_status_url :: Generate an green status flag for the grid"><span class="description">Generate an green status flag for the grid</span><pre>icon_status_url</pre></a></li>
+<li class="function  "><a href="#function_icon_url" title="icon_url :: Generate an url of icon(16x16) for the grid"><span class="description">Generate an url of icon(16x16) for the grid</span><pre>icon_url</pre></a></li>
+<li class="function  "><a href="#function_image" title="image :: Image"><span class="description">Image</span><pre>image</pre></a></li>
+<li class="function  "><a href="#function_image_url" title="image_url :: "><span class="description">image_url()
+        </span><pre>image_url</pre></a></li>
+<li class="function  "><a href="#function_is_logged_on" title="is_logged_on :: "><span class="description">is_logged_on()
+        </span><pre>is_logged_on</pre></a></li>
+<li class="function  "><a href="#function_is_logged_on" title="is_logged_on :: "><span class="description">is_logged_on()
+        </span><pre>is_logged_on</pre></a></li>
+<li class="function  "><a href="#function_is_logged_on" title="is_logged_on :: "><span class="description">is_logged_on()
+        </span><pre>is_logged_on</pre></a></li>
+<li class="function  "><a href="#function_lang" title="lang :: Lang"><span class="description">Lang</span><pre>lang</pre></a></li>
+<li class="function  "><a href="#function_lang" title="lang :: "><span class="description">lang()
+        </span><pre>lang</pre></a></li>
+<li class="function  "><a href="#function_lang_code" title="lang_code :: "><span class="description">lang_code()
+        </span><pre>lang_code</pre></a></li>
+<li class="function  "><a href="#function_lang_get_all" title="lang_get_all :: Geta All Lang"><span class="description">Geta All Lang</span><pre>lang_get_all</pre></a></li>
+<li class="function  "><a href="#function_lang_get_code" title="lang_get_code :: Lang Code"><span class="description">Lang Code</span><pre>lang_get_code</pre></a></li>
+<li class="function  "><a href="#function_lang_get_text_direction" title="lang_get_text_direction :: Lang Text Direction"><span class="description">Lang Text Direction</span><pre>lang_get_text_direction</pre></a></li>
+<li class="function  "><a href="#function_lang_id" title="lang_id :: Lang ID"><span class="description">Lang ID</span><pre>lang_id</pre></a></li>
+<li class="function  "><a href="#function_lang_id" title="lang_id :: "><span class="description">lang_id()
+        </span><pre>lang_id</pre></a></li>
+<li class="function  "><a href="#function_lang_image" title="lang_image :: "><span class="description">lang_image()
+        </span><pre>lang_image</pre></a></li>
+<li class="function  "><a href="#function_lang_name" title="lang_name :: "><span class="description">lang_name()
+        </span><pre>lang_name</pre></a></li>
+<li class="function  "><a href="#function_load_product_library" title="load_product_library :: "><span class="description">load_product_library()
+        </span><pre>load_product_library</pre></a></li>
+<li class="function  "><a href="#function_output_string" title="output_string :: "><span class="description">output_string()
+        </span><pre>output_string</pre></a></li>
+<li class="function  "><a href="#function_output_string_protected" title="output_string_protected :: Strictly parse and output a user submited value"><span class="description">Strictly parse and output a user submited value</span><pre>output_string_protected</pre></a></li>
+<li class="function  "><a href="#function_output_string_protected" title="output_string_protected :: "><span class="description">output_string_protected()
+        </span><pre>output_string_protected</pre></a></li>
+<li class="function  "><a href="#function_parse_variants_from_id_string" title="parse_variants_from_id_string :: "><span class="description">parse_variants_from_id_string()
+        </span><pre>parse_variants_from_id_string</pre></a></li>
+<li class="function  "><a href="#function_parse_variants_string" title="parse_variants_string :: "><span class="description">parse_variants_string()
+        </span><pre>parse_variants_string</pre></a></li>
+<li class="function  "><a href="#function_product_image_url" title="product_image_url :: "><span class="description">product_image_url()
+        </span><pre>product_image_url</pre></a></li>
+<li class="function  "><a href="#function_run_service" title="run_service :: "><span class="description">run_service()
+        </span><pre>run_service</pre></a></li>
+<li class="function  "><a href="#function_show_image" title="show_image :: Lang Flag"><span class="description">Lang Flag</span><pre>show_image</pre></a></li>
+<li class="function  "><a href="#function_show_product_image" title="show_product_image :: Show product image"><span class="description">Show product image</span><pre>show_product_image</pre></a></li>
+<li class="function  "><a href="#function_toc_gd_resize" title="toc_gd_resize :: Resize image"><span class="description">Resize image</span><pre>toc_gd_resize</pre></a></li>
+<li class="function  "><a href="#function_toc_validation_errors" title="toc_validation_errors :: "><span class="description">toc_validation_errors()
+        </span><pre>toc_validation_errors</pre></a></li>
+<li class="function  "><a href="#function_toc_validation_errors_plain" title="toc_validation_errors_plain :: "><span class="description">toc_validation_errors_plain()
+        </span><pre>toc_validation_errors_plain</pre></a></li>
+<li class="function  "><a href="#function_validate_email_address" title="validate_email_address :: "><span class="description">validate_email_address()
+        </span><pre>validate_email_address</pre></a></li>
+<li class="function  "><a href="#function_worldflag_url" title="worldflag_url :: Generate css background for the world flag"><span class="description">Generate css background for the world flag</span><pre>worldflag_url</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_EXT_GRID_STEPS" title="EXT_GRID_STEPS :: "><span class="description">EXT_GRID_STEPS</span><pre>EXT_GRID_STEPS</pre></a></li>
+<li class="constant  "><a href="#constant_EXT_JSON_READER_ROOT" title="EXT_JSON_READER_ROOT :: "><span class="description">EXT_JSON_READER_ROOT</span><pre>EXT_JSON_READER_ROOT</pre></a></li>
+<li class="constant  "><a href="#constant_EXT_JSON_READER_TOTAL" title="EXT_JSON_READER_TOTAL :: "><span class="description">EXT_JSON_READER_TOTAL</span><pre>EXT_JSON_READER_TOTAL</pre></a></li>
+<li class="constant  "><a href="#constant_HOME_META_DESCRIPTION_'%20.%20code" title="HOME_META_DESCRIPTION_' . $code :: "><span class="description">HOME_META_DESCRIPTION_' . $code</span><pre>HOME_META_DESCRIPTION_' . $code</pre></a></li>
+<li class="constant  "><a href="#constant_HOME_META_KEYWORD_'%20.%20code" title="HOME_META_KEYWORD_' . $code :: "><span class="description">HOME_META_KEYWORD_' . $code</span><pre>HOME_META_KEYWORD_' . $code</pre></a></li>
+<li class="constant  "><a href="#constant_HOME_PAGE_TITLE_'%20.%20code" title="HOME_PAGE_TITLE_' . $code :: "><span class="description">HOME_PAGE_TITLE_' . $code</span><pre>HOME_PAGE_TITLE_' . $code</pre></a></li>
+<li class="constant  "><a href="#constant_PAGE_PARSE_START_TIME" title="PAGE_PARSE_START_TIME :: "><span class="description">PAGE_PARSE_START_TIME</span><pre>PAGE_PARSE_START_TIME</pre></a></li>
+<li class="constant  "><a href="#constant_PAGE_PARSE_START_TIME" title="PAGE_PARSE_START_TIME :: "><span class="description">PAGE_PARSE_START_TIME</span><pre>PAGE_PARSE_START_TIME</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-function"></i> Functions</h3>
+<a id="function_address_format"></a><div class="element clickable function  function_address_format" data-toggle="collapse" data-target=".function_address_format .collapse">
+<h2>Validates the format of an email address</h2>
+<pre>address_format(string $address, string $new_line) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$address</h4>
+<code>string</code><p>The email address to validate</p></div>
+<div class="subelement argument">
+<h4>$new_line</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_call_config_func"></a><div class="element clickable function  function_call_config_func" data-toggle="collapse" data-target=".function_call_config_func .collapse">
+<h2>Call a function given in string format used by configuration set and use functions</h2>
+<pre>call_config_func(string $function, string $default, string $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$function</h4>
+<code>string</code><p>The complete function to call</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>string</code><p>The default value to pass to the function</p></div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The key value to use for the input field</p></div>
+</div></div>
+</div>
+<a id="function_cart_item_count"></a><div class="element clickable function  function_cart_item_count" data-toggle="collapse" data-target=".function_cart_item_count .collapse">
+<h2>cart_item_count()
+        </h2>
+<pre>cart_item_count() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_cfg_set_boolean_value"></a><div class="element clickable function  function_cfg_set_boolean_value" data-toggle="collapse" data-target=".function_cfg_set_boolean_value .collapse">
+<h2>cfg_set_boolean_value()
+        </h2>
+<pre>cfg_set_boolean_value($select_array, $default, $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$select_array</h4></div>
+<div class="subelement argument"><h4>$default</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_cfg_set_countries_pulldown_menu"></a><div class="element clickable function  function_cfg_set_countries_pulldown_menu" data-toggle="collapse" data-target=".function_cfg_set_countries_pulldown_menu .collapse">
+<h2>cfg_set_countries_pulldown_menu()
+        </h2>
+<pre>cfg_set_countries_pulldown_menu($default, $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$default</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_cfg_set_textarea_field"></a><div class="element clickable function  function_cfg_set_textarea_field" data-toggle="collapse" data-target=".function_cfg_set_textarea_field .collapse">
+<h2>cfg_set_textarea_field()
+        </h2>
+<pre>cfg_set_textarea_field($default, $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$default</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_cfg_set_weight_classes_pulldown_menu"></a><div class="element clickable function  function_cfg_set_weight_classes_pulldown_menu" data-toggle="collapse" data-target=".function_cfg_set_weight_classes_pulldown_menu .collapse">
+<h2>cfg_set_weight_classes_pulldown_menu()
+        </h2>
+<pre>cfg_set_weight_classes_pulldown_menu($default, $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$default</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_cfg_set_zones_pulldown_menu"></a><div class="element clickable function  function_cfg_set_zones_pulldown_menu" data-toggle="collapse" data-target=".function_cfg_set_zones_pulldown_menu .collapse">
+<h2>cfg_set_zones_pulldown_menu()
+        </h2>
+<pre>cfg_set_zones_pulldown_menu($default, $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$default</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_cfg_use_get_boolean_value"></a><div class="element clickable function  function_cfg_use_get_boolean_value" data-toggle="collapse" data-target=".function_cfg_use_get_boolean_value .collapse">
+<h2>cfg_use_get_boolean_value()
+        </h2>
+<pre>cfg_use_get_boolean_value($string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$string</h4></div>
+</div></div>
+</div>
+<a id="function_config"></a><div class="element clickable function  function_config" data-toggle="collapse" data-target=".function_config .collapse">
+<h2>Config</h2>
+<pre>config(string $key) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_config"></a><div class="element clickable function  function_config" data-toggle="collapse" data-target=".function_config .collapse">
+<h2>config()
+        </h2>
+<pre>config($key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_create_random_string"></a><div class="element clickable function  function_create_random_string" data-toggle="collapse" data-target=".function_create_random_string .collapse">
+<h2>create_random_string()
+        </h2>
+<pre>create_random_string($length, $type) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$length</h4></div>
+<div class="subelement argument"><h4>$type</h4></div>
+</div></div>
+</div>
+<a id="function_currencies_add_tax_rate_to_price"></a><div class="element clickable function  function_currencies_add_tax_rate_to_price" data-toggle="collapse" data-target=".function_currencies_add_tax_rate_to_price .collapse">
+<h2>Add tax value to product price</h2>
+<pre>currencies_add_tax_rate_to_price(int $price, int $tax_rate, int $quantity) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$price</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$tax_rate</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$quantity</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currencies_display_price"></a><div class="element clickable function  function_currencies_display_price" data-toggle="collapse" data-target=".function_currencies_display_price .collapse">
+<h2>Display total price for certain amount of products with currency symbol</h2>
+<pre>currencies_display_price(int $price, $tax_class_id, int $quantity, $currency_code, $currency_value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$price</h4>
+<code>int</code>
+</div>
+<div class="subelement argument"><h4>$tax_class_id</h4></div>
+<div class="subelement argument">
+<h4>$quantity</h4>
+<code>int</code>
+</div>
+<div class="subelement argument"><h4>$currency_code</h4></div>
+<div class="subelement argument"><h4>$currency_value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currencies_display_price_with_tax_rate"></a><div class="element clickable function  function_currencies_display_price_with_tax_rate" data-toggle="collapse" data-target=".function_currencies_display_price_with_tax_rate .collapse">
+<h2>Display total price with tax value for certain amount of products with currency symbol</h2>
+<pre>currencies_display_price_with_tax_rate(int $price, int $tax_rate, int $quantity, string $currency_code, string $currency_value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$price</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$tax_rate</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$quantity</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_code</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currencies_display_raw_price"></a><div class="element clickable function  function_currencies_display_raw_price" data-toggle="collapse" data-target=".function_currencies_display_raw_price .collapse">
+<h2>Display raw price (without tax value) with symbol</h2>
+<pre>currencies_display_raw_price(int $number, string $currency_code) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$number</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_code</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currencies_format"></a><div class="element clickable function  function_currencies_format" data-toggle="collapse" data-target=".function_currencies_format .collapse">
+<h2>Format currency value with currency symbol</h2>
+<pre>currencies_format(int $number, string $currency_code, string $currency_value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$number</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_code</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currencies_format_raw"></a><div class="element clickable function  function_currencies_format_raw" data-toggle="collapse" data-target=".function_currencies_format_raw .collapse">
+<h2>Format currency raw value without symbol</h2>
+<pre>currencies_format_raw(int $number, string $currency_code, string $currency_value) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$number</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_code</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$currency_value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currency_code"></a><div class="element clickable function  function_currency_code" data-toggle="collapse" data-target=".function_currency_code .collapse">
+<h2>Get default currency code</h2>
+<pre>currency_code() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currency_symbol_left"></a><div class="element clickable function  function_currency_symbol_left" data-toggle="collapse" data-target=".function_currency_symbol_left .collapse">
+<h2>Get default currency left symbol</h2>
+<pre>currency_symbol_left() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_currency_title"></a><div class="element clickable function  function_currency_title" data-toggle="collapse" data-target=".function_currency_title .collapse">
+<h2>Get default currency title</h2>
+<pre>currency_title() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_dircopy"></a><div class="element clickable function  function_dircopy" data-toggle="collapse" data-target=".function_dircopy .collapse">
+<h2>Copy file or folder from source to destination</h2>
+<pre>dircopy(string $src, string $dest, int $folder_permission, int $file_permission) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$src</h4>
+<code>string</code><p>source file or folder</p></div>
+<div class="subelement argument">
+<h4>$dest</h4>
+<code>string</code><p>destination file or folder</p></div>
+<div class="subelement argument">
+<h4>$folder_permission</h4>
+<code>int</code><p>Folder Permission</p></div>
+<div class="subelement argument">
+<h4>$file_permission</h4>
+<code>int</code><p>File Permission</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="function_directory_make"></a><div class="element clickable function  function_directory_make" data-toggle="collapse" data-target=".function_directory_make .collapse">
+<h2>Create a Directory Make</h2>
+<pre>directory_make(string $path, int $permission) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Reads the specified directory and builds an array
+representation of it.  Sub-folders contained with the
+directory will be mapped as well.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>path to source</p></div>
+<div class="subelement argument">
+<h4>$permission</h4>
+<code>int</code><p>depth of directories to traverse</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="function_display_tax_rate_value"></a><div class="element clickable function  function_display_tax_rate_value" data-toggle="collapse" data-target=".function_display_tax_rate_value .collapse">
+<h2>display tax rate value.</h2>
+<pre>display_tax_rate_value(int $value, int $padding) : </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$padding</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"></div>
+</div></div>
+</div>
+<a id="function_draw_label"></a><div class="element clickable function  function_draw_label" data-toggle="collapse" data-target=".function_draw_label .collapse">
+<h2>draw_label()
+        </h2>
+<pre>draw_label($text, $for, $access_key, $required, $parameters) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$text</h4></div>
+<div class="subelement argument"><h4>$for</h4></div>
+<div class="subelement argument"><h4>$access_key</h4></div>
+<div class="subelement argument"><h4>$required</h4></div>
+<div class="subelement argument"><h4>$parameters</h4></div>
+</div></div>
+</div>
+<a id="function_encrypt_password"></a><div class="element clickable function  function_encrypt_password" data-toggle="collapse" data-target=".function_encrypt_password .collapse">
+<h2>Encrypt password</h2>
+<pre>encrypt_password($plain) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$plain</h4><p>the password</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_encrypt_password"></a><div class="element clickable function  function_encrypt_password" data-toggle="collapse" data-target=".function_encrypt_password .collapse">
+<h2>encrypt_password()
+        </h2>
+<pre>encrypt_password($plain) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$plain</h4></div>
+</div></div>
+</div>
+<a id="function_format_friendly_url"></a><div class="element clickable function  function_format_friendly_url" data-toggle="collapse" data-target=".function_format_friendly_url .collapse">
+<h2>Format friendly url</h2>
+<pre>format_friendly_url(string $string) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_get_currencies"></a><div class="element clickable function  function_get_currencies" data-toggle="collapse" data-target=".function_get_currencies .collapse">
+<h2>Get all currencies</h2>
+<pre>get_currencies() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="function_get_date"></a><div class="element clickable function  function_get_date" data-toggle="collapse" data-target=".function_get_date .collapse">
+<h2>Get date part of a datetime</h2>
+<pre>get_date(string $datetime) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$datetime</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_get_date"></a><div class="element clickable function  function_get_date" data-toggle="collapse" data-target=".function_get_date .collapse">
+<h2>get_date()
+        </h2>
+<pre>get_date($datetime) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$datetime</h4></div>
+</div></div>
+</div>
+<a id="function_get_date_long"></a><div class="element clickable function  function_get_date_long" data-toggle="collapse" data-target=".function_get_date_long .collapse">
+<h2>Get long type date format</h2>
+<pre>get_date_long(int $date) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$date</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_get_date_long"></a><div class="element clickable function  function_get_date_long" data-toggle="collapse" data-target=".function_get_date_long .collapse">
+<h2>get_date_long()
+        </h2>
+<pre>get_date_long($date, $with_time) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$date</h4></div>
+<div class="subelement argument"><h4>$with_time</h4></div>
+</div></div>
+</div>
+<a id="function_get_date_now"></a><div class="element clickable function  function_get_date_now" data-toggle="collapse" data-target=".function_get_date_now .collapse">
+<h2>Get date now</h2>
+<pre>get_date_now() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_get_date_now"></a><div class="element clickable function  function_get_date_now" data-toggle="collapse" data-target=".function_get_date_now .collapse">
+<h2>get_date_now()
+        </h2>
+<pre>get_date_now() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_get_date_short"></a><div class="element clickable function  function_get_date_short" data-toggle="collapse" data-target=".function_get_date_short .collapse">
+<h2>Get short type date format</h2>
+<pre>get_date_short(int $date, bool $with_time) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$date</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$with_time</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_get_date_short"></a><div class="element clickable function  function_get_date_short" data-toggle="collapse" data-target=".function_get_date_short .collapse">
+<h2>get_date_short()
+        </h2>
+<pre>get_date_short($date, $with_time) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$date</h4></div>
+<div class="subelement argument"><h4>$with_time</h4></div>
+</div></div>
+</div>
+<a id="function_get_ip_address"></a><div class="element clickable function  function_get_ip_address" data-toggle="collapse" data-target=".function_get_ip_address .collapse">
+<h2>Fetch the IP Address</h2>
+<pre>get_ip_address() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Determines and validates the visitor's IP address.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>IP address</div>
+</div></div>
+</div>
+<a id="function_get_languages"></a><div class="element clickable function  function_get_languages" data-toggle="collapse" data-target=".function_get_languages .collapse">
+<h2>get_languages()
+        </h2>
+<pre>get_languages() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_get_product_id"></a><div class="element clickable function  function_get_product_id" data-toggle="collapse" data-target=".function_get_product_id .collapse">
+<h2>get_product_id()
+        </h2>
+<pre>get_product_id($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="function_get_product_id_string"></a><div class="element clickable function  function_get_product_id_string" data-toggle="collapse" data-target=".function_get_product_id_string .collapse">
+<h2>Generate a product ID string value containing its product variants combinations</h2>
+<pre>get_product_id_string(string $id, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>The product ID</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>An array of product variants</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_get_product_id_string"></a><div class="element clickable function  function_get_product_id_string" data-toggle="collapse" data-target=".function_get_product_id_string .collapse">
+<h2>get_product_id_string()
+        </h2>
+<pre>get_product_id_string($id, $params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<div class="subelement argument"><h4>$params</h4></div>
+</div></div>
+</div>
+<a id="function_get_product_variants_string"></a><div class="element clickable function  function_get_product_variants_string" data-toggle="collapse" data-target=".function_get_product_variants_string .collapse">
+<h2>get_product_variants_string()
+        </h2>
+<pre>get_product_variants_string($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="function_get_shopping_cart"></a><div class="element clickable function  function_get_shopping_cart" data-toggle="collapse" data-target=".function_get_shopping_cart .collapse">
+<h2>get_shopping_cart()
+        </h2>
+<pre>get_shopping_cart() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_get_tax_rate"></a><div class="element clickable function  function_get_tax_rate" data-toggle="collapse" data-target=".function_get_tax_rate .collapse">
+<h2>Get tax rate</h2>
+<pre>get_tax_rate(int $class_id, int $country_id, int $zone_id) : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class_id</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$country_id</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$zone_id</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="function_get_tax_rate_description"></a><div class="element clickable function  function_get_tax_rate_description" data-toggle="collapse" data-target=".function_get_tax_rate_description .collapse">
+<h2>Get tax rate description</h2>
+<pre>get_tax_rate_description(int $class_id, int $country_id, int $zone_id) : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class_id</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$country_id</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$zone_id</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="function_href_link_admin"></a><div class="element clickable function  function_href_link_admin" data-toggle="collapse" data-target=".function_href_link_admin .collapse">
+<h2>Generate an internal URL address for the administration side</h2>
+<pre>href_link_admin(string $page, string $parameters) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><p>The page to link to</p></div>
+<div class="subelement argument">
+<h4>$parameters</h4>
+<code>string</code><p>The parameters to pass to the page (in the GET scope)</p>
+</div>
+</div></div>
+</div>
+<a id="function_icon"></a><div class="element clickable function  function_icon" data-toggle="collapse" data-target=".function_icon .collapse">
+<h2>Generate an icon(16x16) for the grid</h2>
+<pre>icon(string $icon, string $template, string $type) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$icon</h4>
+<code>string</code><p>the name of the icon</p></div>
+<div class="subelement argument">
+<h4>$template</h4>
+<code>string</code><p>the template</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><p>the template type web/mobile</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_icon_status_url"></a><div class="element clickable function  function_icon_status_url" data-toggle="collapse" data-target=".function_icon_status_url .collapse">
+<h2>Generate an green status flag for the grid</h2>
+<pre>icon_status_url(string $icon, string $template, string $type) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$icon</h4>
+<code>string</code><p>the url of the icon</p></div>
+<div class="subelement argument">
+<h4>$template</h4>
+<code>string</code><p>the template</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><p>the template type web/mobile</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_icon_url"></a><div class="element clickable function  function_icon_url" data-toggle="collapse" data-target=".function_icon_url .collapse">
+<h2>Generate an url of icon(16x16) for the grid</h2>
+<pre>icon_url(string $icon, string $template, string $type) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$icon</h4>
+<code>string</code><p>the url of the icon</p></div>
+<div class="subelement argument">
+<h4>$template</h4>
+<code>string</code><p>the template</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><p>the template type web/mobile</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_image"></a><div class="element clickable function  function_image" data-toggle="collapse" data-target=".function_image .collapse">
+<h2>Image</h2>
+<pre>image(string $image, string $title, int $width, int $height, string $parameters) : boolean | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$image</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$parameters</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="function_image_url"></a><div class="element clickable function  function_image_url" data-toggle="collapse" data-target=".function_image_url .collapse">
+<h2>image_url()
+        </h2>
+<pre>image_url($image) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$image</h4></div>
+</div></div>
+</div>
+<a id="function_is_logged_on"></a><div class="element clickable function  function_is_logged_on" data-toggle="collapse" data-target=".function_is_logged_on .collapse">
+<h2>is_logged_on()
+        </h2>
+<pre>is_logged_on() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_is_logged_on"></a><div class="element clickable function  function_is_logged_on" data-toggle="collapse" data-target=".function_is_logged_on .collapse">
+<h2>is_logged_on()
+        </h2>
+<pre>is_logged_on() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_is_logged_on"></a><div class="element clickable function  function_is_logged_on" data-toggle="collapse" data-target=".function_is_logged_on .collapse">
+<h2>is_logged_on()
+        </h2>
+<pre>is_logged_on() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_lang"></a><div class="element clickable function  function_lang" data-toggle="collapse" data-target=".function_lang .collapse">
+<h2>Lang</h2>
+<pre>lang(string $key) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Fetches a language variable and optionally outputs a form label</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The language line</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_lang"></a><div class="element clickable function  function_lang" data-toggle="collapse" data-target=".function_lang .collapse">
+<h2>lang()
+        </h2>
+<pre>lang($key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="function_lang_code"></a><div class="element clickable function  function_lang_code" data-toggle="collapse" data-target=".function_lang_code .collapse">
+<h2>lang_code()
+        </h2>
+<pre>lang_code() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_lang_get_all"></a><div class="element clickable function  function_lang_get_all" data-toggle="collapse" data-target=".function_lang_get_all .collapse">
+<h2>Geta All Lang</h2>
+<pre>lang_get_all() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="function_lang_get_code"></a><div class="element clickable function  function_lang_get_code" data-toggle="collapse" data-target=".function_lang_get_code .collapse">
+<h2>Lang Code</h2>
+<pre>lang_get_code() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_lang_get_text_direction"></a><div class="element clickable function  function_lang_get_text_direction" data-toggle="collapse" data-target=".function_lang_get_text_direction .collapse">
+<h2>Lang Text Direction</h2>
+<pre>lang_get_text_direction() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_lang_id"></a><div class="element clickable function  function_lang_id" data-toggle="collapse" data-target=".function_lang_id .collapse">
+<h2>Lang ID</h2>
+<pre>lang_id() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_lang_id"></a><div class="element clickable function  function_lang_id" data-toggle="collapse" data-target=".function_lang_id .collapse">
+<h2>lang_id()
+        </h2>
+<pre>lang_id() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_lang_image"></a><div class="element clickable function  function_lang_image" data-toggle="collapse" data-target=".function_lang_image .collapse">
+<h2>lang_image()
+        </h2>
+<pre>lang_image() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_lang_name"></a><div class="element clickable function  function_lang_name" data-toggle="collapse" data-target=".function_lang_name .collapse">
+<h2>lang_name()
+        </h2>
+<pre>lang_name() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="function_load_product_library"></a><div class="element clickable function  function_load_product_library" data-toggle="collapse" data-target=".function_load_product_library .collapse">
+<h2>load_product_library()
+        </h2>
+<pre>load_product_library($products_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id</h4></div>
+</div></div>
+</div>
+<a id="function_output_string"></a><div class="element clickable function  function_output_string" data-toggle="collapse" data-target=".function_output_string .collapse">
+<h2>output_string()
+        </h2>
+<pre>output_string($string, $translate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$string</h4></div>
+<div class="subelement argument"><h4>$translate</h4></div>
+</div></div>
+</div>
+<a id="function_output_string_protected"></a><div class="element clickable function  function_output_string_protected" data-toggle="collapse" data-target=".function_output_string_protected .collapse">
+<h2>Strictly parse and output a user submited value</h2>
+<pre>output_string_protected(string $str) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Converts special charaters to entities</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$str</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_output_string_protected"></a><div class="element clickable function  function_output_string_protected" data-toggle="collapse" data-target=".function_output_string_protected .collapse">
+<h2>output_string_protected()
+        </h2>
+<pre>output_string_protected($string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$string</h4></div>
+</div></div>
+</div>
+<a id="function_parse_variants_from_id_string"></a><div class="element clickable function  function_parse_variants_from_id_string" data-toggle="collapse" data-target=".function_parse_variants_from_id_string .collapse">
+<h2>parse_variants_from_id_string()
+        </h2>
+<pre>parse_variants_from_id_string($products_id_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id_string</h4></div>
+</div></div>
+</div>
+<a id="function_parse_variants_string"></a><div class="element clickable function  function_parse_variants_string" data-toggle="collapse" data-target=".function_parse_variants_string .collapse">
+<h2>parse_variants_string()
+        </h2>
+<pre>parse_variants_string($variants_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$variants_string</h4></div>
+</div></div>
+</div>
+<a id="function_product_image_url"></a><div class="element clickable function  function_product_image_url" data-toggle="collapse" data-target=".function_product_image_url .collapse">
+<h2>product_image_url()
+        </h2>
+<pre>product_image_url($image, $group) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$image</h4></div>
+<div class="subelement argument"><h4>$group</h4></div>
+</div></div>
+</div>
+<a id="function_run_service"></a><div class="element clickable function  function_run_service" data-toggle="collapse" data-target=".function_run_service .collapse">
+<h2>run_service()
+        </h2>
+<pre>run_service($module) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$module</h4></div>
+</div></div>
+</div>
+<a id="function_show_image"></a><div class="element clickable function  function_show_image" data-toggle="collapse" data-target=".function_show_image .collapse">
+<h2>Lang Flag</h2>
+<pre>show_image(string $code, int $width, int $height, string $parameters) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$parameters</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_show_product_image"></a><div class="element clickable function  function_show_product_image" data-toggle="collapse" data-target=".function_show_product_image .collapse">
+<h2>Show product image</h2>
+<pre>show_product_image(string $image, string $group) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$image</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_toc_gd_resize"></a><div class="element clickable function  function_toc_gd_resize" data-toggle="collapse" data-target=".function_toc_gd_resize .collapse">
+<h2>Resize image</h2>
+<pre>toc_gd_resize(string $original_image, string $dest_image, int $dest_width, int $dest_height, int $force_size) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$original_image</h4>
+<code>string</code><p>original image</p></div>
+<div class="subelement argument">
+<h4>$dest_image</h4>
+<code>string</code><p>dest image</p></div>
+<div class="subelement argument">
+<h4>$dest_width</h4>
+<code>int</code><p>dest width</p></div>
+<div class="subelement argument">
+<h4>$dest_height</h4>
+<code>int</code><p>dest height</p></div>
+<div class="subelement argument">
+<h4>$force_size</h4>
+<code>int</code><p>force resize</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="function_toc_validation_errors"></a><div class="element clickable function  function_toc_validation_errors" data-toggle="collapse" data-target=".function_toc_validation_errors .collapse">
+<h2>toc_validation_errors()
+        </h2>
+<pre>toc_validation_errors($field) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$field</h4></div>
+</div></div>
+</div>
+<a id="function_toc_validation_errors_plain"></a><div class="element clickable function  function_toc_validation_errors_plain" data-toggle="collapse" data-target=".function_toc_validation_errors_plain .collapse">
+<h2>toc_validation_errors_plain()
+        </h2>
+<pre>toc_validation_errors_plain($field) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$field</h4></div>
+</div></div>
+</div>
+<a id="function_validate_email_address"></a><div class="element clickable function  function_validate_email_address" data-toggle="collapse" data-target=".function_validate_email_address .collapse">
+<h2>validate_email_address()
+        </h2>
+<pre>validate_email_address($email_address) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$email_address</h4></div>
+</div></div>
+</div>
+<a id="function_worldflag_url"></a><div class="element clickable function  function_worldflag_url" data-toggle="collapse" data-target=".function_worldflag_url .collapse">
+<h2>Generate css background for the world flag</h2>
+<pre>worldflag_url(string $country_iso) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$country_iso</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_EXT_GRID_STEPS"> </a><div class="element clickable constant  constant_EXT_GRID_STEPS" data-toggle="collapse" data-target=".constant_EXT_GRID_STEPS .collapse">
+<h2>EXT_GRID_STEPS</h2>
+<pre>EXT_GRID_STEPS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_EXT_JSON_READER_ROOT"> </a><div class="element clickable constant  constant_EXT_JSON_READER_ROOT" data-toggle="collapse" data-target=".constant_EXT_JSON_READER_ROOT .collapse">
+<h2>EXT_JSON_READER_ROOT</h2>
+<pre>EXT_JSON_READER_ROOT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_EXT_JSON_READER_TOTAL"> </a><div class="element clickable constant  constant_EXT_JSON_READER_TOTAL" data-toggle="collapse" data-target=".constant_EXT_JSON_READER_TOTAL .collapse">
+<h2>EXT_JSON_READER_TOTAL</h2>
+<pre>EXT_JSON_READER_TOTAL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HOME_META_DESCRIPTION_' . code"> </a><div class="element clickable constant  constant_HOME_META_DESCRIPTION_' . code" data-toggle="collapse" data-target=".constant_HOME_META_DESCRIPTION_' . code .collapse">
+<h2>HOME_META_DESCRIPTION_' . $code</h2>
+<pre>HOME_META_DESCRIPTION_' . $code </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HOME_META_KEYWORD_' . code"> </a><div class="element clickable constant  constant_HOME_META_KEYWORD_' . code" data-toggle="collapse" data-target=".constant_HOME_META_KEYWORD_' . code .collapse">
+<h2>HOME_META_KEYWORD_' . $code</h2>
+<pre>HOME_META_KEYWORD_' . $code </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_HOME_PAGE_TITLE_' . code"> </a><div class="element clickable constant  constant_HOME_PAGE_TITLE_' . code" data-toggle="collapse" data-target=".constant_HOME_PAGE_TITLE_' . code .collapse">
+<h2>HOME_PAGE_TITLE_' . $code</h2>
+<pre>HOME_PAGE_TITLE_' . $code </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PAGE_PARSE_START_TIME"> </a><div class="element clickable constant  constant_PAGE_PARSE_START_TIME" data-toggle="collapse" data-target=".constant_PAGE_PARSE_START_TIME .collapse">
+<h2>PAGE_PARSE_START_TIME</h2>
+<pre>PAGE_PARSE_START_TIME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PAGE_PARSE_START_TIME"> </a><div class="element clickable constant  constant_PAGE_PARSE_START_TIME" data-toggle="collapse" data-target=".constant_PAGE_PARSE_START_TIME .collapse">
+<h2>PAGE_PARSE_START_TIME</h2>
+<pre>PAGE_PARSE_START_TIME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.html">Admin</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.html">Admin</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.Core.html">Core</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.html">Admin</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.Core.Controllers.html">Controllers</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Controller" class="element ajax clickable class">
+<h1>TOC_Controller<a href="../classes/TOC_Controller.html">¶</a>
+</h1>
+<p class="short_description">This is the basis for the Admin class that is used throughout TomatoCart.</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Controller.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.html">Admin</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Admin.Core.Libraries.html">Libraries</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Configuration" class="element ajax clickable class">
+<h1>TOC_Configuration<a href="../classes/TOC_Configuration.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Configuration Library</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Configuration.html" class="more">« More »</a>
+</div>
+<div id="TOC_Lang" class="element ajax clickable class">
+<h1>TOC_Lang<a href="../classes/TOC_Lang.html">¶</a>
+</h1>
+<p class="short_description">General Language library class for using in TomatoCart</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Lang.html" class="more">« More »</a>
+</div>
+<div id="TOC_Loader" class="element ajax clickable class">
+<h1>TOC_Loader<a href="../classes/TOC_Loader.html">¶</a>
+</h1>
+<p class="short_description">This is the loader class used throughout TomatoCart.</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Loader.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Controllers.html">Controllers</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Controller" class="element ajax clickable class">
+<h1>TOC_Controller<a href="../classes/TOC_Controller.html">¶</a>
+</h1>
+<p class="short_description">Code here is run before frontend controllers</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Controller.html" class="more">« More »</a>
+</div>
+<div id="TOC_Module" class="element ajax clickable class">
+<h1>TOC_Module<a href="../classes/TOC_Module.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Template Module Definitions</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Module.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Cache" class="element ajax clickable class">
+<h1>TOC_Cache<a href="../classes/TOC_Cache.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Cache Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Cache.html" class="more">« More »</a>
+</div>
+<div id="TOC_Category" class="element ajax clickable class">
+<h1>TOC_Category<a href="../classes/TOC_Category.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Category Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Category.html" class="more">« More »</a>
+</div>
+<div id="TOC_Category_Tree" class="element ajax clickable class">
+<h1>TOC_Category_Tree<a href="../classes/TOC_Category_Tree.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Category Tree Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Category_Tree.html" class="more">« More »</a>
+</div>
+<div id="TOC_Config" class="element ajax clickable class">
+<h1>TOC_Config<a href="../classes/TOC_Config.html">¶</a>
+</h1>
+<p class="short_description">Extends the CodeIgniter Config class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Config.html" class="more">« More »</a>
+</div>
+<div id="TOC_Configuration" class="element ajax clickable class">
+<h1>TOC_Configuration<a href="../classes/TOC_Configuration.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Configuration Library</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Configuration.html" class="more">« More »</a>
+</div>
+<div id="TOC_Currencies" class="element ajax clickable class">
+<h1>TOC_Currencies<a href="../classes/TOC_Currencies.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Currencies Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Currencies.html" class="more">« More »</a>
+</div>
+<div id="TOC_Customer" class="element ajax clickable class">
+<h1>TOC_Customer<a href="../classes/TOC_Customer.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Customer Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Customer.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template" class="element ajax clickable class">
+<h1>TOC_Email_Template<a href="../classes/TOC_Email_Template.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Email Template Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template.html" class="more">« More »</a>
+</div>
+<div id="TOC_Image" class="element ajax clickable class">
+<h1>TOC_Image<a href="../classes/TOC_Image.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Image Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Image.html" class="more">« More »</a>
+</div>
+<div id="TOC_Lang" class="element ajax clickable class">
+<h1>TOC_Lang<a href="../classes/TOC_Lang.html">¶</a>
+</h1>
+<p class="short_description">General Language library class for using in TomatoCart</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Lang.html" class="more">« More »</a>
+</div>
+<div id="TOC_Loader" class="element ajax clickable class">
+<h1>TOC_Loader<a href="../classes/TOC_Loader.html">¶</a>
+</h1>
+<p class="short_description">This is the loader class used throughout TomatoCart.</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Loader.html" class="more">« More »</a>
+</div>
+<div id="TOC_Message_Stack" class="element ajax clickable class">
+<h1>TOC_Message_Stack<a href="../classes/TOC_Message_Stack.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Message Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Message_Stack.html" class="more">« More »</a>
+</div>
+<div id="TOC_Navigation_History" class="element ajax clickable class">
+<h1>TOC_Navigation_History<a href="../classes/TOC_Navigation_History.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Navigation History Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Navigation_History.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order" class="element ajax clickable class">
+<h1>TOC_Order<a href="../classes/TOC_Order.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Order Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total" class="element ajax clickable class">
+<h1>TOC_Order_Total<a href="../classes/TOC_Order_Total.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Order Total Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment" class="element ajax clickable class">
+<h1>TOC_Payment<a href="../classes/TOC_Payment.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Payment Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment.html" class="more">« More »</a>
+</div>
+<div id="TOC_Product" class="element ajax clickable class">
+<h1>TOC_Product<a href="../classes/TOC_Product.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Product Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Product.html" class="more">« More »</a>
+</div>
+<div id="TOC_Registry" class="element ajax clickable class">
+<h1>TOC_Registry<a href="../classes/TOC_Registry.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Registry Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Registry.html" class="more">« More »</a>
+</div>
+<div id="TOC_Reviews" class="element ajax clickable class">
+<h1>TOC_Reviews<a href="../classes/TOC_Reviews.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Reviews Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Reviews.html" class="more">« More »</a>
+</div>
+<div id="TOC_Search" class="element ajax clickable class">
+<h1>TOC_Search<a href="../classes/TOC_Search.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Search Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Search.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service" class="element ajax clickable class">
+<h1>TOC_Service<a href="../classes/TOC_Service.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Service Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping" class="element ajax clickable class">
+<h1>TOC_Shipping<a href="../classes/TOC_Shipping.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Shipping Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shopping_Cart" class="element ajax clickable class">
+<h1>TOC_Shopping_Cart<a href="../classes/TOC_Shopping_Cart.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Shopping Cart Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shopping_Cart.html" class="more">« More »</a>
+</div>
+<div id="TOC_Tag_Cloud" class="element ajax clickable class">
+<h1>TOC_Tag_Cloud<a href="../classes/TOC_Tag_Cloud.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Tag Cloud Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Tag_Cloud.html" class="more">« More »</a>
+</div>
+<div id="TOC_Tax" class="element ajax clickable class">
+<h1>TOC_Tax<a href="../classes/TOC_Tax.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Tax Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Tax.html" class="more">« More »</a>
+</div>
+<div id="TOC_Weight" class="element ajax clickable class">
+<h1>TOC_Weight<a href="../classes/TOC_Weight.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Weight Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Weight.html" class="more">« More »</a>
+</div>
+<div id="TOC_Wishlist" class="element ajax clickable class">
+<h1>TOC_Wishlist<a href="../classes/TOC_Wishlist.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Wishlist Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Wishlist.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Email%20Template.html">Email Template</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Email_Template_Module" class="element ajax clickable class">
+<h1>TOC_Email_Template_Module<a href="../classes/TOC_Email_Template_Module.html">¶</a>
+</h1>
+<p class="short_description">Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template_admin_password_forgotten" class="element ajax clickable class">
+<h1>TOC_Email_Template_admin_password_forgotten<a href="../classes/TOC_Email_Template_admin_password_forgotten.html">¶</a>
+</h1>
+<p class="short_description">Admin password forgotten -- Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_admin_password_forgotten.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template_create_account_email" class="element ajax clickable class">
+<h1>TOC_Email_Template_create_account_email<a href="../classes/TOC_Email_Template_create_account_email.html">¶</a>
+</h1>
+<p class="short_description">Create account email -- Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_create_account_email.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template_password_forgotten" class="element ajax clickable class">
+<h1>TOC_Email_Template_password_forgotten<a href="../classes/TOC_Email_Template_password_forgotten.html">¶</a>
+</h1>
+<p class="short_description">Password forgotten -- Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_password_forgotten.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Order%20Total.html">Order Total</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Order_Total_Module" class="element ajax clickable class">
+<h1>TOC_Order_Total_Module<a href="../classes/TOC_Order_Total_Module.html">¶</a>
+</h1>
+<p class="short_description">Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_low_order_fee" class="element ajax clickable class">
+<h1>TOC_Order_Total_low_order_fee<a href="../classes/TOC_Order_Total_low_order_fee.html">¶</a>
+</h1>
+<p class="short_description">Low Order Fee -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_low_order_fee.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_shipping" class="element ajax clickable class">
+<h1>TOC_Order_Total_shipping<a href="../classes/TOC_Order_Total_shipping.html">¶</a>
+</h1>
+<p class="short_description">Shipping -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_shipping.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_sub_total" class="element ajax clickable class">
+<h1>TOC_Order_Total_sub_total<a href="../classes/TOC_Order_Total_sub_total.html">¶</a>
+</h1>
+<p class="short_description">Sub Total -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_sub_total.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_tax" class="element ajax clickable class">
+<h1>TOC_Order_Total_tax<a href="../classes/TOC_Order_Total_tax.html">¶</a>
+</h1>
+<p class="short_description">Tax -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_tax.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_total" class="element ajax clickable class">
+<h1>TOC_Order_Total_total<a href="../classes/TOC_Order_Total_total.html">¶</a>
+</h1>
+<p class="short_description">Total -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_total.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Payment.html">Payment</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Payment_Module" class="element ajax clickable class">
+<h1>TOC_Payment_Module<a href="../classes/TOC_Payment_Module.html">¶</a>
+</h1>
+<p class="short_description">Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_bank_wire" class="element ajax clickable class">
+<h1>TOC_Payment_bank_wire<a href="../classes/TOC_Payment_bank_wire.html">¶</a>
+</h1>
+<p class="short_description">Bank Wire -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_bank_wire.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_cheque" class="element ajax clickable class">
+<h1>TOC_Payment_cheque<a href="../classes/TOC_Payment_cheque.html">¶</a>
+</h1>
+<p class="short_description">Bank Wire -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_cheque.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_cod" class="element ajax clickable class">
+<h1>TOC_Payment_cod<a href="../classes/TOC_Payment_cod.html">¶</a>
+</h1>
+<p class="short_description">Cash On Delivery -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_cod.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_paypal_direct" class="element ajax clickable class">
+<h1>TOC_Payment_paypal_direct<a href="../classes/TOC_Payment_paypal_direct.html">¶</a>
+</h1>
+<p class="short_description">Paypal Standard -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_paypal_direct.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_paypal_express" class="element ajax clickable class">
+<h1>TOC_Payment_paypal_express<a href="../classes/TOC_Payment_paypal_express.html">¶</a>
+</h1>
+<p class="short_description">Paypal Standard -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_paypal_express.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_paypal_standard" class="element ajax clickable class">
+<h1>TOC_Payment_paypal_standard<a href="../classes/TOC_Payment_paypal_standard.html">¶</a>
+</h1>
+<p class="short_description">Paypal Standard -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_paypal_standard.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_western_union" class="element ajax clickable class">
+<h1>TOC_Payment_western_union<a href="../classes/TOC_Payment_western_union.html">¶</a>
+</h1>
+<p class="short_description">Bank Wire -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_western_union.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Service.html">Service</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Service_Google_Analytics" class="element ajax clickable class">
+<h1>TOC_Service_Google_Analytics<a href="../classes/TOC_Service_Google_Analytics.html">¶</a>
+</h1>
+<p class="short_description">Google Analytics -- Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_Google_Analytics.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service_Module" class="element ajax clickable class">
+<h1>TOC_Service_Module<a href="../classes/TOC_Service_Module.html">¶</a>
+</h1>
+<p class="short_description">Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service_Sef" class="element ajax clickable class">
+<h1>TOC_Service_Sef<a href="../classes/TOC_Service_Sef.html">¶</a>
+</h1>
+<p class="short_description">Sef -- Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_Sef.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service_debug" class="element ajax clickable class">
+<h1>TOC_Service_debug<a href="../classes/TOC_Service_debug.html">¶</a>
+</h1>
+<p class="short_description">Service Debug -- Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_debug.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Shipping.html">Shipping</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Shipping_Module" class="element ajax clickable class">
+<h1>TOC_Shipping_Module<a href="../classes/TOC_Shipping_Module.html">¶</a>
+</h1>
+<p class="short_description">Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_flat" class="element ajax clickable class">
+<h1>TOC_Shipping_flat<a href="../classes/TOC_Shipping_flat.html">¶</a>
+</h1>
+<p class="short_description">Flat Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_flat.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_free" class="element ajax clickable class">
+<h1>TOC_Shipping_free<a href="../classes/TOC_Shipping_free.html">¶</a>
+</h1>
+<p class="short_description">Free Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_free.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_item" class="element ajax clickable class">
+<h1>TOC_Shipping_item<a href="../classes/TOC_Shipping_item.html">¶</a>
+</h1>
+<p class="short_description">Item Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_item.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_self_pickup" class="element ajax clickable class">
+<h1>TOC_Shipping_self_pickup<a href="../classes/TOC_Shipping_self_pickup.html">¶</a>
+</h1>
+<p class="short_description">Self Pickup Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_self_pickup.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_table" class="element ajax clickable class">
+<h1>TOC_Shipping_table<a href="../classes/TOC_Shipping_table.html">¶</a>
+</h1>
+<p class="short_description">Table Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_table.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:03+07:00.<br></footer></div>
+</div>
+</body>
+</html>

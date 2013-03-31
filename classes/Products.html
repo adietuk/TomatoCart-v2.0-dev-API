@@ -1,0 +1,869 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \Products</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_assign_local_images" title="assign_local_images :: Assign the local images"><span class="description">Assign the local images</span><pre>assign_local_images()</pre></a></li>
+<li class="method public "><a href="#method_delete_image" title="delete_image :: Delete the image"><span class="description">Delete the image</span><pre>delete_image()</pre></a></li>
+<li class="method public "><a href="#method_delete_product" title="delete_product :: Delete the product"><span class="description">Delete the product</span><pre>delete_product()</pre></a></li>
+<li class="method public "><a href="#method_delete_products" title="delete_products :: Batch delete the products"><span class="description">Batch delete the products</span><pre>delete_products()</pre></a></li>
+<li class="method public "><a href="#method_get_accessories" title="get_accessories :: Get the accessories of the product"><span class="description">Get the accessories of the product</span><pre>get_accessories()</pre></a></li>
+<li class="method public "><a href="#method_get_categories_tree" title="get_categories_tree :: Get the categories tree"><span class="description">Get the categories tree</span><pre>get_categories_tree()</pre></a></li>
+<li class="method public "><a href="#method_get_images" title="get_images :: Get the product images"><span class="description">Get the product images</span><pre>get_images()</pre></a></li>
+<li class="method public "><a href="#method_get_local_images" title="get_local_images :: Get the local images"><span class="description">Get the local images</span><pre>get_local_images()</pre></a></li>
+<li class="method public "><a href="#method_get_manufacturers" title="get_manufacturers :: Get the manufacturers"><span class="description">Get the manufacturers</span><pre>get_manufacturers()</pre></a></li>
+<li class="method public "><a href="#method_get_products" title="get_products :: Get the products"><span class="description">Get the products</span><pre>get_products()</pre></a></li>
+<li class="method public "><a href="#method_get_quantity_discount_groups" title="get_quantity_discount_groups :: Get the quantity discount groups"><span class="description">Get the quantity discount groups</span><pre>get_quantity_discount_groups()</pre></a></li>
+<li class="method public "><a href="#method_get_quantity_units" title="get_quantity_units :: Get the quantity discount groups"><span class="description">Get the quantity discount groups</span><pre>get_quantity_units()</pre></a></li>
+<li class="method public "><a href="#method_get_tax_classes" title="get_tax_classes :: Get the tax classes"><span class="description">Get the tax classes</span><pre>get_tax_classes()</pre></a></li>
+<li class="method public "><a href="#method_get_variants_products" title="get_variants_products :: Get the variants products"><span class="description">Get the variants products</span><pre>get_variants_products()</pre></a></li>
+<li class="method public "><a href="#method_get_variants_values" title="get_variants_values :: Get the variants values"><span class="description">Get the variants values</span><pre>get_variants_values()</pre></a></li>
+<li class="method public "><a href="#method_get_weight_classes" title="get_weight_classes :: Get the weight classes"><span class="description">Get the weight classes</span><pre>get_weight_classes()</pre></a></li>
+<li class="method public "><a href="#method_get_xsell_products" title="get_xsell_products :: Get the xsell products"><span class="description">Get the xsell products</span><pre>get_xsell_products()</pre></a></li>
+<li class="method public "><a href="#method_list_products" title="list_products :: List the products"><span class="description">List the products</span><pre>list_products()</pre></a></li>
+<li class="method public "><a href="#method_load_categories_tree" title="load_categories_tree :: Load the categories tree"><span class="description">Load the categories tree</span><pre>load_categories_tree()</pre></a></li>
+<li class="method public "><a href="#method_load_product" title="load_product :: Load the product"><span class="description">Load the product</span><pre>load_product()</pre></a></li>
+<li class="method public "><a href="#method_load_variants_groups" title="load_variants_groups :: Load the variants groups"><span class="description">Load the variants groups</span><pre>load_variants_groups()</pre></a></li>
+<li class="method public "><a href="#method_save_product" title="save_product :: Save the product"><span class="description">Save the product</span><pre>save_product()</pre></a></li>
+<li class="method public "><a href="#method_set_default" title="set_default :: Set the default image"><span class="description">Set the default image</span><pre>set_default()</pre></a></li>
+<li class="method public "><a href="#method_set_frontpage" title="set_frontpage :: Make the product display on the frontpage"><span class="description">Make the product display on the frontpage</span><pre>set_frontpage()</pre></a></li>
+<li class="method public "><a href="#method_set_status" title="set_status :: Set the status of the product"><span class="description">Set the status of the product</span><pre>set_status()</pre></a></li>
+<li class="method public "><a href="#method_upload_image" title="upload_image :: Upload the product image"><span class="description">Upload the product image</span><pre>upload_image()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method__compose_cbodata" title="_compose_cbodata :: Compose the data for the combobox"><span class="description">Compose the data for the combobox</span><pre>_compose_cbodata()</pre></a></li></ul>
+</li>
+</ul>
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_assign_local_images" title="assign_local_images :: "><span class="description">assign_local_images()
+        </span><pre>assign_local_images()</pre></a></li>
+<li class="method public "><a href="#method_delete_image" title="delete_image :: "><span class="description">delete_image()
+        </span><pre>delete_image()</pre></a></li>
+<li class="method public "><a href="#method_delete_product" title="delete_product :: "><span class="description">delete_product()
+        </span><pre>delete_product()</pre></a></li>
+<li class="method public "><a href="#method_delete_products" title="delete_products :: "><span class="description">delete_products()
+        </span><pre>delete_products()</pre></a></li>
+<li class="method public "><a href="#method_get_accessories" title="get_accessories :: "><span class="description">get_accessories()
+        </span><pre>get_accessories()</pre></a></li>
+<li class="method public "><a href="#method_get_categories_tree" title="get_categories_tree :: "><span class="description">get_categories_tree()
+        </span><pre>get_categories_tree()</pre></a></li>
+<li class="method public "><a href="#method_get_images" title="get_images :: "><span class="description">get_images()
+        </span><pre>get_images()</pre></a></li>
+<li class="method public "><a href="#method_get_local_images" title="get_local_images :: "><span class="description">get_local_images()
+        </span><pre>get_local_images()</pre></a></li>
+<li class="method public "><a href="#method_get_manufacturers" title="get_manufacturers :: "><span class="description">get_manufacturers()
+        </span><pre>get_manufacturers()</pre></a></li>
+<li class="method public "><a href="#method_get_model" title="get_model :: "><span class="description">get_model()
+        </span><pre>get_model()</pre></a></li>
+<li class="method public "><a href="#method_get_products" title="get_products :: "><span class="description">get_products()
+        </span><pre>get_products()</pre></a></li>
+<li class="method public "><a href="#method_get_quantity_discount_groups" title="get_quantity_discount_groups :: "><span class="description">get_quantity_discount_groups()
+        </span><pre>get_quantity_discount_groups()</pre></a></li>
+<li class="method public "><a href="#method_get_quantity_units" title="get_quantity_units :: "><span class="description">get_quantity_units()
+        </span><pre>get_quantity_units()</pre></a></li>
+<li class="method public "><a href="#method_get_tax_classes" title="get_tax_classes :: "><span class="description">get_tax_classes()
+        </span><pre>get_tax_classes()</pre></a></li>
+<li class="method public "><a href="#method_get_variants_products" title="get_variants_products :: "><span class="description">get_variants_products()
+        </span><pre>get_variants_products()</pre></a></li>
+<li class="method public "><a href="#method_get_variants_values" title="get_variants_values :: "><span class="description">get_variants_values()
+        </span><pre>get_variants_values()</pre></a></li>
+<li class="method public "><a href="#method_get_weight_classes" title="get_weight_classes :: "><span class="description">get_weight_classes()
+        </span><pre>get_weight_classes()</pre></a></li>
+<li class="method public "><a href="#method_get_xsell_products" title="get_xsell_products :: "><span class="description">get_xsell_products()
+        </span><pre>get_xsell_products()</pre></a></li>
+<li class="method public "><a href="#method_list_products" title="list_products :: "><span class="description">list_products()
+        </span><pre>list_products()</pre></a></li>
+<li class="method public "><a href="#method_load_categories_tree" title="load_categories_tree :: "><span class="description">load_categories_tree()
+        </span><pre>load_categories_tree()</pre></a></li>
+<li class="method public "><a href="#method_load_product" title="load_product :: "><span class="description">load_product()
+        </span><pre>load_product()</pre></a></li>
+<li class="method public "><a href="#method_load_variants_groups" title="load_variants_groups :: "><span class="description">load_variants_groups()
+        </span><pre>load_variants_groups()</pre></a></li>
+<li class="method public "><a href="#method_save_product" title="save_product :: "><span class="description">save_product()
+        </span><pre>save_product()</pre></a></li>
+<li class="method public "><a href="#method_set_default" title="set_default :: "><span class="description">set_default()
+        </span><pre>set_default()</pre></a></li>
+<li class="method public "><a href="#method_set_frontpage" title="set_frontpage :: "><span class="description">set_frontpage()
+        </span><pre>set_frontpage()</pre></a></li>
+<li class="method public "><a href="#method_set_status" title="set_status :: "><span class="description">set_status()
+        </span><pre>set_status()</pre></a></li>
+<li class="method public "><a href="#method_show" title="show :: "><span class="description">show()
+        </span><pre>show()</pre></a></li>
+<li class="method public "><a href="#method_upload_image" title="upload_image :: "><span class="description">upload_image()
+        </span><pre>upload_image()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_set_page_title" title="set_page_title :: Set the page title"><span class="description">Set the page title</span><pre>set_page_title()</pre></a></li>
+<li class="method protected inherited"><a href="#method_validate_customer_access" title="validate_customer_access :: Check whether the customer is able to access the page"><span class="description">Check whether the customer is able to access the page</span><pre>validate_customer_access()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method__compose_cbodata" title="_compose_cbodata :: "><span class="description">_compose_cbodata()
+        </span><pre>_compose_cbodata()</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Products"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Products.html">Products</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_assign_local_images"></a><div class="element clickable method public method_assign_local_images" data-toggle="collapse" data-target=".method_assign_local_images .collapse">
+<h2>Assign the local images</h2>
+<pre>assign_local_images() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete_image"></a><div class="element clickable method public method_delete_image" data-toggle="collapse" data-target=".method_delete_image .collapse">
+<h2>Delete the image</h2>
+<pre>delete_image() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete_product"></a><div class="element clickable method public method_delete_product" data-toggle="collapse" data-target=".method_delete_product .collapse">
+<h2>Delete the product</h2>
+<pre>delete_product() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete_products"></a><div class="element clickable method public method_delete_products" data-toggle="collapse" data-target=".method_delete_products .collapse">
+<h2>Batch delete the products</h2>
+<pre>delete_products() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_accessories"></a><div class="element clickable method public method_get_accessories" data-toggle="collapse" data-target=".method_get_accessories .collapse">
+<h2>Get the accessories of the product</h2>
+<pre>get_accessories() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_categories_tree"></a><div class="element clickable method public method_get_categories_tree" data-toggle="collapse" data-target=".method_get_categories_tree .collapse">
+<h2>Get the categories tree</h2>
+<pre>get_categories_tree() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_images"></a><div class="element clickable method public method_get_images" data-toggle="collapse" data-target=".method_get_images .collapse">
+<h2>Get the product images</h2>
+<pre>get_images() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_local_images"></a><div class="element clickable method public method_get_local_images" data-toggle="collapse" data-target=".method_get_local_images .collapse">
+<h2>Get the local images</h2>
+<pre>get_local_images() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_manufacturers"></a><div class="element clickable method public method_get_manufacturers" data-toggle="collapse" data-target=".method_get_manufacturers .collapse">
+<h2>Get the manufacturers</h2>
+<pre>get_manufacturers() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_products"></a><div class="element clickable method public method_get_products" data-toggle="collapse" data-target=".method_get_products .collapse">
+<h2>Get the products</h2>
+<pre>get_products() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_quantity_discount_groups"></a><div class="element clickable method public method_get_quantity_discount_groups" data-toggle="collapse" data-target=".method_get_quantity_discount_groups .collapse">
+<h2>Get the quantity discount groups</h2>
+<pre>get_quantity_discount_groups() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_quantity_units"></a><div class="element clickable method public method_get_quantity_units" data-toggle="collapse" data-target=".method_get_quantity_units .collapse">
+<h2>Get the quantity discount groups</h2>
+<pre>get_quantity_units() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_tax_classes"></a><div class="element clickable method public method_get_tax_classes" data-toggle="collapse" data-target=".method_get_tax_classes .collapse">
+<h2>Get the tax classes</h2>
+<pre>get_tax_classes() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_variants_products"></a><div class="element clickable method public method_get_variants_products" data-toggle="collapse" data-target=".method_get_variants_products .collapse">
+<h2>Get the variants products</h2>
+<pre>get_variants_products() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_variants_values"></a><div class="element clickable method public method_get_variants_values" data-toggle="collapse" data-target=".method_get_variants_values .collapse">
+<h2>Get the variants values</h2>
+<pre>get_variants_values() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_weight_classes"></a><div class="element clickable method public method_get_weight_classes" data-toggle="collapse" data-target=".method_get_weight_classes .collapse">
+<h2>Get the weight classes</h2>
+<pre>get_weight_classes() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_xsell_products"></a><div class="element clickable method public method_get_xsell_products" data-toggle="collapse" data-target=".method_get_xsell_products .collapse">
+<h2>Get the xsell products</h2>
+<pre>get_xsell_products() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_list_products"></a><div class="element clickable method public method_list_products" data-toggle="collapse" data-target=".method_list_products .collapse">
+<h2>List the products</h2>
+<pre>list_products() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_load_categories_tree"></a><div class="element clickable method public method_load_categories_tree" data-toggle="collapse" data-target=".method_load_categories_tree .collapse">
+<h2>Load the categories tree</h2>
+<pre>load_categories_tree() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_load_product"></a><div class="element clickable method public method_load_product" data-toggle="collapse" data-target=".method_load_product .collapse">
+<h2>Load the product</h2>
+<pre>load_product() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_load_variants_groups"></a><div class="element clickable method public method_load_variants_groups" data-toggle="collapse" data-target=".method_load_variants_groups .collapse">
+<h2>Load the variants groups</h2>
+<pre>load_variants_groups() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_save_product"></a><div class="element clickable method public method_save_product" data-toggle="collapse" data-target=".method_save_product .collapse">
+<h2>Save the product</h2>
+<pre>save_product() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_set_default"></a><div class="element clickable method public method_set_default" data-toggle="collapse" data-target=".method_set_default .collapse">
+<h2>Set the default image</h2>
+<pre>set_default() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_set_frontpage"></a><div class="element clickable method public method_set_frontpage" data-toggle="collapse" data-target=".method_set_frontpage .collapse">
+<h2>Make the product display on the frontpage</h2>
+<pre>set_frontpage() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_set_status"></a><div class="element clickable method public method_set_status" data-toggle="collapse" data-target=".method_set_status .collapse">
+<h2>Set the status of the product</h2>
+<pre>set_status() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_upload_image"></a><div class="element clickable method public method_upload_image" data-toggle="collapse" data-target=".method_upload_image .collapse">
+<h2>Upload the product image</h2>
+<pre>upload_image() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__compose_cbodata"></a><div class="element clickable method private method__compose_cbodata" data-toggle="collapse" data-target=".method__compose_cbodata .collapse">
+<h2>Compose the data for the combobox</h2>
+<pre>_compose_cbodata($data, $keys) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$keys</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+</div></div>
+<a id="\Products"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Products.html">Products</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Code here is run before frontend controllers</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(c) 2009 - 2013, TomatoCart. All rights reserved.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">TomatoCart\Frontend\Core\Controllers</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_assign_local_images"></a><div class="element clickable method public method_assign_local_images" data-toggle="collapse" data-target=".method_assign_local_images .collapse">
+<h2>assign_local_images()
+        </h2>
+<pre>assign_local_images() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_delete_image"></a><div class="element clickable method public method_delete_image" data-toggle="collapse" data-target=".method_delete_image .collapse">
+<h2>delete_image()
+        </h2>
+<pre>delete_image() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_delete_product"></a><div class="element clickable method public method_delete_product" data-toggle="collapse" data-target=".method_delete_product .collapse">
+<h2>delete_product()
+        </h2>
+<pre>delete_product() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_delete_products"></a><div class="element clickable method public method_delete_products" data-toggle="collapse" data-target=".method_delete_products .collapse">
+<h2>delete_products()
+        </h2>
+<pre>delete_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_accessories"></a><div class="element clickable method public method_get_accessories" data-toggle="collapse" data-target=".method_get_accessories .collapse">
+<h2>get_accessories()
+        </h2>
+<pre>get_accessories() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_categories_tree"></a><div class="element clickable method public method_get_categories_tree" data-toggle="collapse" data-target=".method_get_categories_tree .collapse">
+<h2>get_categories_tree()
+        </h2>
+<pre>get_categories_tree() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_images"></a><div class="element clickable method public method_get_images" data-toggle="collapse" data-target=".method_get_images .collapse">
+<h2>get_images()
+        </h2>
+<pre>get_images() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_local_images"></a><div class="element clickable method public method_get_local_images" data-toggle="collapse" data-target=".method_get_local_images .collapse">
+<h2>get_local_images()
+        </h2>
+<pre>get_local_images() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_manufacturers"></a><div class="element clickable method public method_get_manufacturers" data-toggle="collapse" data-target=".method_get_manufacturers .collapse">
+<h2>get_manufacturers()
+        </h2>
+<pre>get_manufacturers() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_model"></a><div class="element clickable method public method_get_model" data-toggle="collapse" data-target=".method_get_model .collapse">
+<h2>get_model()
+        </h2>
+<pre>get_model() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_products"></a><div class="element clickable method public method_get_products" data-toggle="collapse" data-target=".method_get_products .collapse">
+<h2>get_products()
+        </h2>
+<pre>get_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_quantity_discount_groups"></a><div class="element clickable method public method_get_quantity_discount_groups" data-toggle="collapse" data-target=".method_get_quantity_discount_groups .collapse">
+<h2>get_quantity_discount_groups()
+        </h2>
+<pre>get_quantity_discount_groups() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_quantity_units"></a><div class="element clickable method public method_get_quantity_units" data-toggle="collapse" data-target=".method_get_quantity_units .collapse">
+<h2>get_quantity_units()
+        </h2>
+<pre>get_quantity_units() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_tax_classes"></a><div class="element clickable method public method_get_tax_classes" data-toggle="collapse" data-target=".method_get_tax_classes .collapse">
+<h2>get_tax_classes()
+        </h2>
+<pre>get_tax_classes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_variants_products"></a><div class="element clickable method public method_get_variants_products" data-toggle="collapse" data-target=".method_get_variants_products .collapse">
+<h2>get_variants_products()
+        </h2>
+<pre>get_variants_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_variants_values"></a><div class="element clickable method public method_get_variants_values" data-toggle="collapse" data-target=".method_get_variants_values .collapse">
+<h2>get_variants_values()
+        </h2>
+<pre>get_variants_values() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_weight_classes"></a><div class="element clickable method public method_get_weight_classes" data-toggle="collapse" data-target=".method_get_weight_classes .collapse">
+<h2>get_weight_classes()
+        </h2>
+<pre>get_weight_classes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_xsell_products"></a><div class="element clickable method public method_get_xsell_products" data-toggle="collapse" data-target=".method_get_xsell_products .collapse">
+<h2>get_xsell_products()
+        </h2>
+<pre>get_xsell_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_list_products"></a><div class="element clickable method public method_list_products" data-toggle="collapse" data-target=".method_list_products .collapse">
+<h2>list_products()
+        </h2>
+<pre>list_products() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_load_categories_tree"></a><div class="element clickable method public method_load_categories_tree" data-toggle="collapse" data-target=".method_load_categories_tree .collapse">
+<h2>load_categories_tree()
+        </h2>
+<pre>load_categories_tree() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_load_product"></a><div class="element clickable method public method_load_product" data-toggle="collapse" data-target=".method_load_product .collapse">
+<h2>load_product()
+        </h2>
+<pre>load_product() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_load_variants_groups"></a><div class="element clickable method public method_load_variants_groups" data-toggle="collapse" data-target=".method_load_variants_groups .collapse">
+<h2>load_variants_groups()
+        </h2>
+<pre>load_variants_groups() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_save_product"></a><div class="element clickable method public method_save_product" data-toggle="collapse" data-target=".method_save_product .collapse">
+<h2>save_product()
+        </h2>
+<pre>save_product() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_default"></a><div class="element clickable method public method_set_default" data-toggle="collapse" data-target=".method_set_default .collapse">
+<h2>set_default()
+        </h2>
+<pre>set_default() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_frontpage"></a><div class="element clickable method public method_set_frontpage" data-toggle="collapse" data-target=".method_set_frontpage .collapse">
+<h2>set_frontpage()
+        </h2>
+<pre>set_frontpage() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_status"></a><div class="element clickable method public method_set_status" data-toggle="collapse" data-target=".method_set_status .collapse">
+<h2>set_status()
+        </h2>
+<pre>set_status() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_show"></a><div class="element clickable method public method_show" data-toggle="collapse" data-target=".method_show .collapse">
+<h2>show()
+        </h2>
+<pre>show() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_upload_image"></a><div class="element clickable method public method_upload_image" data-toggle="collapse" data-target=".method_upload_image .collapse">
+<h2>upload_image()
+        </h2>
+<pre>upload_image() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_page_title"></a><div class="element clickable method protected method_set_page_title" data-toggle="collapse" data-target=".method_set_page_title .collapse">
+<h2>Set the page title</h2>
+<pre>set_page_title($title) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\TOC_Controller::set_page_title()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4><p>page titme</p></div>
+</div></div>
+</div>
+<a id="method_validate_customer_access"></a><div class="element clickable method protected method_validate_customer_access" data-toggle="collapse" data-target=".method_validate_customer_access .collapse">
+<h2>Check whether the customer is able to access the page</h2>
+<pre>validate_customer_access() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Controller::validate_customer_access()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method__compose_cbodata"></a><div class="element clickable method private method__compose_cbodata" data-toggle="collapse" data-target=".method__compose_cbodata .collapse">
+<h2>_compose_cbodata()
+        </h2>
+<pre>_compose_cbodata($data, $keys) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$keys</h4></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:07+07:00.<br></footer></div>
+</div>
+</body>
+</html>

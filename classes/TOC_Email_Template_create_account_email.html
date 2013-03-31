@@ -1,0 +1,449 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \TOC_Email_Template_create_account_email</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_add_attachment" title="add_attachment :: Add attachment"><span class="description">Add attachment</span><pre>add_attachment()</pre></a></li>
+<li class="method public inherited"><a href="#method_add_recipient" title="add_recipient :: Add recipient"><span class="description">Add recipient</span><pre>add_recipient()</pre></a></li>
+<li class="method public "><a href="#method_build_message" title="build_message :: Build message"><span class="description">Build message</span><pre>build_message()</pre></a></li>
+<li class="method public inherited"><a href="#method_get_keywords" title="get_keywords :: Get keywords"><span class="description">Get keywords</span><pre>get_keywords()</pre></a></li>
+<li class="method public inherited"><a href="#method_has_attachment" title="has_attachment :: Has attachment"><span class="description">Has attachment</span><pre>has_attachment()</pre></a></li>
+<li class="method public inherited"><a href="#method_reset_recipients" title="reset_recipients :: Reset recipients"><span class="description">Reset recipients</span><pre>reset_recipients()</pre></a></li>
+<li class="method public inherited"><a href="#method_send_email" title="send_email :: Send Email"><span class="description">Send Email</span><pre>send_email()</pre></a></li>
+<li class="method public "><a href="#method_set_data" title="set_data :: Set data"><span class="description">Set data</span><pre>set_data()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_attachments" title="$attachments :: Attachments"><span class="description"></span><pre>$attachments</pre></a></li>
+<li class="property protected inherited"><a href="#property_ci" title="$ci :: ci instance"><span class="description"></span><pre>$ci</pre></a></li>
+<li class="property protected inherited"><a href="#property_content" title="$content :: Content"><span class="description"></span><pre>$content</pre></a></li>
+<li class="property protected inherited"><a href="#property_email_text" title="$email_text :: Email Text"><span class="description"></span><pre>$email_text</pre></a></li>
+<li class="property protected "><a href="#property_keywords" title="$keywords :: Email Template Keywords"><span class="description"></span><pre>$keywords</pre></a></li>
+<li class="property protected inherited"><a href="#property_recipients" title="$recipients :: Recipients"><span class="description"></span><pre>$recipients</pre></a></li>
+<li class="property protected inherited"><a href="#property_status" title="$status :: Status"><span class="description"></span><pre>$status</pre></a></li>
+<li class="property protected "><a href="#property_template_name" title="$template_name :: Email Template Name"><span class="description"></span><pre>$template_name</pre></a></li>
+<li class="property protected inherited"><a href="#property_title" title="$title :: Title"><span class="description"></span><pre>$title</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TOC_Email_Template_create_account_email"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Email_Template_create_account_email.html">TOC_Email_Template_create_account_email</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Create account email -- Email Template Module Class</p>
+<div class="details">
+<div class="long_description"><p>This class is the parent class for all service modules</p></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(c) 2009 - 2013, TomatoCart. All rights reserved.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/TomatoCart.Frontend.Core.Libraries.Email%20Template.html">TomatoCart\Frontend\Core\Libraries\Email Template</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_add_attachment"></a><div class="element clickable method public method_add_attachment" data-toggle="collapse" data-target=".method_add_attachment .collapse">
+<h2>Add attachment</h2>
+<pre>add_attachment($file, $is_uploaded) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::add_attachment()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+<div class="subelement argument"><h4>$is_uploaded</h4></div>
+</div></div>
+</div>
+<a id="method_add_recipient"></a><div class="element clickable method public method_add_recipient" data-toggle="collapse" data-target=".method_add_recipient .collapse">
+<h2>Add recipient</h2>
+<pre>add_recipient($name, $email_address) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::add_recipient()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$email_address</h4></div>
+</div></div>
+</div>
+<a id="method_build_message"></a><div class="element clickable method public method_build_message" data-toggle="collapse" data-target=".method_build_message .collapse">
+<h2>Build message</h2>
+<pre>build_message() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_get_keywords"></a><div class="element clickable method public method_get_keywords" data-toggle="collapse" data-target=".method_get_keywords .collapse">
+<h2>Get keywords</h2>
+<pre>get_keywords() : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::get_keywords()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_has_attachment"></a><div class="element clickable method public method_has_attachment" data-toggle="collapse" data-target=".method_has_attachment .collapse">
+<h2>Has attachment</h2>
+<pre>has_attachment() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::has_attachment()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_reset_recipients"></a><div class="element clickable method public method_reset_recipients" data-toggle="collapse" data-target=".method_reset_recipients .collapse">
+<h2>Reset recipients</h2>
+<pre>reset_recipients() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::reset_recipients()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_send_email"></a><div class="element clickable method public method_send_email" data-toggle="collapse" data-target=".method_send_email .collapse">
+<h2>Send Email</h2>
+<pre>send_email() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::send_email()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_set_data"></a><div class="element clickable method public method_set_data" data-toggle="collapse" data-target=".method_set_data .collapse">
+<h2>Set data</h2>
+<pre>set_data($password) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$password</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_attachments"> </a><div class="element clickable property protected property_attachments" data-toggle="collapse" data-target=".property_attachments .collapse">
+<h2></h2>
+<pre>$attachments : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$attachments</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ci"> </a><div class="element clickable property protected property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$ci</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_content"> </a><div class="element clickable property protected property_content" data-toggle="collapse" data-target=".property_content .collapse">
+<h2></h2>
+<pre>$content : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$content</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_email_text"> </a><div class="element clickable property protected property_email_text" data-toggle="collapse" data-target=".property_email_text .collapse">
+<h2></h2>
+<pre>$email_text : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$email_text</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_keywords"> </a><div class="element clickable property protected property_keywords" data-toggle="collapse" data-target=".property_keywords .collapse">
+<h2></h2>
+<pre>$keywords : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_recipients"> </a><div class="element clickable property protected property_recipients" data-toggle="collapse" data-target=".property_recipients .collapse">
+<h2></h2>
+<pre>$recipients : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$recipients</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_status"> </a><div class="element clickable property protected property_status" data-toggle="collapse" data-target=".property_status .collapse">
+<h2></h2>
+<pre>$status : </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$status</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_template_name"> </a><div class="element clickable property protected property_template_name" data-toggle="collapse" data-target=".property_template_name .collapse">
+<h2></h2>
+<pre>$template_name : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_title"> </a><div class="element clickable property protected property_title" data-toggle="collapse" data-target=".property_title .collapse">
+<h2></h2>
+<pre>$title : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Email_Template_Module::$$title</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:09+07:00.<br></footer></div>
+</div>
+</body>
+</html>

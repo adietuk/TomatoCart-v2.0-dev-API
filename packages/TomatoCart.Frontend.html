@@ -1,0 +1,644 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » TomatoCart\Frontend</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<span class="empty-package"><i class="icon-folder-close"></i>Frontend</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>Core</span><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Controllers.html" title="Controllers"><i class="icon-folder-open"></i>Controllers</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.html" title="Libraries"><i class="icon-folder-open"></i>Libraries</a><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Email%20Template.html" title="Email Template"><i class="icon-folder-open"></i>Email Template</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Order%20Total.html" title="Order Total"><i class="icon-folder-open"></i>Order Total</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Payment.html" title="Payment"><i class="icon-folder-open"></i>Payment</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Service.html" title="Service"><i class="icon-folder-open"></i>Service</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/TomatoCart.Frontend.Core.Libraries.Shipping.html" title="Shipping"><i class="icon-folder-open"></i>Shipping</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Controllers.html">Controllers</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Controller" class="element ajax clickable class">
+<h1>TOC_Controller<a href="../classes/TOC_Controller.html">¶</a>
+</h1>
+<p class="short_description">Code here is run before frontend controllers</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Controller.html" class="more">« More »</a>
+</div>
+<div id="TOC_Module" class="element ajax clickable class">
+<h1>TOC_Module<a href="../classes/TOC_Module.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Template Module Definitions</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Module.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Cache" class="element ajax clickable class">
+<h1>TOC_Cache<a href="../classes/TOC_Cache.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Cache Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Cache.html" class="more">« More »</a>
+</div>
+<div id="TOC_Category" class="element ajax clickable class">
+<h1>TOC_Category<a href="../classes/TOC_Category.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Category Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Category.html" class="more">« More »</a>
+</div>
+<div id="TOC_Category_Tree" class="element ajax clickable class">
+<h1>TOC_Category_Tree<a href="../classes/TOC_Category_Tree.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Category Tree Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Category_Tree.html" class="more">« More »</a>
+</div>
+<div id="TOC_Config" class="element ajax clickable class">
+<h1>TOC_Config<a href="../classes/TOC_Config.html">¶</a>
+</h1>
+<p class="short_description">Extends the CodeIgniter Config class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Config.html" class="more">« More »</a>
+</div>
+<div id="TOC_Configuration" class="element ajax clickable class">
+<h1>TOC_Configuration<a href="../classes/TOC_Configuration.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Configuration Library</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Configuration.html" class="more">« More »</a>
+</div>
+<div id="TOC_Currencies" class="element ajax clickable class">
+<h1>TOC_Currencies<a href="../classes/TOC_Currencies.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Currencies Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Currencies.html" class="more">« More »</a>
+</div>
+<div id="TOC_Customer" class="element ajax clickable class">
+<h1>TOC_Customer<a href="../classes/TOC_Customer.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Customer Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Customer.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template" class="element ajax clickable class">
+<h1>TOC_Email_Template<a href="../classes/TOC_Email_Template.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Email Template Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template.html" class="more">« More »</a>
+</div>
+<div id="TOC_Image" class="element ajax clickable class">
+<h1>TOC_Image<a href="../classes/TOC_Image.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Image Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Image.html" class="more">« More »</a>
+</div>
+<div id="TOC_Lang" class="element ajax clickable class">
+<h1>TOC_Lang<a href="../classes/TOC_Lang.html">¶</a>
+</h1>
+<p class="short_description">General Language library class for using in TomatoCart</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Lang.html" class="more">« More »</a>
+</div>
+<div id="TOC_Loader" class="element ajax clickable class">
+<h1>TOC_Loader<a href="../classes/TOC_Loader.html">¶</a>
+</h1>
+<p class="short_description">This is the loader class used throughout TomatoCart.</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Loader.html" class="more">« More »</a>
+</div>
+<div id="TOC_Message_Stack" class="element ajax clickable class">
+<h1>TOC_Message_Stack<a href="../classes/TOC_Message_Stack.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Message Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Message_Stack.html" class="more">« More »</a>
+</div>
+<div id="TOC_Navigation_History" class="element ajax clickable class">
+<h1>TOC_Navigation_History<a href="../classes/TOC_Navigation_History.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Navigation History Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Navigation_History.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order" class="element ajax clickable class">
+<h1>TOC_Order<a href="../classes/TOC_Order.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Order Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total" class="element ajax clickable class">
+<h1>TOC_Order_Total<a href="../classes/TOC_Order_Total.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Order Total Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment" class="element ajax clickable class">
+<h1>TOC_Payment<a href="../classes/TOC_Payment.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Payment Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment.html" class="more">« More »</a>
+</div>
+<div id="TOC_Product" class="element ajax clickable class">
+<h1>TOC_Product<a href="../classes/TOC_Product.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Product Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Product.html" class="more">« More »</a>
+</div>
+<div id="TOC_Registry" class="element ajax clickable class">
+<h1>TOC_Registry<a href="../classes/TOC_Registry.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Registry Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Registry.html" class="more">« More »</a>
+</div>
+<div id="TOC_Reviews" class="element ajax clickable class">
+<h1>TOC_Reviews<a href="../classes/TOC_Reviews.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Reviews Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Reviews.html" class="more">« More »</a>
+</div>
+<div id="TOC_Search" class="element ajax clickable class">
+<h1>TOC_Search<a href="../classes/TOC_Search.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Search Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Search.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service" class="element ajax clickable class">
+<h1>TOC_Service<a href="../classes/TOC_Service.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Service Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping" class="element ajax clickable class">
+<h1>TOC_Shipping<a href="../classes/TOC_Shipping.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Shipping Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shopping_Cart" class="element ajax clickable class">
+<h1>TOC_Shopping_Cart<a href="../classes/TOC_Shopping_Cart.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Shopping Cart Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shopping_Cart.html" class="more">« More »</a>
+</div>
+<div id="TOC_Tag_Cloud" class="element ajax clickable class">
+<h1>TOC_Tag_Cloud<a href="../classes/TOC_Tag_Cloud.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Tag Cloud Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Tag_Cloud.html" class="more">« More »</a>
+</div>
+<div id="TOC_Tax" class="element ajax clickable class">
+<h1>TOC_Tax<a href="../classes/TOC_Tax.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Tax Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Tax.html" class="more">« More »</a>
+</div>
+<div id="TOC_Weight" class="element ajax clickable class">
+<h1>TOC_Weight<a href="../classes/TOC_Weight.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Weight Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Weight.html" class="more">« More »</a>
+</div>
+<div id="TOC_Wishlist" class="element ajax clickable class">
+<h1>TOC_Wishlist<a href="../classes/TOC_Wishlist.html">¶</a>
+</h1>
+<p class="short_description">TomatoCart Wishlist Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Wishlist.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Email%20Template.html">Email Template</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Email_Template_Module" class="element ajax clickable class">
+<h1>TOC_Email_Template_Module<a href="../classes/TOC_Email_Template_Module.html">¶</a>
+</h1>
+<p class="short_description">Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template_admin_password_forgotten" class="element ajax clickable class">
+<h1>TOC_Email_Template_admin_password_forgotten<a href="../classes/TOC_Email_Template_admin_password_forgotten.html">¶</a>
+</h1>
+<p class="short_description">Admin password forgotten -- Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_admin_password_forgotten.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template_create_account_email" class="element ajax clickable class">
+<h1>TOC_Email_Template_create_account_email<a href="../classes/TOC_Email_Template_create_account_email.html">¶</a>
+</h1>
+<p class="short_description">Create account email -- Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_create_account_email.html" class="more">« More »</a>
+</div>
+<div id="TOC_Email_Template_password_forgotten" class="element ajax clickable class">
+<h1>TOC_Email_Template_password_forgotten<a href="../classes/TOC_Email_Template_password_forgotten.html">¶</a>
+</h1>
+<p class="short_description">Password forgotten -- Email Template Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Email_Template_password_forgotten.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Order%20Total.html">Order Total</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Order_Total_Module" class="element ajax clickable class">
+<h1>TOC_Order_Total_Module<a href="../classes/TOC_Order_Total_Module.html">¶</a>
+</h1>
+<p class="short_description">Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_low_order_fee" class="element ajax clickable class">
+<h1>TOC_Order_Total_low_order_fee<a href="../classes/TOC_Order_Total_low_order_fee.html">¶</a>
+</h1>
+<p class="short_description">Low Order Fee -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_low_order_fee.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_shipping" class="element ajax clickable class">
+<h1>TOC_Order_Total_shipping<a href="../classes/TOC_Order_Total_shipping.html">¶</a>
+</h1>
+<p class="short_description">Shipping -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_shipping.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_sub_total" class="element ajax clickable class">
+<h1>TOC_Order_Total_sub_total<a href="../classes/TOC_Order_Total_sub_total.html">¶</a>
+</h1>
+<p class="short_description">Sub Total -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_sub_total.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_tax" class="element ajax clickable class">
+<h1>TOC_Order_Total_tax<a href="../classes/TOC_Order_Total_tax.html">¶</a>
+</h1>
+<p class="short_description">Tax -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_tax.html" class="more">« More »</a>
+</div>
+<div id="TOC_Order_Total_total" class="element ajax clickable class">
+<h1>TOC_Order_Total_total<a href="../classes/TOC_Order_Total_total.html">¶</a>
+</h1>
+<p class="short_description">Total -- Order Total Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Order_Total_total.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Payment.html">Payment</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Payment_Module" class="element ajax clickable class">
+<h1>TOC_Payment_Module<a href="../classes/TOC_Payment_Module.html">¶</a>
+</h1>
+<p class="short_description">Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_bank_wire" class="element ajax clickable class">
+<h1>TOC_Payment_bank_wire<a href="../classes/TOC_Payment_bank_wire.html">¶</a>
+</h1>
+<p class="short_description">Bank Wire -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_bank_wire.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_cheque" class="element ajax clickable class">
+<h1>TOC_Payment_cheque<a href="../classes/TOC_Payment_cheque.html">¶</a>
+</h1>
+<p class="short_description">Bank Wire -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_cheque.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_cod" class="element ajax clickable class">
+<h1>TOC_Payment_cod<a href="../classes/TOC_Payment_cod.html">¶</a>
+</h1>
+<p class="short_description">Cash On Delivery -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_cod.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_paypal_direct" class="element ajax clickable class">
+<h1>TOC_Payment_paypal_direct<a href="../classes/TOC_Payment_paypal_direct.html">¶</a>
+</h1>
+<p class="short_description">Paypal Standard -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_paypal_direct.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_paypal_express" class="element ajax clickable class">
+<h1>TOC_Payment_paypal_express<a href="../classes/TOC_Payment_paypal_express.html">¶</a>
+</h1>
+<p class="short_description">Paypal Standard -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_paypal_express.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_paypal_standard" class="element ajax clickable class">
+<h1>TOC_Payment_paypal_standard<a href="../classes/TOC_Payment_paypal_standard.html">¶</a>
+</h1>
+<p class="short_description">Paypal Standard -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_paypal_standard.html" class="more">« More »</a>
+</div>
+<div id="TOC_Payment_western_union" class="element ajax clickable class">
+<h1>TOC_Payment_western_union<a href="../classes/TOC_Payment_western_union.html">¶</a>
+</h1>
+<p class="short_description">Bank Wire -- Payment Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Payment_western_union.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Service.html">Service</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Service_Google_Analytics" class="element ajax clickable class">
+<h1>TOC_Service_Google_Analytics<a href="../classes/TOC_Service_Google_Analytics.html">¶</a>
+</h1>
+<p class="short_description">Google Analytics -- Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_Google_Analytics.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service_Module" class="element ajax clickable class">
+<h1>TOC_Service_Module<a href="../classes/TOC_Service_Module.html">¶</a>
+</h1>
+<p class="short_description">Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service_Sef" class="element ajax clickable class">
+<h1>TOC_Service_Sef<a href="../classes/TOC_Service_Sef.html">¶</a>
+</h1>
+<p class="short_description">Sef -- Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_Sef.html" class="more">« More »</a>
+</div>
+<div id="TOC_Service_debug" class="element ajax clickable class">
+<h1>TOC_Service_debug<a href="../classes/TOC_Service_debug.html">¶</a>
+</h1>
+<p class="short_description">Service Debug -- Service Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Service_debug.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/TomatoCart.html">TomatoCart</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.html">Frontend</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">Libraries</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/TomatoCart.Frontend.Core.Libraries.Shipping.html">Shipping</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="TOC_Shipping_Module" class="element ajax clickable class">
+<h1>TOC_Shipping_Module<a href="../classes/TOC_Shipping_Module.html">¶</a>
+</h1>
+<p class="short_description">Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_Module.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_flat" class="element ajax clickable class">
+<h1>TOC_Shipping_flat<a href="../classes/TOC_Shipping_flat.html">¶</a>
+</h1>
+<p class="short_description">Flat Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_flat.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_free" class="element ajax clickable class">
+<h1>TOC_Shipping_free<a href="../classes/TOC_Shipping_free.html">¶</a>
+</h1>
+<p class="short_description">Free Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_free.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_item" class="element ajax clickable class">
+<h1>TOC_Shipping_item<a href="../classes/TOC_Shipping_item.html">¶</a>
+</h1>
+<p class="short_description">Item Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_item.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_self_pickup" class="element ajax clickable class">
+<h1>TOC_Shipping_self_pickup<a href="../classes/TOC_Shipping_self_pickup.html">¶</a>
+</h1>
+<p class="short_description">Self Pickup Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_self_pickup.html" class="more">« More »</a>
+</div>
+<div id="TOC_Shipping_table" class="element ajax clickable class">
+<h1>TOC_Shipping_table<a href="../classes/TOC_Shipping_table.html">¶</a>
+</h1>
+<p class="short_description">Table Shipping -- Shipping Module Class</p>
+<div class="details collapse"></div>
+<a href="../classes/TOC_Shipping_table.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:03+07:00.<br></footer></div>
+</div>
+</body>
+</html>

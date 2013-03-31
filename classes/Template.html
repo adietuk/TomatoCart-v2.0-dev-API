@@ -1,0 +1,2316 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \Template</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor - Sets Preferences"><span class="description">Constructor - Sets Preferences</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get :: Magic Get function to get data"><span class="description">Magic Get function to get data</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set :: Magic Set function to set data"><span class="description">Magic Set function to set data</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method__find_view" title="_find_view :: "><span class="description">_find_view()
+        </span><pre>_find_view()</pre></a></li>
+<li class="method public "><a href="#method_add_javascript_block" title="add_javascript_block :: Adds javascript logic to the page"><span class="description">Adds javascript logic to the page</span><pre>add_javascript_block()</pre></a></li>
+<li class="method public "><a href="#method_add_javascript_file" title="add_javascript_file :: Adds a javascript file to link to"><span class="description">Adds a javascript file to link to</span><pre>add_javascript_file()</pre></a></li>
+<li class="method public "><a href="#method_add_meta_tags" title="add_meta_tags :: Add head meta tags"><span class="description">Add head meta tags</span><pre>add_meta_tags()</pre></a></li>
+<li class="method public "><a href="#method_add_module" title="add_module :: Set a view module
+lei: add module should not include data"><span class="description">Set a view module
+lei: add module should not include data</span><pre>add_module()</pre></a></li>
+<li class="method public "><a href="#method_add_modules" title="add_modules :: Set the view modules
+lei: add module should not include data"><span class="description">Set the view modules
+lei: add module should not include data</span><pre>add_modules()</pre></a></li>
+<li class="method public "><a href="#method_add_stylesheet_block" title="add_stylesheet_block :: Adds a stylesheet declaration to the page"><span class="description">Adds a stylesheet declaration to the page</span><pre>add_stylesheet_block()</pre></a></li>
+<li class="method public "><a href="#method_add_stylesheet_file" title="add_stylesheet_file :: Adds a stylesheet to the page"><span class="description">Adds a stylesheet to the page</span><pre>add_stylesheet_file()</pre></a></li>
+<li class="method public "><a href="#method_build" title="build :: Build the entire HTML output combining modules, layouts and views."><span class="description">Build the entire HTML output combining modules, layouts and views.</span><pre>build()</pre></a></li>
+<li class="method public "><a href="#method_enable_parser" title="enable_parser :: enable_parser
+Should be parser be used or the view files just loaded normally?"><span class="description">enable_parser
+Should be parser be used or the view files just loaded normally?</span><pre>enable_parser()</pre></a></li>
+<li class="method public "><a href="#method_enable_parser_body" title="enable_parser_body :: enable_parser_body
+Should be parser be used or the body view files just loaded normally?"><span class="description">enable_parser_body
+Should be parser be used or the body view files just loaded normally?</span><pre>enable_parser_body()</pre></a></li>
+<li class="method public "><a href="#method_get_breadcrumbs" title="get_breadcrumbs :: "><span class="description">get_breadcrumbs()
+        </span><pre>get_breadcrumbs()</pre></a></li>
+<li class="method public "><a href="#method_get_code" title="get_code :: "><span class="description">get_code()
+        </span><pre>get_code()</pre></a></li>
+<li class="method public "><a href="#method_get_id" title="get_id :: "><span class="description">get_id()
+        </span><pre>get_id()</pre></a></li>
+<li class="method public "><a href="#method_get_javascript_blocks" title="get_javascript_blocks :: Returns javascript blocks to add to the page"><span class="description">Returns javascript blocks to add to the page</span><pre>get_javascript_blocks()</pre></a></li>
+<li class="method public "><a href="#method_get_javascript_files" title="get_javascript_files :: Returns the javascript filenames to link to on the page"><span class="description">Returns the javascript filenames to link to on the page</span><pre>get_javascript_files()</pre></a></li>
+<li class="method public "><a href="#method_get_javascripts" title="get_javascripts :: Returns the javascript to link from or embedd to on the page"><span class="description">Returns the javascript to link from or embedd to on the page</span><pre>get_javascripts()</pre></a></li>
+<li class="method public "><a href="#method_get_layouts" title="get_layouts :: get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)"><span class="description">get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</span><pre>get_layouts()</pre></a></li>
+<li class="method public "><a href="#method_get_meta_tags" title="get_meta_tags :: Returns the tags of the page separated by a comma"><span class="description">Returns the tags of the page separated by a comma</span><pre>get_meta_tags()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheet_blocks" title="get_stylesheet_blocks :: Return the stylesheet declaration"><span class="description">Return the stylesheet declaration</span><pre>get_stylesheet_blocks()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheet_files" title="get_stylesheet_files :: Return the stylesheet linked to the page"><span class="description">Return the stylesheet linked to the page</span><pre>get_stylesheet_files()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheets" title="get_stylesheets :: "><span class="description">get_stylesheets()
+        </span><pre>get_stylesheets()</pre></a></li>
+<li class="method public "><a href="#method_get_template_layouts" title="get_template_layouts :: get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)"><span class="description">get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</span><pre>get_template_layouts()</pre></a></li>
+<li class="method public "><a href="#method_get_template_path" title="get_template_path :: Get the current template path"><span class="description">Get the current template path</span><pre>get_template_path()</pre></a></li>
+<li class="method public "><a href="#method_initialize" title="initialize :: Initialize preferences"><span class="description">Initialize preferences</span><pre>initialize()</pre></a></li>
+<li class="method public "><a href="#method_layout_exists" title="layout_exists :: layout_exists
+Check if a template layout exists"><span class="description">layout_exists
+Check if a template layout exists</span><pre>layout_exists()</pre></a></li>
+<li class="method public "><a href="#method_set" title="set :: Set data using a chainable metod."><span class="description">Set data using a chainable metod.</span><pre>set()</pre></a></li>
+<li class="method public "><a href="#method_set_breadcrumb" title="set_breadcrumb :: Helps build custom breadcrumb trails"><span class="description">Helps build custom breadcrumb trails</span><pre>set_breadcrumb()</pre></a></li>
+<li class="method public "><a href="#method_set_cache" title="set_cache :: Set a the cache lifetime"><span class="description">Set a the cache lifetime</span><pre>set_cache()</pre></a></li>
+<li class="method public "><a href="#method_set_layout" title="set_layout :: Which template layout should we using here?"><span class="description">Which template layout should we using here?</span><pre>set_layout()</pre></a></li>
+<li class="method public "><a href="#method_set_template" title="set_template :: Which template are we using here?"><span class="description">Which template are we using here?</span><pre>set_template()</pre></a></li>
+<li class="method public "><a href="#method_set_templates_location" title="set_templates_location :: set_templates_location
+Set location for templates to be looked in"><span class="description">set_templates_location
+Set location for templates to be looked in</span><pre>set_templates_location()</pre></a></li>
+<li class="method public "><a href="#method_set_title" title="set_title :: "><span class="description">set_title()
+        </span><pre>set_title()</pre></a></li>
+<li class="method public "><a href="#method_template_exists" title="template_exists :: template_exists
+Check if a template exists"><span class="description">template_exists
+Check if a template exists</span><pre>template_exists()</pre></a></li>
+<li class="method public "><a href="#method_templates_location" title="templates_location :: templates_location
+Get the location where template is stored"><span class="description">templates_location
+Get the location where template is stored</span><pre>templates_location()</pre></a></li>
+<li class="method public "><a href="#method_title" title="title :: Set the title of the page"><span class="description">Set the title of the page</span><pre>title()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__ext" title="_ext :: "><span class="description">_ext()
+        </span><pre>_ext()</pre></a></li>
+<li class="method private "><a href="#method__find_module_view" title="_find_module_view :: "><span class="description">_find_module_view()
+        </span><pre>_find_module_view()</pre></a></li>
+<li class="method private "><a href="#method__find_view_folder" title="_find_view_folder :: "><span class="description">_find_view_folder()
+        </span><pre>_find_view_folder()</pre></a></li>
+<li class="method private "><a href="#method__guess_title" title="_guess_title :: "><span class="description">_guess_title()
+        </span><pre>_guess_title()</pre></a></li>
+<li class="method private "><a href="#method__load_view" title="_load_view :: "><span class="description">_load_view()
+        </span><pre>_load_view()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__breadcrumbs" title="$_breadcrumbs :: Holds the content of breadcrumbs"><span class="description"></span><pre>$_breadcrumbs</pre></a></li>
+<li class="property private "><a href="#property__ci" title="$_ci :: Reference to the CodeIgniter instance"><span class="description"></span><pre>$_ci</pre></a></li>
+<li class="property private "><a href="#property__controller" title="$_controller :: Holds the controller"><span class="description"></span><pre>$_controller</pre></a></li>
+<li class="property private "><a href="#property__data" title="$_data :: Holds the template physical location"><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property private "><a href="#property__has_footer" title="$_has_footer :: Defines if the requested page has a footer"><span class="description"></span><pre>$_has_footer</pre></a></li>
+<li class="property private "><a href="#property__has_header" title="$_has_header :: Defines if the requested page has a header"><span class="description"></span><pre>$_has_header</pre></a></li>
+<li class="property private "><a href="#property__has_modules" title="$_has_modules :: Defines if the requested page has modules"><span class="description"></span><pre>$_has_modules</pre></a></li>
+<li class="property private "><a href="#property__is_mobile" title="$_is_mobile :: Flag for if the user-agent is a mobile browser"><span class="description"></span><pre>$_is_mobile</pre></a></li>
+<li class="property private "><a href="#property__is_pad" title="$_is_pad :: Flag for if the user-agent is a pad browser"><span class="description"></span><pre>$_is_pad</pre></a></li>
+<li class="property private "><a href="#property__javascript_blocks" title="$_javascript_blocks :: Holds blocks of javascript syntax to embedd into the page, each block must contain its relevant &lt;script&gt; and &lt;/script&gt; tags"><span class="description"></span><pre>$_javascript_blocks</pre></a></li>
+<li class="property private "><a href="#property__javascript_files" title="$_javascript_files :: Holds javascript filenames to be included in the page"><span class="description"></span><pre>$_javascript_files</pre></a></li>
+<li class="property private "><a href="#property__layout" title="$_layout :: layout file name
+By default, dont wrap the view with anything"><span class="description"></span><pre>$_layout</pre></a></li>
+<li class="property private "><a href="#property__layout_subdir" title="$_layout_subdir :: layout file folder
+Layouts and modules will exist in views/layouts"><span class="description"></span><pre>$_layout_subdir</pre></a></li>
+<li class="property private "><a href="#property__meta_tags" title="$_meta_tags :: page meta title (Keywords, Description, Generator)"><span class="description"></span><pre>$_meta_tags</pre></a></li>
+<li class="property private "><a href="#property__method" title="$_method :: Holds the controller method"><span class="description"></span><pre>$_method</pre></a></li>
+<li class="property private "><a href="#property__module" title="$_module :: Holds the title of the page module"><span class="description"></span><pre>$_module</pre></a></li>
+<li class="property private "><a href="#property__module_groups" title="$_module_groups :: Holds the content of the module groups"><span class="description"></span><pre>$_module_groups</pre></a></li>
+<li class="property private "><a href="#property__parser_body_enabled" title="$_parser_body_enabled :: Parser Body Enabled"><span class="description"></span><pre>$_parser_body_enabled</pre></a></li>
+<li class="property private "><a href="#property__parser_enabled" title="$_parser_enabled :: Parser Enabled"><span class="description"></span><pre>$_parser_enabled</pre></a></li>
+<li class="property private "><a href="#property__stylesheet_blocks" title="$_stylesheet_blocks :: Holds style declarations to embedd into the page head"><span class="description"></span><pre>$_stylesheet_blocks</pre></a></li>
+<li class="property private "><a href="#property__stylesheet_files" title="$_stylesheet_files :: Holds style sheet files to be included in the page"><span class="description"></span><pre>$_stylesheet_files</pre></a></li>
+<li class="property private "><a href="#property__template" title="$_template :: template name"><span class="description"></span><pre>$_template</pre></a></li>
+<li class="property private "><a href="#property__template_id" title="$_template_id :: template id"><span class="description"></span><pre>$_template_id</pre></a></li>
+<li class="property private "><a href="#property__template_path" title="$_template_path :: template path"><span class="description"></span><pre>$_template_path</pre></a></li>
+<li class="property private "><a href="#property__templates_location" title="$_templates_location :: Holds the template physical location"><span class="description"></span><pre>$_templates_location</pre></a></li>
+<li class="property private "><a href="#property__title" title="$_title :: page title"><span class="description"></span><pre>$_title</pre></a></li>
+<li class="property private "><a href="#property__title_separator" title="$_title_separator :: Title Separator"><span class="description"></span><pre>$_title_separator</pre></a></li>
+<li class="property private "><a href="#property_cache_lifetime" title="$cache_lifetime :: Minutes that cache will be alive for"><span class="description"></span><pre>$cache_lifetime</pre></a></li>
+</ul>
+</li>
+</ul>
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor - Sets Preferences"><span class="description">Constructor - Sets Preferences</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get :: Magic Get function to get data"><span class="description">Magic Get function to get data</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set :: Magic Set function to set data"><span class="description">Magic Set function to set data</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method__find_view" title="_find_view :: "><span class="description">_find_view()
+        </span><pre>_find_view()</pre></a></li>
+<li class="method public "><a href="#method_add_javascript_block" title="add_javascript_block :: Adds javascript logic to the page"><span class="description">Adds javascript logic to the page</span><pre>add_javascript_block()</pre></a></li>
+<li class="method public "><a href="#method_add_javascript_file" title="add_javascript_file :: Adds a javascript file to link to"><span class="description">Adds a javascript file to link to</span><pre>add_javascript_file()</pre></a></li>
+<li class="method public "><a href="#method_add_meta_tags" title="add_meta_tags :: Add head meta tags"><span class="description">Add head meta tags</span><pre>add_meta_tags()</pre></a></li>
+<li class="method public "><a href="#method_add_module" title="add_module :: Set a view module
+lei: add module should not include data"><span class="description">Set a view module
+lei: add module should not include data</span><pre>add_module()</pre></a></li>
+<li class="method public "><a href="#method_add_modules" title="add_modules :: Set the view modules
+lei: add module should not include data"><span class="description">Set the view modules
+lei: add module should not include data</span><pre>add_modules()</pre></a></li>
+<li class="method public "><a href="#method_add_stylesheet_block" title="add_stylesheet_block :: Adds a stylesheet declaration to the page"><span class="description">Adds a stylesheet declaration to the page</span><pre>add_stylesheet_block()</pre></a></li>
+<li class="method public "><a href="#method_add_stylesheet_file" title="add_stylesheet_file :: Adds a stylesheet to the page"><span class="description">Adds a stylesheet to the page</span><pre>add_stylesheet_file()</pre></a></li>
+<li class="method public "><a href="#method_build" title="build :: Build the entire HTML output combining modules, layouts and views."><span class="description">Build the entire HTML output combining modules, layouts and views.</span><pre>build()</pre></a></li>
+<li class="method public "><a href="#method_enable_parser" title="enable_parser :: enable_parser
+Should be parser be used or the view files just loaded normally?"><span class="description">enable_parser
+Should be parser be used or the view files just loaded normally?</span><pre>enable_parser()</pre></a></li>
+<li class="method public "><a href="#method_enable_parser_body" title="enable_parser_body :: enable_parser_body
+Should be parser be used or the body view files just loaded normally?"><span class="description">enable_parser_body
+Should be parser be used or the body view files just loaded normally?</span><pre>enable_parser_body()</pre></a></li>
+<li class="method public "><a href="#method_get_breadcrumbs" title="get_breadcrumbs :: "><span class="description">get_breadcrumbs()
+        </span><pre>get_breadcrumbs()</pre></a></li>
+<li class="method public "><a href="#method_get_code" title="get_code :: "><span class="description">get_code()
+        </span><pre>get_code()</pre></a></li>
+<li class="method public "><a href="#method_get_id" title="get_id :: "><span class="description">get_id()
+        </span><pre>get_id()</pre></a></li>
+<li class="method public "><a href="#method_get_javascript_blocks" title="get_javascript_blocks :: Returns javascript blocks to add to the page"><span class="description">Returns javascript blocks to add to the page</span><pre>get_javascript_blocks()</pre></a></li>
+<li class="method public "><a href="#method_get_javascript_files" title="get_javascript_files :: Returns the javascript filenames to link to on the page"><span class="description">Returns the javascript filenames to link to on the page</span><pre>get_javascript_files()</pre></a></li>
+<li class="method public "><a href="#method_get_javascripts" title="get_javascripts :: Returns the javascript to link from or embedd to on the page"><span class="description">Returns the javascript to link from or embedd to on the page</span><pre>get_javascripts()</pre></a></li>
+<li class="method public "><a href="#method_get_layouts" title="get_layouts :: get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)"><span class="description">get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</span><pre>get_layouts()</pre></a></li>
+<li class="method public "><a href="#method_get_meta_tags" title="get_meta_tags :: Returns the tags of the page separated by a comma"><span class="description">Returns the tags of the page separated by a comma</span><pre>get_meta_tags()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheet_blocks" title="get_stylesheet_blocks :: Return the stylesheet declaration"><span class="description">Return the stylesheet declaration</span><pre>get_stylesheet_blocks()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheet_files" title="get_stylesheet_files :: Return the stylesheet linked to the page"><span class="description">Return the stylesheet linked to the page</span><pre>get_stylesheet_files()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheets" title="get_stylesheets :: "><span class="description">get_stylesheets()
+        </span><pre>get_stylesheets()</pre></a></li>
+<li class="method public "><a href="#method_get_template_layouts" title="get_template_layouts :: get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)"><span class="description">get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</span><pre>get_template_layouts()</pre></a></li>
+<li class="method public "><a href="#method_get_template_path" title="get_template_path :: Get the current template path"><span class="description">Get the current template path</span><pre>get_template_path()</pre></a></li>
+<li class="method public "><a href="#method_initialize" title="initialize :: Initialize preferences"><span class="description">Initialize preferences</span><pre>initialize()</pre></a></li>
+<li class="method public "><a href="#method_layout_exists" title="layout_exists :: layout_exists
+Check if a template layout exists"><span class="description">layout_exists
+Check if a template layout exists</span><pre>layout_exists()</pre></a></li>
+<li class="method public "><a href="#method_set" title="set :: Set data using a chainable metod."><span class="description">Set data using a chainable metod.</span><pre>set()</pre></a></li>
+<li class="method public "><a href="#method_set_breadcrumb" title="set_breadcrumb :: Helps build custom breadcrumb trails"><span class="description">Helps build custom breadcrumb trails</span><pre>set_breadcrumb()</pre></a></li>
+<li class="method public "><a href="#method_set_cache" title="set_cache :: Set a the cache lifetime"><span class="description">Set a the cache lifetime</span><pre>set_cache()</pre></a></li>
+<li class="method public "><a href="#method_set_layout" title="set_layout :: Which template layout should we using here?"><span class="description">Which template layout should we using here?</span><pre>set_layout()</pre></a></li>
+<li class="method public "><a href="#method_set_template" title="set_template :: Which template are we using here?"><span class="description">Which template are we using here?</span><pre>set_template()</pre></a></li>
+<li class="method public "><a href="#method_set_templates_location" title="set_templates_location :: set_templates_location
+Set location for templates to be looked in"><span class="description">set_templates_location
+Set location for templates to be looked in</span><pre>set_templates_location()</pre></a></li>
+<li class="method public "><a href="#method_set_title" title="set_title :: "><span class="description">set_title()
+        </span><pre>set_title()</pre></a></li>
+<li class="method public "><a href="#method_template_exists" title="template_exists :: template_exists
+Check if a template exists"><span class="description">template_exists
+Check if a template exists</span><pre>template_exists()</pre></a></li>
+<li class="method public "><a href="#method_templates_location" title="templates_location :: templates_location
+Get the location where template is stored"><span class="description">templates_location
+Get the location where template is stored</span><pre>templates_location()</pre></a></li>
+<li class="method public "><a href="#method_title" title="title :: Set the title of the page"><span class="description">Set the title of the page</span><pre>title()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__ext" title="_ext :: "><span class="description">_ext()
+        </span><pre>_ext()</pre></a></li>
+<li class="method private "><a href="#method__find_module_view" title="_find_module_view :: "><span class="description">_find_module_view()
+        </span><pre>_find_module_view()</pre></a></li>
+<li class="method private "><a href="#method__find_view_folder" title="_find_view_folder :: "><span class="description">_find_view_folder()
+        </span><pre>_find_view_folder()</pre></a></li>
+<li class="method private "><a href="#method__guess_title" title="_guess_title :: "><span class="description">_guess_title()
+        </span><pre>_guess_title()</pre></a></li>
+<li class="method private "><a href="#method__load_view" title="_load_view :: "><span class="description">_load_view()
+        </span><pre>_load_view()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__breadcrumbs" title="$_breadcrumbs :: Holds the content of breadcrumbs"><span class="description"></span><pre>$_breadcrumbs</pre></a></li>
+<li class="property private "><a href="#property__ci" title="$_ci :: Reference to the CodeIgniter instance"><span class="description"></span><pre>$_ci</pre></a></li>
+<li class="property private "><a href="#property__controller" title="$_controller :: Holds the controller"><span class="description"></span><pre>$_controller</pre></a></li>
+<li class="property private "><a href="#property__data" title="$_data :: Holds the template physical location"><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property private "><a href="#property__has_footer" title="$_has_footer :: Defines if the requested page has a footer"><span class="description"></span><pre>$_has_footer</pre></a></li>
+<li class="property private "><a href="#property__has_header" title="$_has_header :: Defines if the requested page has a header"><span class="description"></span><pre>$_has_header</pre></a></li>
+<li class="property private "><a href="#property__has_modules" title="$_has_modules :: Defines if the requested page has modules"><span class="description"></span><pre>$_has_modules</pre></a></li>
+<li class="property private "><a href="#property__is_mobile" title="$_is_mobile :: Flag for if the user-agent is a mobile browser"><span class="description"></span><pre>$_is_mobile</pre></a></li>
+<li class="property private "><a href="#property__is_pad" title="$_is_pad :: Flag for if the user-agent is a pad browser"><span class="description"></span><pre>$_is_pad</pre></a></li>
+<li class="property private "><a href="#property__javascript_blocks" title="$_javascript_blocks :: Holds blocks of javascript syntax to embedd into the page, each block must contain its relevant &lt;script&gt; and &lt;/script&gt; tags"><span class="description"></span><pre>$_javascript_blocks</pre></a></li>
+<li class="property private "><a href="#property__javascript_files" title="$_javascript_files :: Holds javascript filenames to be included in the page"><span class="description"></span><pre>$_javascript_files</pre></a></li>
+<li class="property private "><a href="#property__layout" title="$_layout :: layout file name
+By default, dont wrap the view with anything"><span class="description"></span><pre>$_layout</pre></a></li>
+<li class="property private "><a href="#property__layout_subdir" title="$_layout_subdir :: layout file folder
+Layouts and modules will exist in views/layouts"><span class="description"></span><pre>$_layout_subdir</pre></a></li>
+<li class="property private "><a href="#property__meta_tags" title="$_meta_tags :: page meta title (Keywords, Description, Generator)"><span class="description"></span><pre>$_meta_tags</pre></a></li>
+<li class="property private "><a href="#property__method" title="$_method :: Holds the controller method"><span class="description"></span><pre>$_method</pre></a></li>
+<li class="property private "><a href="#property__module" title="$_module :: Holds the title of the page module"><span class="description"></span><pre>$_module</pre></a></li>
+<li class="property private "><a href="#property__module_groups" title="$_module_groups :: Holds the content of the module groups"><span class="description"></span><pre>$_module_groups</pre></a></li>
+<li class="property private "><a href="#property__parser_body_enabled" title="$_parser_body_enabled :: Parser Body Enabled"><span class="description"></span><pre>$_parser_body_enabled</pre></a></li>
+<li class="property private "><a href="#property__parser_enabled" title="$_parser_enabled :: Parser Enabled"><span class="description"></span><pre>$_parser_enabled</pre></a></li>
+<li class="property private "><a href="#property__stylesheet_blocks" title="$_stylesheet_blocks :: Holds style declarations to embedd into the page head"><span class="description"></span><pre>$_stylesheet_blocks</pre></a></li>
+<li class="property private "><a href="#property__stylesheet_files" title="$_stylesheet_files :: Holds style sheet files to be included in the page"><span class="description"></span><pre>$_stylesheet_files</pre></a></li>
+<li class="property private "><a href="#property__template" title="$_template :: template name"><span class="description"></span><pre>$_template</pre></a></li>
+<li class="property private "><a href="#property__template_id" title="$_template_id :: template id"><span class="description"></span><pre>$_template_id</pre></a></li>
+<li class="property private "><a href="#property__template_path" title="$_template_path :: template path"><span class="description"></span><pre>$_template_path</pre></a></li>
+<li class="property private "><a href="#property__templates_location" title="$_templates_location :: Holds the template physical location"><span class="description"></span><pre>$_templates_location</pre></a></li>
+<li class="property private "><a href="#property__title" title="$_title :: page title"><span class="description"></span><pre>$_title</pre></a></li>
+<li class="property private "><a href="#property__title_separator" title="$_title_separator :: Title Separator"><span class="description"></span><pre>$_title_separator</pre></a></li>
+<li class="property private "><a href="#property_cache_lifetime" title="$cache_lifetime :: Minutes that cache will be alive for"><span class="description"></span><pre>$cache_lifetime</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Template"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Template.html">Template</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">CodeIgniter Template Class</p>
+<div class="details">
+<div class="long_description"><p>This template library is derived from Phil Sturgeon's (Pyrocms) template and themeing library.</p>
+
+<p>Build your CodeIgniter pages much easier with modules, breadcrumbs, layouts and templates</p></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Philip Sturgeon &lt;http://philsturgeon.co.uk&gt;</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://philsturgeon.co.uk/code/dbad-license">http://philsturgeon.co.uk/code/dbad-license</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://philsturgeon.co.uk/code/codeigniter-template">http://philsturgeon.co.uk/code/codeigniter-template</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/CodeIgniter.Admin.Libraries.html">CodeIgniter\Admin\Libraries</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor - Sets Preferences</h2>
+<pre>__construct($config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The constructor can be passed an array of config values</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4><p>an array of config values</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Magic Get function to get data</h2>
+<pre>__get(string $name) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Magic Set function to set data</h2>
+<pre>__set(string $name, $value) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method__find_view"></a><div class="element clickable method public method__find_view" data-toggle="collapse" data-target=".method__find_view .collapse">
+<h2>_find_view()
+        </h2>
+<pre>_find_view($view, $data, $parse_view) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$parse_view</h4></div>
+</div></div>
+</div>
+<a id="method_add_javascript_block"></a><div class="element clickable method public method_add_javascript_block" data-toggle="collapse" data-target=".method_add_javascript_block .collapse">
+<h2>Adds javascript logic to the page</h2>
+<pre>add_javascript_block($block) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$block</h4></div>
+</div></div>
+</div>
+<a id="method_add_javascript_file"></a><div class="element clickable method public method_add_javascript_file" data-toggle="collapse" data-target=".method_add_javascript_file .collapse">
+<h2>Adds a javascript file to link to</h2>
+<pre>add_javascript_file($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method_add_meta_tags"></a><div class="element clickable method public method_add_meta_tags" data-toggle="collapse" data-target=".method_add_meta_tags .collapse">
+<h2>Add head meta tags</h2>
+<pre>add_meta_tags(string $key, string $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>key value</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>value</p></div>
+</div></div>
+</div>
+<a id="method_add_module"></a><div class="element clickable method public method_add_module" data-toggle="collapse" data-target=".method_add_module .collapse">
+<h2>Set a view module
+lei: add module should not include data</h2>
+<pre>add_module(string $group, string $module) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_modules"></a><div class="element clickable method public method_add_modules" data-toggle="collapse" data-target=".method_add_modules .collapse">
+<h2>Set the view modules
+lei: add module should not include data</h2>
+<pre>add_modules(string $groups) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groups</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_stylesheet_block"></a><div class="element clickable method public method_add_stylesheet_block" data-toggle="collapse" data-target=".method_add_stylesheet_block .collapse">
+<h2>Adds a stylesheet declaration to the page</h2>
+<pre>add_stylesheet_block($block) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$block</h4></div>
+</div></div>
+</div>
+<a id="method_add_stylesheet_file"></a><div class="element clickable method public method_add_stylesheet_file" data-toggle="collapse" data-target=".method_add_stylesheet_file .collapse">
+<h2>Adds a stylesheet to the page</h2>
+<pre>add_stylesheet_file($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method_build"></a><div class="element clickable method public method_build" data-toggle="collapse" data-target=".method_build .collapse">
+<h2>Build the entire HTML output combining modules, layouts and views.</h2>
+<pre>build(string $view, $data, $return) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$return</h4></div>
+</div></div>
+</div>
+<a id="method_enable_parser"></a><div class="element clickable method public method_enable_parser" data-toggle="collapse" data-target=".method_enable_parser .collapse">
+<h2>enable_parser
+Should be parser be used or the view files just loaded normally?</h2>
+<pre>enable_parser($bool) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$bool</h4></div>
+</div></div>
+</div>
+<a id="method_enable_parser_body"></a><div class="element clickable method public method_enable_parser_body" data-toggle="collapse" data-target=".method_enable_parser_body .collapse">
+<h2>enable_parser_body
+Should be parser be used or the body view files just loaded normally?</h2>
+<pre>enable_parser_body($bool) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$bool</h4></div>
+</div></div>
+</div>
+<a id="method_get_breadcrumbs"></a><div class="element clickable method public method_get_breadcrumbs" data-toggle="collapse" data-target=".method_get_breadcrumbs .collapse">
+<h2>get_breadcrumbs()
+        </h2>
+<pre>get_breadcrumbs() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_code"></a><div class="element clickable method public method_get_code" data-toggle="collapse" data-target=".method_get_code .collapse">
+<h2>get_code()
+        </h2>
+<pre>get_code() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_id"></a><div class="element clickable method public method_get_id" data-toggle="collapse" data-target=".method_get_id .collapse">
+<h2>get_id()
+        </h2>
+<pre>get_id() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_javascript_blocks"></a><div class="element clickable method public method_get_javascript_blocks" data-toggle="collapse" data-target=".method_get_javascript_blocks .collapse">
+<h2>Returns javascript blocks to add to the page</h2>
+<pre>get_javascript_blocks() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_javascript_files"></a><div class="element clickable method public method_get_javascript_files" data-toggle="collapse" data-target=".method_get_javascript_files .collapse">
+<h2>Returns the javascript filenames to link to on the page</h2>
+<pre>get_javascript_files() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_javascripts"></a><div class="element clickable method public method_get_javascripts" data-toggle="collapse" data-target=".method_get_javascripts .collapse">
+<h2>Returns the javascript to link from or embedd to on the page</h2>
+<pre>get_javascripts() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_layouts"></a><div class="element clickable method public method_get_layouts" data-toggle="collapse" data-target=".method_get_layouts .collapse">
+<h2>get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</h2>
+<pre>get_layouts() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_meta_tags"></a><div class="element clickable method public method_get_meta_tags" data-toggle="collapse" data-target=".method_get_meta_tags .collapse">
+<h2>Returns the tags of the page separated by a comma</h2>
+<pre>get_meta_tags() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_stylesheet_blocks"></a><div class="element clickable method public method_get_stylesheet_blocks" data-toggle="collapse" data-target=".method_get_stylesheet_blocks .collapse">
+<h2>Return the stylesheet declaration</h2>
+<pre>get_stylesheet_blocks() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_stylesheet_files"></a><div class="element clickable method public method_get_stylesheet_files" data-toggle="collapse" data-target=".method_get_stylesheet_files .collapse">
+<h2>Return the stylesheet linked to the page</h2>
+<pre>get_stylesheet_files() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_stylesheets"></a><div class="element clickable method public method_get_stylesheets" data-toggle="collapse" data-target=".method_get_stylesheets .collapse">
+<h2>get_stylesheets()
+        </h2>
+<pre>get_stylesheets() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_template_layouts"></a><div class="element clickable method public method_get_template_layouts" data-toggle="collapse" data-target=".method_get_template_layouts .collapse">
+<h2>get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</h2>
+<pre>get_template_layouts($template) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$template</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_template_path"></a><div class="element clickable method public method_get_template_path" data-toggle="collapse" data-target=".method_get_template_path .collapse">
+<h2>Get the current template path</h2>
+<pre>get_template_path() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The current template path</div>
+</div></div>
+</div>
+<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+<h2>Initialize preferences</h2>
+<pre>initialize(array $config) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_layout_exists"></a><div class="element clickable method public method_layout_exists" data-toggle="collapse" data-target=".method_layout_exists .collapse">
+<h2>layout_exists
+Check if a template layout exists</h2>
+<pre>layout_exists($layout) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$layout</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set" data-toggle="collapse" data-target=".method_set .collapse">
+<h2>Set data using a chainable metod.</h2>
+<pre>set(string $name, $value) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Provide two strings or an array of data.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_set_breadcrumb"></a><div class="element clickable method public method_set_breadcrumb" data-toggle="collapse" data-target=".method_set_breadcrumb .collapse">
+<h2>Helps build custom breadcrumb trails</h2>
+<pre>set_breadcrumb(string $name, $uri) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>What will appear as the link text</p></div>
+<div class="subelement argument"><h4>$uri</h4></div>
+</div></div>
+</div>
+<a id="method_set_cache"></a><div class="element clickable method public method_set_cache" data-toggle="collapse" data-target=".method_set_cache .collapse">
+<h2>Set a the cache lifetime</h2>
+<pre>set_cache(string $minutes) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$minutes</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_layout"></a><div class="element clickable method public method_set_layout" data-toggle="collapse" data-target=".method_set_layout .collapse">
+<h2>Which template layout should we using here?</h2>
+<pre>set_layout(string $view, $_layout_subdir) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$_layout_subdir</h4></div>
+</div></div>
+</div>
+<a id="method_set_template"></a><div class="element clickable method public method_set_template" data-toggle="collapse" data-target=".method_set_template .collapse">
+<h2>Which template are we using here?</h2>
+<pre>set_template(string $template) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$template</h4>
+<code>string</code><p>Set a template for the template library to use</p></div>
+</div></div>
+</div>
+<a id="method_set_templates_location"></a><div class="element clickable method public method_set_templates_location" data-toggle="collapse" data-target=".method_set_templates_location .collapse">
+<h2>set_templates_location
+Set location for templates to be looked in</h2>
+<pre>set_templates_location($location) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$location</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_set_title"></a><div class="element clickable method public method_set_title" data-toggle="collapse" data-target=".method_set_title .collapse">
+<h2>set_title()
+        </h2>
+<pre>set_title($title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$title</h4></div>
+</div></div>
+</div>
+<a id="method_template_exists"></a><div class="element clickable method public method_template_exists" data-toggle="collapse" data-target=".method_template_exists .collapse">
+<h2>template_exists
+Check if a template exists</h2>
+<pre>template_exists($template) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$template</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_templates_location"></a><div class="element clickable method public method_templates_location" data-toggle="collapse" data-target=".method_templates_location .collapse">
+<h2>templates_location
+Get the location where template is stored</h2>
+<pre>templates_location() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_title"></a><div class="element clickable method public method_title" data-toggle="collapse" data-target=".method_title .collapse">
+<h2>Set the title of the page</h2>
+<pre>title() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method__ext"></a><div class="element clickable method private method__ext" data-toggle="collapse" data-target=".method__ext .collapse">
+<h2>_ext()
+        </h2>
+<pre>_ext($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method__find_module_view"></a><div class="element clickable method private method__find_module_view" data-toggle="collapse" data-target=".method__find_module_view .collapse">
+<h2>_find_module_view()
+        </h2>
+<pre>_find_module_view($view, array $data, $parse_view) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$parse_view</h4></div>
+</div></div>
+</div>
+<a id="method__find_view_folder"></a><div class="element clickable method private method__find_view_folder" data-toggle="collapse" data-target=".method__find_view_folder .collapse">
+<h2>_find_view_folder()
+        </h2>
+<pre>_find_view_folder() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__guess_title"></a><div class="element clickable method private method__guess_title" data-toggle="collapse" data-target=".method__guess_title .collapse">
+<h2>_guess_title()
+        </h2>
+<pre>_guess_title() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__load_view"></a><div class="element clickable method private method__load_view" data-toggle="collapse" data-target=".method__load_view .collapse">
+<h2>_load_view()
+        </h2>
+<pre>_load_view($view, array $data, $parse_view, $override_view_path) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$parse_view</h4></div>
+<div class="subelement argument"><h4>$override_view_path</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__breadcrumbs"> </a><div class="element clickable property private property__breadcrumbs" data-toggle="collapse" data-target=".property__breadcrumbs .collapse">
+<h2></h2>
+<pre>$_breadcrumbs : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__ci"> </a><div class="element clickable property private property__ci" data-toggle="collapse" data-target=".property__ci .collapse">
+<h2></h2>
+<pre>$_ci : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__controller"> </a><div class="element clickable property private property__controller" data-toggle="collapse" data-target=".property__controller .collapse">
+<h2></h2>
+<pre>$_controller : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__data"> </a><div class="element clickable property private property__data" data-toggle="collapse" data-target=".property__data .collapse">
+<h2></h2>
+<pre>$_data : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__has_footer"> </a><div class="element clickable property private property__has_footer" data-toggle="collapse" data-target=".property__has_footer .collapse">
+<h2></h2>
+<pre>$_has_footer : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__has_header"> </a><div class="element clickable property private property__has_header" data-toggle="collapse" data-target=".property__has_header .collapse">
+<h2></h2>
+<pre>$_has_header : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__has_modules"> </a><div class="element clickable property private property__has_modules" data-toggle="collapse" data-target=".property__has_modules .collapse">
+<h2></h2>
+<pre>$_has_modules : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__is_mobile"> </a><div class="element clickable property private property__is_mobile" data-toggle="collapse" data-target=".property__is_mobile .collapse">
+<h2></h2>
+<pre>$_is_mobile : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__is_pad"> </a><div class="element clickable property private property__is_pad" data-toggle="collapse" data-target=".property__is_pad .collapse">
+<h2></h2>
+<pre>$_is_pad : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__javascript_blocks"> </a><div class="element clickable property private property__javascript_blocks" data-toggle="collapse" data-target=".property__javascript_blocks .collapse">
+<h2></h2>
+<pre>$_javascript_blocks : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__javascript_files"> </a><div class="element clickable property private property__javascript_files" data-toggle="collapse" data-target=".property__javascript_files .collapse">
+<h2></h2>
+<pre>$_javascript_files : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__layout"> </a><div class="element clickable property private property__layout" data-toggle="collapse" data-target=".property__layout .collapse">
+<h2></h2>
+<pre>$_layout : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__layout_subdir"> </a><div class="element clickable property private property__layout_subdir" data-toggle="collapse" data-target=".property__layout_subdir .collapse">
+<h2></h2>
+<pre>$_layout_subdir : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__meta_tags"> </a><div class="element clickable property private property__meta_tags" data-toggle="collapse" data-target=".property__meta_tags .collapse">
+<h2></h2>
+<pre>$_meta_tags : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__method"> </a><div class="element clickable property private property__method" data-toggle="collapse" data-target=".property__method .collapse">
+<h2></h2>
+<pre>$_method : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__module"> </a><div class="element clickable property private property__module" data-toggle="collapse" data-target=".property__module .collapse">
+<h2></h2>
+<pre>$_module : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__module_groups"> </a><div class="element clickable property private property__module_groups" data-toggle="collapse" data-target=".property__module_groups .collapse">
+<h2></h2>
+<pre>$_module_groups : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__parser_body_enabled"> </a><div class="element clickable property private property__parser_body_enabled" data-toggle="collapse" data-target=".property__parser_body_enabled .collapse">
+<h2></h2>
+<pre>$_parser_body_enabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__parser_enabled"> </a><div class="element clickable property private property__parser_enabled" data-toggle="collapse" data-target=".property__parser_enabled .collapse">
+<h2></h2>
+<pre>$_parser_enabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__stylesheet_blocks"> </a><div class="element clickable property private property__stylesheet_blocks" data-toggle="collapse" data-target=".property__stylesheet_blocks .collapse">
+<h2></h2>
+<pre>$_stylesheet_blocks : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__stylesheet_files"> </a><div class="element clickable property private property__stylesheet_files" data-toggle="collapse" data-target=".property__stylesheet_files .collapse">
+<h2></h2>
+<pre>$_stylesheet_files : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__template"> </a><div class="element clickable property private property__template" data-toggle="collapse" data-target=".property__template .collapse">
+<h2></h2>
+<pre>$_template : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__template_id"> </a><div class="element clickable property private property__template_id" data-toggle="collapse" data-target=".property__template_id .collapse">
+<h2></h2>
+<pre>$_template_id : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__template_path"> </a><div class="element clickable property private property__template_path" data-toggle="collapse" data-target=".property__template_path .collapse">
+<h2></h2>
+<pre>$_template_path : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__templates_location"> </a><div class="element clickable property private property__templates_location" data-toggle="collapse" data-target=".property__templates_location .collapse">
+<h2></h2>
+<pre>$_templates_location : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__title"> </a><div class="element clickable property private property__title" data-toggle="collapse" data-target=".property__title .collapse">
+<h2></h2>
+<pre>$_title : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__title_separator"> </a><div class="element clickable property private property__title_separator" data-toggle="collapse" data-target=".property__title_separator .collapse">
+<h2></h2>
+<pre>$_title_separator : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cache_lifetime"> </a><div class="element clickable property private property_cache_lifetime" data-toggle="collapse" data-target=".property_cache_lifetime .collapse">
+<h2></h2>
+<pre>$cache_lifetime : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+<a id="\Template"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Template.html">Template</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">CodeIgniter Template Class</p>
+<div class="details">
+<div class="long_description"><p>This template library is derived from Phil Sturgeon's (Pyrocms) template and themeing library.</p>
+
+<p>Build your CodeIgniter pages much easier with modules, breadcrumbs, layouts and templates</p></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Philip Sturgeon &lt;http://philsturgeon.co.uk&gt;</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://philsturgeon.co.uk/code/dbad-license">http://philsturgeon.co.uk/code/dbad-license</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://philsturgeon.co.uk/code/codeigniter-template">http://philsturgeon.co.uk/code/codeigniter-template</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/CodeIgniter.Frontend.Libraries.html">CodeIgniter\Frontend\Libraries</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor - Sets Preferences</h2>
+<pre>__construct($config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The constructor can be passed an array of config values</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4><p>an array of config values</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Magic Get function to get data</h2>
+<pre>__get(string $name) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Magic Set function to set data</h2>
+<pre>__set(string $name, $value) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method__find_view"></a><div class="element clickable method public method__find_view" data-toggle="collapse" data-target=".method__find_view .collapse">
+<h2>_find_view()
+        </h2>
+<pre>_find_view($view, array $data, $parse_view) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$parse_view</h4></div>
+</div></div>
+</div>
+<a id="method_add_javascript_block"></a><div class="element clickable method public method_add_javascript_block" data-toggle="collapse" data-target=".method_add_javascript_block .collapse">
+<h2>Adds javascript logic to the page</h2>
+<pre>add_javascript_block($block) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$block</h4></div>
+</div></div>
+</div>
+<a id="method_add_javascript_file"></a><div class="element clickable method public method_add_javascript_file" data-toggle="collapse" data-target=".method_add_javascript_file .collapse">
+<h2>Adds a javascript file to link to</h2>
+<pre>add_javascript_file($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method_add_meta_tags"></a><div class="element clickable method public method_add_meta_tags" data-toggle="collapse" data-target=".method_add_meta_tags .collapse">
+<h2>Add head meta tags</h2>
+<pre>add_meta_tags(string $key, string $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>key value</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>value</p></div>
+</div></div>
+</div>
+<a id="method_add_module"></a><div class="element clickable method public method_add_module" data-toggle="collapse" data-target=".method_add_module .collapse">
+<h2>Set a view module
+lei: add module should not include data</h2>
+<pre>add_module(string $group, string $module) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_modules"></a><div class="element clickable method public method_add_modules" data-toggle="collapse" data-target=".method_add_modules .collapse">
+<h2>Set the view modules
+lei: add module should not include data</h2>
+<pre>add_modules(string $groups) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$groups</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_stylesheet_block"></a><div class="element clickable method public method_add_stylesheet_block" data-toggle="collapse" data-target=".method_add_stylesheet_block .collapse">
+<h2>Adds a stylesheet declaration to the page</h2>
+<pre>add_stylesheet_block($block) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$block</h4></div>
+</div></div>
+</div>
+<a id="method_add_stylesheet_file"></a><div class="element clickable method public method_add_stylesheet_file" data-toggle="collapse" data-target=".method_add_stylesheet_file .collapse">
+<h2>Adds a stylesheet to the page</h2>
+<pre>add_stylesheet_file($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method_build"></a><div class="element clickable method public method_build" data-toggle="collapse" data-target=".method_build .collapse">
+<h2>Build the entire HTML output combining modules, layouts and views.</h2>
+<pre>build(string $view, $data, $return) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$return</h4></div>
+</div></div>
+</div>
+<a id="method_enable_parser"></a><div class="element clickable method public method_enable_parser" data-toggle="collapse" data-target=".method_enable_parser .collapse">
+<h2>enable_parser
+Should be parser be used or the view files just loaded normally?</h2>
+<pre>enable_parser($bool) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$bool</h4></div>
+</div></div>
+</div>
+<a id="method_enable_parser_body"></a><div class="element clickable method public method_enable_parser_body" data-toggle="collapse" data-target=".method_enable_parser_body .collapse">
+<h2>enable_parser_body
+Should be parser be used or the body view files just loaded normally?</h2>
+<pre>enable_parser_body($bool) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$bool</h4></div>
+</div></div>
+</div>
+<a id="method_get_breadcrumbs"></a><div class="element clickable method public method_get_breadcrumbs" data-toggle="collapse" data-target=".method_get_breadcrumbs .collapse">
+<h2>get_breadcrumbs()
+        </h2>
+<pre>get_breadcrumbs() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_code"></a><div class="element clickable method public method_get_code" data-toggle="collapse" data-target=".method_get_code .collapse">
+<h2>get_code()
+        </h2>
+<pre>get_code() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_id"></a><div class="element clickable method public method_get_id" data-toggle="collapse" data-target=".method_get_id .collapse">
+<h2>get_id()
+        </h2>
+<pre>get_id() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_javascript_blocks"></a><div class="element clickable method public method_get_javascript_blocks" data-toggle="collapse" data-target=".method_get_javascript_blocks .collapse">
+<h2>Returns javascript blocks to add to the page</h2>
+<pre>get_javascript_blocks() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_javascript_files"></a><div class="element clickable method public method_get_javascript_files" data-toggle="collapse" data-target=".method_get_javascript_files .collapse">
+<h2>Returns the javascript filenames to link to on the page</h2>
+<pre>get_javascript_files() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_javascripts"></a><div class="element clickable method public method_get_javascripts" data-toggle="collapse" data-target=".method_get_javascripts .collapse">
+<h2>Returns the javascript to link from or embedd to on the page</h2>
+<pre>get_javascripts() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_layouts"></a><div class="element clickable method public method_get_layouts" data-toggle="collapse" data-target=".method_get_layouts .collapse">
+<h2>get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</h2>
+<pre>get_layouts() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_meta_tags"></a><div class="element clickable method public method_get_meta_tags" data-toggle="collapse" data-target=".method_get_meta_tags .collapse">
+<h2>Returns the tags of the page separated by a comma</h2>
+<pre>get_meta_tags() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_stylesheet_blocks"></a><div class="element clickable method public method_get_stylesheet_blocks" data-toggle="collapse" data-target=".method_get_stylesheet_blocks .collapse">
+<h2>Return the stylesheet declaration</h2>
+<pre>get_stylesheet_blocks() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_stylesheet_files"></a><div class="element clickable method public method_get_stylesheet_files" data-toggle="collapse" data-target=".method_get_stylesheet_files .collapse">
+<h2>Return the stylesheet linked to the page</h2>
+<pre>get_stylesheet_files() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_stylesheets"></a><div class="element clickable method public method_get_stylesheets" data-toggle="collapse" data-target=".method_get_stylesheets .collapse">
+<h2>get_stylesheets()
+        </h2>
+<pre>get_stylesheets() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_template_layouts"></a><div class="element clickable method public method_get_template_layouts" data-toggle="collapse" data-target=".method_get_template_layouts .collapse">
+<h2>get_layouts
+Get all current layouts (if using a template you'll get a list of template layouts)</h2>
+<pre>get_template_layouts($template) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$template</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_template_path"></a><div class="element clickable method public method_get_template_path" data-toggle="collapse" data-target=".method_get_template_path .collapse">
+<h2>Get the current template path</h2>
+<pre>get_template_path() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The current template path</div>
+</div></div>
+</div>
+<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+<h2>Initialize preferences</h2>
+<pre>initialize(array $config) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_layout_exists"></a><div class="element clickable method public method_layout_exists" data-toggle="collapse" data-target=".method_layout_exists .collapse">
+<h2>layout_exists
+Check if a template layout exists</h2>
+<pre>layout_exists($layout) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$layout</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set" data-toggle="collapse" data-target=".method_set .collapse">
+<h2>Set data using a chainable metod.</h2>
+<pre>set(string $name, $value) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Provide two strings or an array of data.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$value</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_set_breadcrumb"></a><div class="element clickable method public method_set_breadcrumb" data-toggle="collapse" data-target=".method_set_breadcrumb .collapse">
+<h2>Helps build custom breadcrumb trails</h2>
+<pre>set_breadcrumb(string $name, $uri) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>What will appear as the link text</p></div>
+<div class="subelement argument"><h4>$uri</h4></div>
+</div></div>
+</div>
+<a id="method_set_cache"></a><div class="element clickable method public method_set_cache" data-toggle="collapse" data-target=".method_set_cache .collapse">
+<h2>Set a the cache lifetime</h2>
+<pre>set_cache(string $minutes) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$minutes</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set_layout"></a><div class="element clickable method public method_set_layout" data-toggle="collapse" data-target=".method_set_layout .collapse">
+<h2>Which template layout should we using here?</h2>
+<pre>set_layout(string $view, $_layout_subdir) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code>
+</div>
+<div class="subelement argument"><h4>$_layout_subdir</h4></div>
+</div></div>
+</div>
+<a id="method_set_template"></a><div class="element clickable method public method_set_template" data-toggle="collapse" data-target=".method_set_template .collapse">
+<h2>Which template are we using here?</h2>
+<pre>set_template(string $template) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$template</h4>
+<code>string</code><p>Set a template for the template library to use</p></div>
+</div></div>
+</div>
+<a id="method_set_templates_location"></a><div class="element clickable method public method_set_templates_location" data-toggle="collapse" data-target=".method_set_templates_location .collapse">
+<h2>set_templates_location
+Set location for templates to be looked in</h2>
+<pre>set_templates_location($location) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$location</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_set_title"></a><div class="element clickable method public method_set_title" data-toggle="collapse" data-target=".method_set_title .collapse">
+<h2>set_title()
+        </h2>
+<pre>set_title($title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$title</h4></div>
+</div></div>
+</div>
+<a id="method_template_exists"></a><div class="element clickable method public method_template_exists" data-toggle="collapse" data-target=".method_template_exists .collapse">
+<h2>template_exists
+Check if a template exists</h2>
+<pre>template_exists($template) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$template</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_templates_location"></a><div class="element clickable method public method_templates_location" data-toggle="collapse" data-target=".method_templates_location .collapse">
+<h2>templates_location
+Get the location where template is stored</h2>
+<pre>templates_location() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_title"></a><div class="element clickable method public method_title" data-toggle="collapse" data-target=".method_title .collapse">
+<h2>Set the title of the page</h2>
+<pre>title() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method__ext"></a><div class="element clickable method private method__ext" data-toggle="collapse" data-target=".method__ext .collapse">
+<h2>_ext()
+        </h2>
+<pre>_ext($file) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$file</h4></div>
+</div></div>
+</div>
+<a id="method__find_module_view"></a><div class="element clickable method private method__find_module_view" data-toggle="collapse" data-target=".method__find_module_view .collapse">
+<h2>_find_module_view()
+        </h2>
+<pre>_find_module_view($view, array $data, $parse_view) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$parse_view</h4></div>
+</div></div>
+</div>
+<a id="method__find_view_folder"></a><div class="element clickable method private method__find_view_folder" data-toggle="collapse" data-target=".method__find_view_folder .collapse">
+<h2>_find_view_folder()
+        </h2>
+<pre>_find_view_folder() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__guess_title"></a><div class="element clickable method private method__guess_title" data-toggle="collapse" data-target=".method__guess_title .collapse">
+<h2>_guess_title()
+        </h2>
+<pre>_guess_title() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__load_view"></a><div class="element clickable method private method__load_view" data-toggle="collapse" data-target=".method__load_view .collapse">
+<h2>_load_view()
+        </h2>
+<pre>_load_view($view, array $data, $parse_view, $override_view_path) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$parse_view</h4></div>
+<div class="subelement argument"><h4>$override_view_path</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__breadcrumbs"> </a><div class="element clickable property private property__breadcrumbs" data-toggle="collapse" data-target=".property__breadcrumbs .collapse">
+<h2></h2>
+<pre>$_breadcrumbs : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__ci"> </a><div class="element clickable property private property__ci" data-toggle="collapse" data-target=".property__ci .collapse">
+<h2></h2>
+<pre>$_ci : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__controller"> </a><div class="element clickable property private property__controller" data-toggle="collapse" data-target=".property__controller .collapse">
+<h2></h2>
+<pre>$_controller : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__data"> </a><div class="element clickable property private property__data" data-toggle="collapse" data-target=".property__data .collapse">
+<h2></h2>
+<pre>$_data : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__has_footer"> </a><div class="element clickable property private property__has_footer" data-toggle="collapse" data-target=".property__has_footer .collapse">
+<h2></h2>
+<pre>$_has_footer : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__has_header"> </a><div class="element clickable property private property__has_header" data-toggle="collapse" data-target=".property__has_header .collapse">
+<h2></h2>
+<pre>$_has_header : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__has_modules"> </a><div class="element clickable property private property__has_modules" data-toggle="collapse" data-target=".property__has_modules .collapse">
+<h2></h2>
+<pre>$_has_modules : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__is_mobile"> </a><div class="element clickable property private property__is_mobile" data-toggle="collapse" data-target=".property__is_mobile .collapse">
+<h2></h2>
+<pre>$_is_mobile : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__is_pad"> </a><div class="element clickable property private property__is_pad" data-toggle="collapse" data-target=".property__is_pad .collapse">
+<h2></h2>
+<pre>$_is_pad : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__javascript_blocks"> </a><div class="element clickable property private property__javascript_blocks" data-toggle="collapse" data-target=".property__javascript_blocks .collapse">
+<h2></h2>
+<pre>$_javascript_blocks : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__javascript_files"> </a><div class="element clickable property private property__javascript_files" data-toggle="collapse" data-target=".property__javascript_files .collapse">
+<h2></h2>
+<pre>$_javascript_files : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__layout"> </a><div class="element clickable property private property__layout" data-toggle="collapse" data-target=".property__layout .collapse">
+<h2></h2>
+<pre>$_layout : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__layout_subdir"> </a><div class="element clickable property private property__layout_subdir" data-toggle="collapse" data-target=".property__layout_subdir .collapse">
+<h2></h2>
+<pre>$_layout_subdir : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__meta_tags"> </a><div class="element clickable property private property__meta_tags" data-toggle="collapse" data-target=".property__meta_tags .collapse">
+<h2></h2>
+<pre>$_meta_tags : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__method"> </a><div class="element clickable property private property__method" data-toggle="collapse" data-target=".property__method .collapse">
+<h2></h2>
+<pre>$_method : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__module"> </a><div class="element clickable property private property__module" data-toggle="collapse" data-target=".property__module .collapse">
+<h2></h2>
+<pre>$_module : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__module_groups"> </a><div class="element clickable property private property__module_groups" data-toggle="collapse" data-target=".property__module_groups .collapse">
+<h2></h2>
+<pre>$_module_groups : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__parser_body_enabled"> </a><div class="element clickable property private property__parser_body_enabled" data-toggle="collapse" data-target=".property__parser_body_enabled .collapse">
+<h2></h2>
+<pre>$_parser_body_enabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__parser_enabled"> </a><div class="element clickable property private property__parser_enabled" data-toggle="collapse" data-target=".property__parser_enabled .collapse">
+<h2></h2>
+<pre>$_parser_enabled : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__stylesheet_blocks"> </a><div class="element clickable property private property__stylesheet_blocks" data-toggle="collapse" data-target=".property__stylesheet_blocks .collapse">
+<h2></h2>
+<pre>$_stylesheet_blocks : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__stylesheet_files"> </a><div class="element clickable property private property__stylesheet_files" data-toggle="collapse" data-target=".property__stylesheet_files .collapse">
+<h2></h2>
+<pre>$_stylesheet_files : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__template"> </a><div class="element clickable property private property__template" data-toggle="collapse" data-target=".property__template .collapse">
+<h2></h2>
+<pre>$_template : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__template_id"> </a><div class="element clickable property private property__template_id" data-toggle="collapse" data-target=".property__template_id .collapse">
+<h2></h2>
+<pre>$_template_id : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__template_path"> </a><div class="element clickable property private property__template_path" data-toggle="collapse" data-target=".property__template_path .collapse">
+<h2></h2>
+<pre>$_template_path : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__templates_location"> </a><div class="element clickable property private property__templates_location" data-toggle="collapse" data-target=".property__templates_location .collapse">
+<h2></h2>
+<pre>$_templates_location : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__title"> </a><div class="element clickable property private property__title" data-toggle="collapse" data-target=".property__title .collapse">
+<h2></h2>
+<pre>$_title : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__title_separator"> </a><div class="element clickable property private property__title_separator" data-toggle="collapse" data-target=".property__title_separator .collapse">
+<h2></h2>
+<pre>$_title_separator : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cache_lifetime"> </a><div class="element clickable property private property_cache_lifetime" data-toggle="collapse" data-target=".property_cache_lifetime .collapse">
+<h2></h2>
+<pre>$cache_lifetime : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:10+07:00.<br></footer></div>
+</div>
+</body>
+</html>

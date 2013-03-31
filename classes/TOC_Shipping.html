@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \TOC_Shipping</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_get_cheapest_quote" title="get_cheapest_quote :: "><span class="description">get_cheapest_quote()
+        </span><pre>get_cheapest_quote()</pre></a></li>
+<li class="method public "><a href="#method_get_quote" title="get_quote :: Get all quotes"><span class="description">Get all quotes</span><pre>get_quote()</pre></a></li>
+<li class="method public "><a href="#method_get_quotes" title="get_quotes :: Get all quotes"><span class="description">Get all quotes</span><pre>get_quotes()</pre></a></li>
+<li class="method public "><a href="#method_has_active" title="has_active :: "><span class="description">has_active()
+        </span><pre>has_active()</pre></a></li>
+<li class="method public "><a href="#method_has_quotes" title="has_quotes :: Get shipping module quotes"><span class="description">Get shipping module quotes</span><pre>has_quotes()</pre></a></li>
+<li class="method public "><a href="#method_load_shipping_module" title="load_shipping_module :: "><span class="description">load_shipping_module()
+        </span><pre>load_shipping_module()</pre></a></li>
+<li class="method public "><a href="#method_number_of_quotes" title="number_of_quotes :: Get number of quotes"><span class="description">Get number of quotes</span><pre>number_of_quotes()</pre></a></li>
+<li class="method public "><a href="#method_usort_modules" title="usort_modules :: "><span class="description">usort_modules()
+        </span><pre>usort_modules()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_calculate" title="calculate :: Calcuate shipping costs"><span class="description">Calcuate shipping costs</span><pre>calculate()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_ci" title="$ci :: ci instance"><span class="description"></span><pre>$ci</pre></a></li>
+<li class="property protected "><a href="#property_group" title="$group :: each shipping method quotation array"><span class="description"></span><pre>$group</pre></a></li>
+<li class="property protected "><a href="#property_modules" title="$modules :: shipping modules array"><span class="description"></span><pre>$modules</pre></a></li>
+<li class="property protected "><a href="#property_quotes" title="$quotes :: each shipping method quotation array"><span class="description"></span><pre>$quotes</pre></a></li>
+<li class="property protected "><a href="#property_selected_module" title="$selected_module :: selected shipping modules array"><span class="description"></span><pre>$selected_module</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TOC_Shipping"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Shipping.html">TOC_Shipping</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">TomatoCart Shipping Class</p>
+<div class="details">
+<div class="long_description"><p>Allows for an easy interface for site configuration</p></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(c) 2009 - 2013, TomatoCart. All rights reserved.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">TomatoCart\Frontend\Core\Libraries</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct(string $module) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code><p>shipping module name</p></div>
+</div></div>
+</div>
+<a id="method_get_cheapest_quote"></a><div class="element clickable method public method_get_cheapest_quote" data-toggle="collapse" data-target=".method_get_cheapest_quote .collapse">
+<h2>get_cheapest_quote()
+        </h2>
+<pre>get_cheapest_quote() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_quote"></a><div class="element clickable method public method_get_quote" data-toggle="collapse" data-target=".method_get_quote .collapse">
+<h2>Get all quotes</h2>
+<pre>get_quote($module) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$module</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>quotes</div>
+</div></div>
+</div>
+<a id="method_get_quotes"></a><div class="element clickable method public method_get_quotes" data-toggle="collapse" data-target=".method_get_quotes .collapse">
+<h2>Get all quotes</h2>
+<pre>get_quotes() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>quotes</div>
+</div></div>
+</div>
+<a id="method_has_active"></a><div class="element clickable method public method_has_active" data-toggle="collapse" data-target=".method_has_active .collapse">
+<h2>has_active()
+        </h2>
+<pre>has_active() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_has_quotes"></a><div class="element clickable method public method_has_quotes" data-toggle="collapse" data-target=".method_has_quotes .collapse">
+<h2>Get shipping module quotes</h2>
+<pre>has_quotes() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>shipping module quotes</div>
+</div></div>
+</div>
+<a id="method_load_shipping_module"></a><div class="element clickable method public method_load_shipping_module" data-toggle="collapse" data-target=".method_load_shipping_module .collapse">
+<h2>load_shipping_module()
+        </h2>
+<pre>load_shipping_module(string $module) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_number_of_quotes"></a><div class="element clickable method public method_number_of_quotes" data-toggle="collapse" data-target=".method_number_of_quotes .collapse">
+<h2>Get number of quotes</h2>
+<pre>number_of_quotes() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>number of quotes</div>
+</div></div>
+</div>
+<a id="method_usort_modules"></a><div class="element clickable method public method_usort_modules" data-toggle="collapse" data-target=".method_usort_modules .collapse">
+<h2>usort_modules()
+        </h2>
+<pre>usort_modules($a, $b) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+</div></div>
+</div>
+<a id="method_calculate"></a><div class="element clickable method private method_calculate" data-toggle="collapse" data-target=".method_calculate .collapse">
+<h2>Calcuate shipping costs</h2>
+<pre>calculate() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_ci"> </a><div class="element clickable property protected property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_group"> </a><div class="element clickable property protected property_group" data-toggle="collapse" data-target=".property_group .collapse">
+<h2></h2>
+<pre>$group : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_modules"> </a><div class="element clickable property protected property_modules" data-toggle="collapse" data-target=".property_modules .collapse">
+<h2></h2>
+<pre>$modules : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_quotes"> </a><div class="element clickable property protected property_quotes" data-toggle="collapse" data-target=".property_quotes .collapse">
+<h2></h2>
+<pre>$quotes : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_selected_module"> </a><div class="element clickable property protected property_selected_module" data-toggle="collapse" data-target=".property_selected_module .collapse">
+<h2></h2>
+<pre>$selected_module : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:10+07:00.<br></footer></div>
+</div>
+</body>
+</html>

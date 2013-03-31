@@ -1,0 +1,1228 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \TOC_Shopping_Cart</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Shopping Class Constructor"><span class="description">Shopping Class Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_add" title="add :: Insert items into the cart and save it to the session table"><span class="description">Insert items into the cart and save it to the session table</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_get_contents" title="get_contents :: "><span class="description">get_contents()
+        </span><pre>get_contents()</pre></a></li>
+<li class="method public "><a href="#method_reset" title="reset :: "><span class="description">reset()
+        </span><pre>reset()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_ci" title="$ci :: "><span class="description"></span><pre>$ci</pre></a></li>
+<li class="property private "><a href="#property_content_type" title="$content_type :: "><span class="description"></span><pre>$content_type</pre></a></li>
+<li class="property private "><a href="#property_contents" title="$contents :: "><span class="description"></span><pre>$contents</pre></a></li>
+<li class="property private "><a href="#property_coupon_amount" title="$coupon_amount :: "><span class="description"></span><pre>$coupon_amount</pre></a></li>
+<li class="property private "><a href="#property_coupon_code" title="$coupon_code :: "><span class="description"></span><pre>$coupon_code</pre></a></li>
+<li class="property private "><a href="#property_customer_credit" title="$customer_credit :: "><span class="description"></span><pre>$customer_credit</pre></a></li>
+<li class="property private "><a href="#property_gift_certificate_codes" title="$gift_certificate_codes :: "><span class="description"></span><pre>$gift_certificate_codes</pre></a></li>
+<li class="property private "><a href="#property_gift_certificate_redeem_amount" title="$gift_certificate_redeem_amount :: "><span class="description"></span><pre>$gift_certificate_redeem_amount</pre></a></li>
+<li class="property private "><a href="#property_gift_wrapping_message" title="$gift_wrapping_message :: "><span class="description"></span><pre>$gift_wrapping_message</pre></a></li>
+<li class="property private "><a href="#property_is_gift_wrapping" title="$is_gift_wrapping :: "><span class="description"></span><pre>$is_gift_wrapping</pre></a></li>
+<li class="property private "><a href="#property_products_in_stock" title="$products_in_stock :: "><span class="description"></span><pre>$products_in_stock</pre></a></li>
+<li class="property private "><a href="#property_subtotal" title="$subtotal :: "><span class="description"></span><pre>$subtotal</pre></a></li>
+<li class="property private "><a href="#property_tax" title="$tax :: "><span class="description"></span><pre>$tax</pre></a></li>
+<li class="property private "><a href="#property_tax_groups" title="$tax_groups :: "><span class="description"></span><pre>$tax_groups</pre></a></li>
+<li class="property private "><a href="#property_total" title="$total :: "><span class="description"></span><pre>$total</pre></a></li>
+<li class="property private "><a href="#property_use_customer_credit" title="$use_customer_credit :: "><span class="description"></span><pre>$use_customer_credit</pre></a></li>
+<li class="property private "><a href="#property_weight" title="$weight :: "><span class="description"></span><pre>$weight</pre></a></li>
+</ul>
+</li>
+</ul>
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Shopping Class Constructor"><span class="description">Shopping Class Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method__uasort_products_by_date_added" title="_uasort_products_by_date_added :: "><span class="description">_uasort_products_by_date_added()
+        </span><pre>_uasort_products_by_date_added()</pre></a></li>
+<li class="method public "><a href="#method_add" title="add :: Add product to shopping cart"><span class="description">Add product to shopping cart</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_add_tax_amount" title="add_tax_amount :: Enter description here ."><span class="description">Enter description here .</span><pre>add_tax_amount()</pre></a></li>
+<li class="method public "><a href="#method_add_tax_group" title="add_tax_group :: Enter description here ."><span class="description">Enter description here .</span><pre>add_tax_group()</pre></a></li>
+<li class="method public "><a href="#method_add_to_total" title="add_to_total :: Enter description here ."><span class="description">Enter description here .</span><pre>add_to_total()</pre></a></li>
+<li class="method public "><a href="#method_calculate" title="calculate :: Caculate Shopping Cart"><span class="description">Caculate Shopping Cart</span><pre>calculate()</pre></a></li>
+<li class="method public "><a href="#method_clean_up" title="clean_up :: Clean up shopping cart"><span class="description">Clean up shopping cart</span><pre>clean_up()</pre></a></li>
+<li class="method public "><a href="#method_exists" title="exists :: Check whether the product exists"><span class="description">Check whether the product exists</span><pre>exists()</pre></a></li>
+<li class="method public "><a href="#method_generate_cart_id" title="generate_cart_id :: "><span class="description">generate_cart_id()
+        </span><pre>generate_cart_id()</pre></a></li>
+<li class="method public "><a href="#method_get_billing_address" title="get_billing_address :: "><span class="description">get_billing_address()
+        </span><pre>get_billing_address()</pre></a></li>
+<li class="method public "><a href="#method_get_billing_method" title="get_billing_method :: "><span class="description">get_billing_method()
+        </span><pre>get_billing_method()</pre></a></li>
+<li class="method public "><a href="#method_get_cart_billing_methods" title="get_cart_billing_methods :: "><span class="description">get_cart_billing_methods()
+        </span><pre>get_cart_billing_methods()</pre></a></li>
+<li class="method public "><a href="#method_get_cart_billing_modules" title="get_cart_billing_modules :: "><span class="description">get_cart_billing_modules()
+        </span><pre>get_cart_billing_modules()</pre></a></li>
+<li class="method public "><a href="#method_get_cart_id" title="get_cart_id :: "><span class="description">get_cart_id()
+        </span><pre>get_cart_id()</pre></a></li>
+<li class="method public "><a href="#method_get_content_type" title="get_content_type :: Get shopping cart content type(physical, virtual, mixed)"><span class="description">Get shopping cart content type(physical, virtual, mixed)</span><pre>get_content_type()</pre></a></li>
+<li class="method public "><a href="#method_get_contents" title="get_contents :: "><span class="description">get_contents()
+        </span><pre>get_contents()</pre></a></li>
+<li class="method public "><a href="#method_get_order_totals" title="get_order_totals :: Enter description here ."><span class="description">Enter description here .</span><pre>get_order_totals()</pre></a></li>
+<li class="method public "><a href="#method_get_products" title="get_products :: Get shopping cart contents"><span class="description">Get shopping cart contents</span><pre>get_products()</pre></a></li>
+<li class="method public "><a href="#method_get_quantity" title="get_quantity :: Get shopping cart product quantity"><span class="description">Get shopping cart product quantity</span><pre>get_quantity()</pre></a></li>
+<li class="method public "><a href="#method_get_shipping_address" title="get_shipping_address :: "><span class="description">get_shipping_address()
+        </span><pre>get_shipping_address()</pre></a></li>
+<li class="method public "><a href="#method_get_shipping_method" title="get_shipping_method :: "><span class="description">get_shipping_method()
+        </span><pre>get_shipping_method()</pre></a></li>
+<li class="method public "><a href="#method_get_shipping_quotes" title="get_shipping_quotes :: "><span class="description">get_shipping_quotes()
+        </span><pre>get_shipping_quotes()</pre></a></li>
+<li class="method public "><a href="#method_get_sub_total" title="get_sub_total :: Get shopping cart sub total"><span class="description">Get shopping cart sub total</span><pre>get_sub_total()</pre></a></li>
+<li class="method public "><a href="#method_get_tax" title="get_tax :: Enter description here ."><span class="description">Enter description here .</span><pre>get_tax()</pre></a></li>
+<li class="method public "><a href="#method_get_tax_groups" title="get_tax_groups :: "><span class="description">get_tax_groups()
+        </span><pre>get_tax_groups()</pre></a></li>
+<li class="method public "><a href="#method_get_taxing_address" title="get_taxing_address :: "><span class="description">get_taxing_address()
+        </span><pre>get_taxing_address()</pre></a></li>
+<li class="method public "><a href="#method_get_total" title="get_total :: Get shopping cart total"><span class="description">Get shopping cart total</span><pre>get_total()</pre></a></li>
+<li class="method public "><a href="#method_get_variants" title="get_variants :: Get product variants"><span class="description">Get product variants</span><pre>get_variants()</pre></a></li>
+<li class="method public "><a href="#method_get_weight" title="get_weight :: Get total weight"><span class="description">Get total weight</span><pre>get_weight()</pre></a></li>
+<li class="method public "><a href="#method_has_billing_ddress" title="has_billing_ddress :: "><span class="description">has_billing_ddress()
+        </span><pre>has_billing_ddress()</pre></a></li>
+<li class="method public "><a href="#method_has_billing_method" title="has_billing_method :: "><span class="description">has_billing_method()
+        </span><pre>has_billing_method()</pre></a></li>
+<li class="method public "><a href="#method_has_contents" title="has_contents :: Return whether the shopping cart has contents"><span class="description">Return whether the shopping cart has contents</span><pre>has_contents()</pre></a></li>
+<li class="method public "><a href="#method_has_shipping_address" title="has_shipping_address :: Check whether the shopping cart has shipping address"><span class="description">Check whether the shopping cart has shipping address</span><pre>has_shipping_address()</pre></a></li>
+<li class="method public "><a href="#method_has_shipping_method" title="has_shipping_method :: "><span class="description">has_shipping_method()
+        </span><pre>has_shipping_method()</pre></a></li>
+<li class="method public "><a href="#method_has_stock" title="has_stock :: Check whether the products is in stock"><span class="description">Check whether the products is in stock</span><pre>has_stock()</pre></a></li>
+<li class="method public "><a href="#method_has_variants" title="has_variants :: Check whether a product has variants"><span class="description">Check whether a product has variants</span><pre>has_variants()</pre></a></li>
+<li class="method public "><a href="#method_insert_order" title="insert_order :: "><span class="description">insert_order()
+        </span><pre>insert_order()</pre></a></li>
+<li class="method public "><a href="#method_is_in_stock" title="is_in_stock :: Check if product is in stock"><span class="description">Check if product is in stock</span><pre>is_in_stock()</pre></a></li>
+<li class="method public "><a href="#method_is_total_zero" title="is_total_zero :: Check whether the cart total is zero"><span class="description">Check whether the cart total is zero</span><pre>is_total_zero()</pre></a></li>
+<li class="method public "><a href="#method_is_virtual_cart" title="is_virtual_cart :: Check whether the content is virtual"><span class="description">Check whether the content is virtual</span><pre>is_virtual_cart()</pre></a></li>
+<li class="method public "><a href="#method_number_of_items" title="number_of_items :: Get number of items"><span class="description">Get number of items</span><pre>number_of_items()</pre></a></li>
+<li class="method public "><a href="#method_number_of_physical_items" title="number_of_physical_items :: Get number of physical items"><span class="description">Get number of physical items</span><pre>number_of_physical_items()</pre></a></li>
+<li class="method public "><a href="#method_number_of_tax_groups" title="number_of_tax_groups :: Enter description here ."><span class="description">Enter description here .</span><pre>number_of_tax_groups()</pre></a></li>
+<li class="method public "><a href="#method_remove" title="remove :: Remove shopping cart content"><span class="description">Remove shopping cart content</span><pre>remove()</pre></a></li>
+<li class="method public "><a href="#method_reset" title="reset :: Reset shopping cart"><span class="description">Reset shopping cart</span><pre>reset()</pre></a></li>
+<li class="method public "><a href="#method_reset_billing_address" title="reset_billing_address :: "><span class="description">reset_billing_address()
+        </span><pre>reset_billing_address()</pre></a></li>
+<li class="method public "><a href="#method_reset_billing_method" title="reset_billing_method :: "><span class="description">reset_billing_method()
+        </span><pre>reset_billing_method()</pre></a></li>
+<li class="method public "><a href="#method_reset_shipping_address" title="reset_shipping_address :: "><span class="description">reset_shipping_address()
+        </span><pre>reset_shipping_address()</pre></a></li>
+<li class="method public "><a href="#method_reset_shipping_method" title="reset_shipping_method :: "><span class="description">reset_shipping_method()
+        </span><pre>reset_shipping_method()</pre></a></li>
+<li class="method public "><a href="#method_save_session" title="save_session :: save session to data"><span class="description">save session to data</span><pre>save_session()</pre></a></li>
+<li class="method public "><a href="#method_set_billing_address" title="set_billing_address :: "><span class="description">set_billing_address()
+        </span><pre>set_billing_address()</pre></a></li>
+<li class="method public "><a href="#method_set_billing_method" title="set_billing_method :: "><span class="description">set_billing_method()
+        </span><pre>set_billing_method()</pre></a></li>
+<li class="method public "><a href="#method_set_raw_billing_address" title="set_raw_billing_address :: "><span class="description">set_raw_billing_address()
+        </span><pre>set_raw_billing_address()</pre></a></li>
+<li class="method public "><a href="#method_set_raw_shipping_address" title="set_raw_shipping_address :: Set raw shipping address"><span class="description">Set raw shipping address</span><pre>set_raw_shipping_address()</pre></a></li>
+<li class="method public "><a href="#method_set_shipping_address" title="set_shipping_address :: Set shipping address"><span class="description">Set shipping address</span><pre>set_shipping_address()</pre></a></li>
+<li class="method public "><a href="#method_set_shipping_method" title="set_shipping_method :: "><span class="description">set_shipping_method()
+        </span><pre>set_shipping_method()</pre></a></li>
+<li class="method public "><a href="#method_set_shipping_quotes" title="set_shipping_quotes :: "><span class="description">set_shipping_quotes()
+        </span><pre>set_shipping_quotes()</pre></a></li>
+<li class="method public "><a href="#method_synchronize_with_database" title="synchronize_with_database :: Synchronize shopping cart contents with database"><span class="description">Synchronize shopping cart contents with database</span><pre>synchronize_with_database()</pre></a></li>
+<li class="method public "><a href="#method_update" title="update :: Update Shopping Cart"><span class="description">Update Shopping Cart</span><pre>update()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_billing_address" title="$billing_address :: shopping cart billing address"><span class="description"></span><pre>$billing_address</pre></a></li>
+<li class="property protected "><a href="#property_ci" title="$ci :: ci instance"><span class="description"></span><pre>$ci</pre></a></li>
+<li class="property protected "><a href="#property_content_type" title="$content_type :: shopping cart content type"><span class="description"></span><pre>$content_type</pre></a></li>
+<li class="property protected "><a href="#property_contents" title="$contents :: shopping cart content"><span class="description"></span><pre>$contents</pre></a></li>
+<li class="property protected "><a href="#property_products_in_stock" title="$products_in_stock :: products tax total"><span class="description"></span><pre>$products_in_stock</pre></a></li>
+<li class="property protected "><a href="#property_shipping_address" title="$shipping_address :: shopping cart shipping address"><span class="description"></span><pre>$shipping_address</pre></a></li>
+<li class="property protected "><a href="#property_subtotal" title="$subtotal :: products subtotal"><span class="description"></span><pre>$subtotal</pre></a></li>
+<li class="property protected "><a href="#property_tax" title="$tax :: products tax total"><span class="description"></span><pre>$tax</pre></a></li>
+<li class="property protected "><a href="#property_tax_groups" title="$tax_groups :: products tax groups"><span class="description"></span><pre>$tax_groups</pre></a></li>
+<li class="property protected "><a href="#property_total" title="$total :: shopping cart total"><span class="description"></span><pre>$total</pre></a></li>
+<li class="property protected "><a href="#property_weight" title="$weight :: products total weight"><span class="description"></span><pre>$weight</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TOC_Shopping_Cart"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Shopping_Cart.html">TOC_Shopping_Cart</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Shopping Class Constructor</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>The constructor loads the Session class, used to store the shopping cart contents.</p></div></div></div>
+</div>
+<a id="method_add"></a><div class="element clickable method public method_add" data-toggle="collapse" data-target=".method_add .collapse">
+<h2>Insert items into the cart and save it to the session table</h2>
+<pre>add(array $products_id_string) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$products_id_string</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_get_contents"></a><div class="element clickable method public method_get_contents" data-toggle="collapse" data-target=".method_get_contents .collapse">
+<h2>get_contents()
+        </h2>
+<pre>get_contents() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_reset"></a><div class="element clickable method public method_reset" data-toggle="collapse" data-target=".method_reset .collapse">
+<h2>reset()
+        </h2>
+<pre>reset() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_ci"> </a><div class="element clickable property private property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_content_type"> </a><div class="element clickable property private property_content_type" data-toggle="collapse" data-target=".property_content_type .collapse">
+<h2></h2>
+<pre>$content_type </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_contents"> </a><div class="element clickable property private property_contents" data-toggle="collapse" data-target=".property_contents .collapse">
+<h2></h2>
+<pre>$contents </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_coupon_amount"> </a><div class="element clickable property private property_coupon_amount" data-toggle="collapse" data-target=".property_coupon_amount .collapse">
+<h2></h2>
+<pre>$coupon_amount </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_coupon_code"> </a><div class="element clickable property private property_coupon_code" data-toggle="collapse" data-target=".property_coupon_code .collapse">
+<h2></h2>
+<pre>$coupon_code </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_customer_credit"> </a><div class="element clickable property private property_customer_credit" data-toggle="collapse" data-target=".property_customer_credit .collapse">
+<h2></h2>
+<pre>$customer_credit </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_gift_certificate_codes"> </a><div class="element clickable property private property_gift_certificate_codes" data-toggle="collapse" data-target=".property_gift_certificate_codes .collapse">
+<h2></h2>
+<pre>$gift_certificate_codes </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_gift_certificate_redeem_amount"> </a><div class="element clickable property private property_gift_certificate_redeem_amount" data-toggle="collapse" data-target=".property_gift_certificate_redeem_amount .collapse">
+<h2></h2>
+<pre>$gift_certificate_redeem_amount </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_gift_wrapping_message"> </a><div class="element clickable property private property_gift_wrapping_message" data-toggle="collapse" data-target=".property_gift_wrapping_message .collapse">
+<h2></h2>
+<pre>$gift_wrapping_message </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_is_gift_wrapping"> </a><div class="element clickable property private property_is_gift_wrapping" data-toggle="collapse" data-target=".property_is_gift_wrapping .collapse">
+<h2></h2>
+<pre>$is_gift_wrapping </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_products_in_stock"> </a><div class="element clickable property private property_products_in_stock" data-toggle="collapse" data-target=".property_products_in_stock .collapse">
+<h2></h2>
+<pre>$products_in_stock </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_subtotal"> </a><div class="element clickable property private property_subtotal" data-toggle="collapse" data-target=".property_subtotal .collapse">
+<h2></h2>
+<pre>$subtotal </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tax"> </a><div class="element clickable property private property_tax" data-toggle="collapse" data-target=".property_tax .collapse">
+<h2></h2>
+<pre>$tax </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tax_groups"> </a><div class="element clickable property private property_tax_groups" data-toggle="collapse" data-target=".property_tax_groups .collapse">
+<h2></h2>
+<pre>$tax_groups </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_total"> </a><div class="element clickable property private property_total" data-toggle="collapse" data-target=".property_total .collapse">
+<h2></h2>
+<pre>$total </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_use_customer_credit"> </a><div class="element clickable property private property_use_customer_credit" data-toggle="collapse" data-target=".property_use_customer_credit .collapse">
+<h2></h2>
+<pre>$use_customer_credit </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_weight"> </a><div class="element clickable property private property_weight" data-toggle="collapse" data-target=".property_weight .collapse">
+<h2></h2>
+<pre>$weight </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+<a id="\TOC_Shopping_Cart"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Shopping_Cart.html">TOC_Shopping_Cart</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">TomatoCart Shopping Cart Class</p>
+<div class="details">
+<div class="long_description"><p>The shopping cart class is copied from TomatoCart v1.0. It keep some basic features and following features are
+removed:
+  gift wrapping
+  gift wrapping message
+  coupon
+  gift certificate
+  customer credit</p></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(c) 2009 - 2013, TomatoCart. All rights reserved.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">TomatoCart\Frontend\Core\Libraries</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Shopping Class Constructor</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The constructor loads the Session class, used to store the shopping cart contents.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method__uasort_products_by_date_added"></a><div class="element clickable method public method__uasort_products_by_date_added" data-toggle="collapse" data-target=".method__uasort_products_by_date_added .collapse">
+<h2>_uasort_products_by_date_added()
+        </h2>
+<pre>_uasort_products_by_date_added($a, $b) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$a</h4></div>
+<div class="subelement argument"><h4>$b</h4></div>
+</div></div>
+</div>
+<a id="method_add"></a><div class="element clickable method public method_add" data-toggle="collapse" data-target=".method_add .collapse">
+<h2>Add product to shopping cart</h2>
+<pre>add(string $products_id_string, array $variants, int $quantity, \stirng $action) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$products_id_string</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$variants</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$quantity</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>\stirng</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_tax_amount"></a><div class="element clickable method public method_add_tax_amount" data-toggle="collapse" data-target=".method_add_tax_amount .collapse">
+<h2>Enter description here .</h2>
+<pre>add_tax_amount(\unknown_type $amount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$amount</h4>
+<code>\unknown_type</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_tax_group"></a><div class="element clickable method public method_add_tax_group" data-toggle="collapse" data-target=".method_add_tax_group .collapse">
+<h2>Enter description here .</h2>
+<pre>add_tax_group(\unknown_type $group, \unknown_type $amount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>\unknown_type</code>
+</div>
+<div class="subelement argument">
+<h4>$amount</h4>
+<code>\unknown_type</code>
+</div>
+</div></div>
+</div>
+<a id="method_add_to_total"></a><div class="element clickable method public method_add_to_total" data-toggle="collapse" data-target=".method_add_to_total .collapse">
+<h2>Enter description here .</h2>
+<pre>add_to_total(\unknown_type $amount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$amount</h4>
+<code>\unknown_type</code>
+</div>
+</div></div>
+</div>
+<a id="method_calculate"></a><div class="element clickable method public method_calculate" data-toggle="collapse" data-target=".method_calculate .collapse">
+<h2>Caculate Shopping Cart</h2>
+<pre>calculate($set_shipping) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$set_shipping</h4></div>
+</div></div>
+</div>
+<a id="method_clean_up"></a><div class="element clickable method public method_clean_up" data-toggle="collapse" data-target=".method_clean_up .collapse">
+<h2>Clean up shopping cart</h2>
+<pre>clean_up() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_exists"></a><div class="element clickable method public method_exists" data-toggle="collapse" data-target=".method_exists .collapse">
+<h2>Check whether the product exists</h2>
+<pre>exists($products_id) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_generate_cart_id"></a><div class="element clickable method public method_generate_cart_id" data-toggle="collapse" data-target=".method_generate_cart_id .collapse">
+<h2>generate_cart_id()
+        </h2>
+<pre>generate_cart_id($length) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$length</h4></div>
+</div></div>
+</div>
+<a id="method_get_billing_address"></a><div class="element clickable method public method_get_billing_address" data-toggle="collapse" data-target=".method_get_billing_address .collapse">
+<h2>get_billing_address()
+        </h2>
+<pre>get_billing_address($key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="method_get_billing_method"></a><div class="element clickable method public method_get_billing_method" data-toggle="collapse" data-target=".method_get_billing_method .collapse">
+<h2>get_billing_method()
+        </h2>
+<pre>get_billing_method($key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="method_get_cart_billing_methods"></a><div class="element clickable method public method_get_cart_billing_methods" data-toggle="collapse" data-target=".method_get_cart_billing_methods .collapse">
+<h2>get_cart_billing_methods()
+        </h2>
+<pre>get_cart_billing_methods() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_cart_billing_modules"></a><div class="element clickable method public method_get_cart_billing_modules" data-toggle="collapse" data-target=".method_get_cart_billing_modules .collapse">
+<h2>get_cart_billing_modules()
+        </h2>
+<pre>get_cart_billing_modules() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_cart_id"></a><div class="element clickable method public method_get_cart_id" data-toggle="collapse" data-target=".method_get_cart_id .collapse">
+<h2>get_cart_id()
+        </h2>
+<pre>get_cart_id() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_content_type"></a><div class="element clickable method public method_get_content_type" data-toggle="collapse" data-target=".method_get_content_type .collapse">
+<h2>Get shopping cart content type(physical, virtual, mixed)</h2>
+<pre>get_content_type() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_contents"></a><div class="element clickable method public method_get_contents" data-toggle="collapse" data-target=".method_get_contents .collapse">
+<h2>get_contents()
+        </h2>
+<pre>get_contents() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_order_totals"></a><div class="element clickable method public method_get_order_totals" data-toggle="collapse" data-target=".method_get_order_totals .collapse">
+<h2>Enter description here .</h2>
+<pre>get_order_totals($code) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$code</h4></div>
+</div></div>
+</div>
+<a id="method_get_products"></a><div class="element clickable method public method_get_products" data-toggle="collapse" data-target=".method_get_products .collapse">
+<h2>Get shopping cart contents</h2>
+<pre>get_products() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_quantity"></a><div class="element clickable method public method_get_quantity" data-toggle="collapse" data-target=".method_get_quantity .collapse">
+<h2>Get shopping cart product quantity</h2>
+<pre>get_quantity($products_id) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_get_shipping_address"></a><div class="element clickable method public method_get_shipping_address" data-toggle="collapse" data-target=".method_get_shipping_address .collapse">
+<h2>get_shipping_address()
+        </h2>
+<pre>get_shipping_address($key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="method_get_shipping_method"></a><div class="element clickable method public method_get_shipping_method" data-toggle="collapse" data-target=".method_get_shipping_method .collapse">
+<h2>get_shipping_method()
+        </h2>
+<pre>get_shipping_method($key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="method_get_shipping_quotes"></a><div class="element clickable method public method_get_shipping_quotes" data-toggle="collapse" data-target=".method_get_shipping_quotes .collapse">
+<h2>get_shipping_quotes()
+        </h2>
+<pre>get_shipping_quotes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_sub_total"></a><div class="element clickable method public method_get_sub_total" data-toggle="collapse" data-target=".method_get_sub_total .collapse">
+<h2>Get shopping cart sub total</h2>
+<pre>get_sub_total() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="method_get_tax"></a><div class="element clickable method public method_get_tax" data-toggle="collapse" data-target=".method_get_tax .collapse">
+<h2>Enter description here .</h2>
+<pre>get_tax() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>..</p></div></div></div>
+</div>
+<a id="method_get_tax_groups"></a><div class="element clickable method public method_get_tax_groups" data-toggle="collapse" data-target=".method_get_tax_groups .collapse">
+<h2>get_tax_groups()
+        </h2>
+<pre>get_tax_groups() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_get_taxing_address"></a><div class="element clickable method public method_get_taxing_address" data-toggle="collapse" data-target=".method_get_taxing_address .collapse">
+<h2>get_taxing_address()
+        </h2>
+<pre>get_taxing_address($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_get_total"></a><div class="element clickable method public method_get_total" data-toggle="collapse" data-target=".method_get_total .collapse">
+<h2>Get shopping cart total</h2>
+<pre>get_total() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="method_get_variants"></a><div class="element clickable method public method_get_variants" data-toggle="collapse" data-target=".method_get_variants .collapse">
+<h2>Get product variants</h2>
+<pre>get_variants($products_id) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_weight"></a><div class="element clickable method public method_get_weight" data-toggle="collapse" data-target=".method_get_weight .collapse">
+<h2>Get total weight</h2>
+<pre>get_weight() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>float</code></div>
+</div></div>
+</div>
+<a id="method_has_billing_ddress"></a><div class="element clickable method public method_has_billing_ddress" data-toggle="collapse" data-target=".method_has_billing_ddress .collapse">
+<h2>has_billing_ddress()
+        </h2>
+<pre>has_billing_ddress() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_has_billing_method"></a><div class="element clickable method public method_has_billing_method" data-toggle="collapse" data-target=".method_has_billing_method .collapse">
+<h2>has_billing_method()
+        </h2>
+<pre>has_billing_method() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_has_contents"></a><div class="element clickable method public method_has_contents" data-toggle="collapse" data-target=".method_has_contents .collapse">
+<h2>Return whether the shopping cart has contents</h2>
+<pre>has_contents() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_has_shipping_address"></a><div class="element clickable method public method_has_shipping_address" data-toggle="collapse" data-target=".method_has_shipping_address .collapse">
+<h2>Check whether the shopping cart has shipping address</h2>
+<pre>has_shipping_address() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_has_shipping_method"></a><div class="element clickable method public method_has_shipping_method" data-toggle="collapse" data-target=".method_has_shipping_method .collapse">
+<h2>has_shipping_method()
+        </h2>
+<pre>has_shipping_method() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_has_stock"></a><div class="element clickable method public method_has_stock" data-toggle="collapse" data-target=".method_has_stock .collapse">
+<h2>Check whether the products is in stock</h2>
+<pre>has_stock() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_has_variants"></a><div class="element clickable method public method_has_variants" data-toggle="collapse" data-target=".method_has_variants .collapse">
+<h2>Check whether a product has variants</h2>
+<pre>has_variants($products_id) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_insert_order"></a><div class="element clickable method public method_insert_order" data-toggle="collapse" data-target=".method_insert_order .collapse">
+<h2>insert_order()
+        </h2>
+<pre>insert_order() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_is_in_stock"></a><div class="element clickable method public method_is_in_stock" data-toggle="collapse" data-target=".method_is_in_stock .collapse">
+<h2>Check if product is in stock</h2>
+<pre>is_in_stock($products_id_string) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id_string</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_is_total_zero"></a><div class="element clickable method public method_is_total_zero" data-toggle="collapse" data-target=".method_is_total_zero .collapse">
+<h2>Check whether the cart total is zero</h2>
+<pre>is_total_zero() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_is_virtual_cart"></a><div class="element clickable method public method_is_virtual_cart" data-toggle="collapse" data-target=".method_is_virtual_cart .collapse">
+<h2>Check whether the content is virtual</h2>
+<pre>is_virtual_cart() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_number_of_items"></a><div class="element clickable method public method_number_of_items" data-toggle="collapse" data-target=".method_number_of_items .collapse">
+<h2>Get number of items</h2>
+<pre>number_of_items() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_number_of_physical_items"></a><div class="element clickable method public method_number_of_physical_items" data-toggle="collapse" data-target=".method_number_of_physical_items .collapse">
+<h2>Get number of physical items</h2>
+<pre>number_of_physical_items() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_number_of_tax_groups"></a><div class="element clickable method public method_number_of_tax_groups" data-toggle="collapse" data-target=".method_number_of_tax_groups .collapse">
+<h2>Enter description here .</h2>
+<pre>number_of_tax_groups() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>..</p></div></div></div>
+</div>
+<a id="method_remove"></a><div class="element clickable method public method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
+<h2>Remove shopping cart content</h2>
+<pre>remove($products_id) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$products_id</h4></div>
+</div></div>
+</div>
+<a id="method_reset"></a><div class="element clickable method public method_reset" data-toggle="collapse" data-target=".method_reset .collapse">
+<h2>Reset shopping cart</h2>
+<pre>reset(boolean $reset_database) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$reset_database</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_reset_billing_address"></a><div class="element clickable method public method_reset_billing_address" data-toggle="collapse" data-target=".method_reset_billing_address .collapse">
+<h2>reset_billing_address()
+        </h2>
+<pre>reset_billing_address() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_reset_billing_method"></a><div class="element clickable method public method_reset_billing_method" data-toggle="collapse" data-target=".method_reset_billing_method .collapse">
+<h2>reset_billing_method()
+        </h2>
+<pre>reset_billing_method($calculate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$calculate</h4></div>
+</div></div>
+</div>
+<a id="method_reset_shipping_address"></a><div class="element clickable method public method_reset_shipping_address" data-toggle="collapse" data-target=".method_reset_shipping_address .collapse">
+<h2>reset_shipping_address()
+        </h2>
+<pre>reset_shipping_address() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_reset_shipping_method"></a><div class="element clickable method public method_reset_shipping_method" data-toggle="collapse" data-target=".method_reset_shipping_method .collapse">
+<h2>reset_shipping_method()
+        </h2>
+<pre>reset_shipping_method() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_save_session"></a><div class="element clickable method public method_save_session" data-toggle="collapse" data-target=".method_save_session .collapse">
+<h2>save session to data</h2>
+<pre>save_session() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_billing_address"></a><div class="element clickable method public method_set_billing_address" data-toggle="collapse" data-target=".method_set_billing_address .collapse">
+<h2>set_billing_address()
+        </h2>
+<pre>set_billing_address($address_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$address_id</h4></div>
+</div></div>
+</div>
+<a id="method_set_billing_method"></a><div class="element clickable method public method_set_billing_method" data-toggle="collapse" data-target=".method_set_billing_method .collapse">
+<h2>set_billing_method()
+        </h2>
+<pre>set_billing_method($billing_array) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$billing_array</h4></div>
+</div></div>
+</div>
+<a id="method_set_raw_billing_address"></a><div class="element clickable method public method_set_raw_billing_address" data-toggle="collapse" data-target=".method_set_raw_billing_address .collapse">
+<h2>set_raw_billing_address()
+        </h2>
+<pre>set_raw_billing_address($data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data</h4></div>
+</div></div>
+</div>
+<a id="method_set_raw_shipping_address"></a><div class="element clickable method public method_set_raw_shipping_address" data-toggle="collapse" data-target=".method_set_raw_shipping_address .collapse">
+<h2>Set raw shipping address</h2>
+<pre>set_raw_shipping_address($data) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data</h4></div>
+</div></div>
+</div>
+<a id="method_set_shipping_address"></a><div class="element clickable method public method_set_shipping_address" data-toggle="collapse" data-target=".method_set_shipping_address .collapse">
+<h2>Set shipping address</h2>
+<pre>set_shipping_address($address_id) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$address_id</h4></div>
+</div></div>
+</div>
+<a id="method_set_shipping_method"></a><div class="element clickable method public method_set_shipping_method" data-toggle="collapse" data-target=".method_set_shipping_method .collapse">
+<h2>set_shipping_method()
+        </h2>
+<pre>set_shipping_method($shipping_array, $calculate_total) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$shipping_array</h4></div>
+<div class="subelement argument"><h4>$calculate_total</h4></div>
+</div></div>
+</div>
+<a id="method_set_shipping_quotes"></a><div class="element clickable method public method_set_shipping_quotes" data-toggle="collapse" data-target=".method_set_shipping_quotes .collapse">
+<h2>set_shipping_quotes()
+        </h2>
+<pre>set_shipping_quotes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_synchronize_with_database"></a><div class="element clickable method public method_synchronize_with_database" data-toggle="collapse" data-target=".method_synchronize_with_database .collapse">
+<h2>Synchronize shopping cart contents with database</h2>
+<pre>synchronize_with_database() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
+<h2>Update Shopping Cart</h2>
+<pre>update() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_billing_address"> </a><div class="element clickable property protected property_billing_address" data-toggle="collapse" data-target=".property_billing_address .collapse">
+<h2></h2>
+<pre>$billing_address : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ci"> </a><div class="element clickable property protected property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_content_type"> </a><div class="element clickable property protected property_content_type" data-toggle="collapse" data-target=".property_content_type .collapse">
+<h2></h2>
+<pre>$content_type : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_contents"> </a><div class="element clickable property protected property_contents" data-toggle="collapse" data-target=".property_contents .collapse">
+<h2></h2>
+<pre>$contents : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_products_in_stock"> </a><div class="element clickable property protected property_products_in_stock" data-toggle="collapse" data-target=".property_products_in_stock .collapse">
+<h2></h2>
+<pre>$products_in_stock : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_shipping_address"> </a><div class="element clickable property protected property_shipping_address" data-toggle="collapse" data-target=".property_shipping_address .collapse">
+<h2></h2>
+<pre>$shipping_address : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_subtotal"> </a><div class="element clickable property protected property_subtotal" data-toggle="collapse" data-target=".property_subtotal .collapse">
+<h2></h2>
+<pre>$subtotal : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_tax"> </a><div class="element clickable property protected property_tax" data-toggle="collapse" data-target=".property_tax .collapse">
+<h2></h2>
+<pre>$tax : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_tax_groups"> </a><div class="element clickable property protected property_tax_groups" data-toggle="collapse" data-target=".property_tax_groups .collapse">
+<h2></h2>
+<pre>$tax_groups : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_total"> </a><div class="element clickable property protected property_total" data-toggle="collapse" data-target=".property_total .collapse">
+<h2></h2>
+<pre>$total : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_weight"> </a><div class="element clickable property protected property_weight" data-toggle="collapse" data-target=".property_weight .collapse">
+<h2></h2>
+<pre>$weight : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:10+07:00.<br></footer></div>
+</div>
+</body>
+</html>

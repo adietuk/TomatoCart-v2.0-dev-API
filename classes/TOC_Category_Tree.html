@@ -1,0 +1,1669 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \TOC_Category_Tree</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_buildBranchArray" title="buildBranchArray :: "><span class="description">buildBranchArray()
+        </span><pre>buildBranchArray()</pre></a></li>
+<li class="method public "><a href="#method_build_branch" title="build_branch :: "><span class="description">build_branch()
+        </span><pre>build_branch()</pre></a></li>
+<li class="method public "><a href="#method_build_branch_array" title="build_branch_array :: "><span class="description">build_branch_array()
+        </span><pre>build_branch_array()</pre></a></li>
+<li class="method public "><a href="#method_build_bread_crumb" title="build_bread_crumb :: "><span class="description">build_bread_crumb()
+        </span><pre>build_bread_crumb()</pre></a></li>
+<li class="method public "><a href="#method_build_breadcrumb" title="build_breadcrumb :: "><span class="description">build_breadcrumb()
+        </span><pre>build_breadcrumb()</pre></a></li>
+<li class="method public "><a href="#method_build_check_tree" title="build_check_tree :: "><span class="description">build_check_tree()
+        </span><pre>build_check_tree()</pre></a></li>
+<li class="method public "><a href="#method_build_ext_json_tree" title="build_ext_json_tree :: "><span class="description">build_ext_json_tree()
+        </span><pre>build_ext_json_tree()</pre></a></li>
+<li class="method public "><a href="#method_build_tree" title="build_tree :: "><span class="description">build_tree()
+        </span><pre>build_tree()</pre></a></li>
+<li class="method public "><a href="#method_calculate_category_product_count" title="calculate_category_product_count :: "><span class="description">calculate_category_product_count()
+        </span><pre>calculate_category_product_count()</pre></a></li>
+<li class="method public "><a href="#method_exists" title="exists :: "><span class="description">exists()
+        </span><pre>exists()</pre></a></li>
+<li class="method public "><a href="#method_get_category_name" title="get_category_name :: "><span class="description">get_category_name()
+        </span><pre>get_category_name()</pre></a></li>
+<li class="method public "><a href="#method_get_category_url" title="get_category_url :: "><span class="description">get_category_url()
+        </span><pre>get_category_url()</pre></a></li>
+<li class="method public "><a href="#method_get_children" title="get_children :: "><span class="description">get_children()
+        </span><pre>get_children()</pre></a></li>
+<li class="method public "><a href="#method_get_data" title="get_data :: "><span class="description">get_data()
+        </span><pre>get_data()</pre></a></li>
+<li class="method public "><a href="#method_get_full_cpath" title="get_full_cpath :: "><span class="description">get_full_cpath()
+        </span><pre>get_full_cpath()</pre></a></li>
+<li class="method public "><a href="#method_get_number_of_products" title="get_number_of_products :: "><span class="description">get_number_of_products()
+        </span><pre>get_number_of_products()</pre></a></li>
+<li class="method public "><a href="#method_get_parent_categories" title="get_parent_categories :: "><span class="description">get_parent_categories()
+        </span><pre>get_parent_categories()</pre></a></li>
+<li class="method public "><a href="#method_get_tree" title="get_tree :: "><span class="description">get_tree()
+        </span><pre>get_tree()</pre></a></li>
+<li class="method public "><a href="#method_initialize" title="initialize :: "><span class="description">initialize()
+        </span><pre>initialize()</pre></a></li>
+<li class="method public "><a href="#method_reset" title="reset :: "><span class="description">reset()
+        </span><pre>reset()</pre></a></li>
+<li class="method public "><a href="#method_set_breadcrumb_separator" title="set_breadcrumb_separator :: "><span class="description">set_breadcrumb_separator()
+        </span><pre>set_breadcrumb_separator()</pre></a></li>
+<li class="method public "><a href="#method_set_breadcrumb_usage" title="set_breadcrumb_usage :: "><span class="description">set_breadcrumb_usage()
+        </span><pre>set_breadcrumb_usage()</pre></a></li>
+<li class="method public "><a href="#method_set_category_path" title="set_category_path :: "><span class="description">set_category_path()
+        </span><pre>set_category_path()</pre></a></li>
+<li class="method public "><a href="#method_set_category_path_string" title="set_category_path_string :: "><span class="description">set_category_path_string()
+        </span><pre>set_category_path_string()</pre></a></li>
+<li class="method public "><a href="#method_set_category_product_count_string" title="set_category_product_count_string :: "><span class="description">set_category_product_count_string()
+        </span><pre>set_category_product_count_string()</pre></a></li>
+<li class="method public "><a href="#method_set_child_string" title="set_child_string :: "><span class="description">set_child_string()
+        </span><pre>set_child_string()</pre></a></li>
+<li class="method public "><a href="#method_set_data" title="set_data :: "><span class="description">set_data()
+        </span><pre>set_data()</pre></a></li>
+<li class="method public "><a href="#method_set_follow_category_path" title="set_follow_category_path :: "><span class="description">set_follow_category_path()
+        </span><pre>set_follow_category_path()</pre></a></li>
+<li class="method public "><a href="#method_set_maximum_level" title="set_maximum_level :: "><span class="description">set_maximum_level()
+        </span><pre>set_maximum_level()</pre></a></li>
+<li class="method public "><a href="#method_set_parent_group_string" title="set_parent_group_string :: "><span class="description">set_parent_group_string()
+        </span><pre>set_parent_group_string()</pre></a></li>
+<li class="method public "><a href="#method_set_parent_string" title="set_parent_string :: "><span class="description">set_parent_string()
+        </span><pre>set_parent_string()</pre></a></li>
+<li class="method public "><a href="#method_set_root_category_id" title="set_root_category_id :: "><span class="description">set_root_category_id()
+        </span><pre>set_root_category_id()</pre></a></li>
+<li class="method public "><a href="#method_set_root_string" title="set_root_string :: "><span class="description">set_root_string()
+        </span><pre>set_root_string()</pre></a></li>
+<li class="method public "><a href="#method_set_show_category_product_count" title="set_show_category_product_count :: "><span class="description">set_show_category_product_count()
+        </span><pre>set_show_category_product_count()</pre></a></li>
+<li class="method public "><a href="#method_set_spacer_string" title="set_spacer_string :: "><span class="description">set_spacer_string()
+        </span><pre>set_spacer_string()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_breadcrumb_separator" title="$breadcrumb_separator :: "><span class="description"></span><pre>$breadcrumb_separator</pre></a></li>
+<li class="property private "><a href="#property_breadcrumb_usage" title="$breadcrumb_usage :: "><span class="description"></span><pre>$breadcrumb_usage</pre></a></li>
+<li class="property private "><a href="#property_category_product_count_end_string" title="$category_product_count_end_string :: "><span class="description"></span><pre>$category_product_count_end_string</pre></a></li>
+<li class="property private "><a href="#property_category_product_count_start_string" title="$category_product_count_start_string :: "><span class="description"></span><pre>$category_product_count_start_string</pre></a></li>
+<li class="property private "><a href="#property_child_end_string" title="$child_end_string :: "><span class="description"></span><pre>$child_end_string</pre></a></li>
+<li class="property private "><a href="#property_child_start_string" title="$child_start_string :: "><span class="description"></span><pre>$child_start_string</pre></a></li>
+<li class="property private "><a href="#property_ci" title="$ci :: "><span class="description"></span><pre>$ci</pre></a></li>
+<li class="property private "><a href="#property_cpath_array" title="$cpath_array :: "><span class="description"></span><pre>$cpath_array</pre></a></li>
+<li class="property private "><a href="#property_cpath_end_string" title="$cpath_end_string :: "><span class="description"></span><pre>$cpath_end_string</pre></a></li>
+<li class="property private "><a href="#property_cpath_start_string" title="$cpath_start_string :: "><span class="description"></span><pre>$cpath_start_string</pre></a></li>
+<li class="property private "><a href="#property_data" title="$data :: "><span class="description"></span><pre>$data</pre></a></li>
+<li class="property private "><a href="#property_follow_cpath" title="$follow_cpath :: "><span class="description"></span><pre>$follow_cpath</pre></a></li>
+<li class="property private "><a href="#property_load_all_categories" title="$load_all_categories :: "><span class="description"></span><pre>$load_all_categories</pre></a></li>
+<li class="property private "><a href="#property_load_from_cache" title="$load_from_cache :: "><span class="description"></span><pre>$load_from_cache</pre></a></li>
+<li class="property private "><a href="#property_load_from_database" title="$load_from_database :: "><span class="description"></span><pre>$load_from_database</pre></a></li>
+<li class="property private "><a href="#property_max_level" title="$max_level :: "><span class="description"></span><pre>$max_level</pre></a></li>
+<li class="property private "><a href="#property_parent_end_string" title="$parent_end_string :: "><span class="description"></span><pre>$parent_end_string</pre></a></li>
+<li class="property private "><a href="#property_parent_group_end_string" title="$parent_group_end_string :: "><span class="description"></span><pre>$parent_group_end_string</pre></a></li>
+<li class="property private "><a href="#property_parent_group_start_string" title="$parent_group_start_string :: "><span class="description"></span><pre>$parent_group_start_string</pre></a></li>
+<li class="property private "><a href="#property_parent_start_string" title="$parent_start_string :: "><span class="description"></span><pre>$parent_start_string</pre></a></li>
+<li class="property private "><a href="#property_root_category_id" title="$root_category_id :: "><span class="description"></span><pre>$root_category_id</pre></a></li>
+<li class="property private "><a href="#property_root_end_string" title="$root_end_string :: "><span class="description"></span><pre>$root_end_string</pre></a></li>
+<li class="property private "><a href="#property_root_start_string" title="$root_start_string :: "><span class="description"></span><pre>$root_start_string</pre></a></li>
+<li class="property private "><a href="#property_show_category_product_count" title="$show_category_product_count :: "><span class="description"></span><pre>$show_category_product_count</pre></a></li>
+<li class="property private "><a href="#property_spacer_multiplier" title="$spacer_multiplier :: "><span class="description"></span><pre>$spacer_multiplier</pre></a></li>
+<li class="property private "><a href="#property_spacer_string" title="$spacer_string :: "><span class="description"></span><pre>$spacer_string</pre></a></li>
+</ul>
+</li>
+</ul>
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_build_branch" title="build_branch :: Build branch"><span class="description">Build branch</span><pre>build_branch()</pre></a></li>
+<li class="method public "><a href="#method_build_branch_array" title="build_branch_array :: Build branch as array"><span class="description">Build branch as array</span><pre>build_branch_array()</pre></a></li>
+<li class="method public "><a href="#method_build_breadcrumb" title="build_breadcrumb :: Build category breadcrumb"><span class="description">Build category breadcrumb</span><pre>build_breadcrumb()</pre></a></li>
+<li class="method public "><a href="#method_build_tree" title="build_tree :: Build category tree"><span class="description">Build category tree</span><pre>build_tree()</pre></a></li>
+<li class="method public "><a href="#method_calculate_category_product_count" title="calculate_category_product_count :: Calculate category product count"><span class="description">Calculate category product count</span><pre>calculate_category_product_count()</pre></a></li>
+<li class="method public "><a href="#method_exists" title="exists :: Check whether category id exists"><span class="description">Check whether category id exists</span><pre>exists()</pre></a></li>
+<li class="method public "><a href="#method_get_category_name" title="get_category_name :: get category name"><span class="description">get category name</span><pre>get_category_name()</pre></a></li>
+<li class="method public "><a href="#method_get_category_url" title="get_category_url :: get category url"><span class="description">get category url</span><pre>get_category_url()</pre></a></li>
+<li class="method public "><a href="#method_get_children" title="get_children :: Get children"><span class="description">Get children</span><pre>get_children()</pre></a></li>
+<li class="method public "><a href="#method_get_cid_from_sef_url" title="get_cid_from_sef_url :: Get category id from friendly url"><span class="description">Get category id from friendly url</span><pre>get_cid_from_sef_url()</pre></a></li>
+<li class="method public "><a href="#method_get_data" title="get_data :: Get category data"><span class="description">Get category data</span><pre>get_data()</pre></a></li>
+<li class="method public "><a href="#method_get_full_cpath" title="get_full_cpath :: get full cpath"><span class="description">get full cpath</span><pre>get_full_cpath()</pre></a></li>
+<li class="method public "><a href="#method_get_full_cpath_info" title="get_full_cpath_info :: get full cpath info"><span class="description">get full cpath info</span><pre>get_full_cpath_info()</pre></a></li>
+<li class="method public "><a href="#method_get_number_of_products" title="get_number_of_products :: Get number of products"><span class="description">Get number of products</span><pre>get_number_of_products()</pre></a></li>
+<li class="method public "><a href="#method_get_parent_categories" title="get_parent_categories :: get category product count string"><span class="description">get category product count string</span><pre>get_parent_categories()</pre></a></li>
+<li class="method public "><a href="#method_get_sef_url" title="get_sef_url :: Build search enginee friendly url"><span class="description">Build search enginee friendly url</span><pre>get_sef_url()</pre></a></li>
+<li class="method public "><a href="#method_get_tree" title="get_tree :: Get category tree"><span class="description">Get category tree</span><pre>get_tree()</pre></a></li>
+<li class="method public "><a href="#method_parse_cpath" title="parse_cpath :: Compile search enginee friendly url"><span class="description">Compile search enginee friendly url</span><pre>parse_cpath()</pre></a></li>
+<li class="method public "><a href="#method_reset" title="reset :: Reset category tree"><span class="description">Reset category tree</span><pre>reset()</pre></a></li>
+<li class="method public "><a href="#method_set_breadcrumb_separator" title="set_breadcrumb_separator :: set breadcrumb separator"><span class="description">set breadcrumb separator</span><pre>set_breadcrumb_separator()</pre></a></li>
+<li class="method public "><a href="#method_set_breadcrumb_usage" title="set_breadcrumb_usage :: set breadcrumb usage"><span class="description">set breadcrumb usage</span><pre>set_breadcrumb_usage()</pre></a></li>
+<li class="method public "><a href="#method_set_category_path" title="set_category_path :: set category path"><span class="description">set category path</span><pre>set_category_path()</pre></a></li>
+<li class="method public "><a href="#method_set_category_path_string" title="set_category_path_string :: set category path string"><span class="description">set category path string</span><pre>set_category_path_string()</pre></a></li>
+<li class="method public "><a href="#method_set_category_product_count_string" title="set_category_product_count_string :: set category product count string"><span class="description">set category product count string</span><pre>set_category_product_count_string()</pre></a></li>
+<li class="method public "><a href="#method_set_child_string" title="set_child_string :: set child string"><span class="description">set child string</span><pre>set_child_string()</pre></a></li>
+<li class="method public "><a href="#method_set_data" title="set_data :: "><span class="description">set_data()
+        </span><pre>set_data()</pre></a></li>
+<li class="method public "><a href="#method_set_follow_category_path" title="set_follow_category_path :: set follow category path"><span class="description">set follow category path</span><pre>set_follow_category_path()</pre></a></li>
+<li class="method public "><a href="#method_set_maximum_level" title="set_maximum_level :: set maximum level"><span class="description">set maximum level</span><pre>set_maximum_level()</pre></a></li>
+<li class="method public "><a href="#method_set_parent_group_string" title="set_parent_group_string :: set group string"><span class="description">set group string</span><pre>set_parent_group_string()</pre></a></li>
+<li class="method public "><a href="#method_set_parent_string" title="set_parent_string :: set parent string"><span class="description">set parent string</span><pre>set_parent_string()</pre></a></li>
+<li class="method public "><a href="#method_set_root_category_id" title="set_root_category_id :: set root category id"><span class="description">set root category id</span><pre>set_root_category_id()</pre></a></li>
+<li class="method public "><a href="#method_set_root_string" title="set_root_string :: set root string"><span class="description">set root string</span><pre>set_root_string()</pre></a></li>
+<li class="method public "><a href="#method_set_show_category_product_count" title="set_show_category_product_count :: set show category product count"><span class="description">set show category product count</span><pre>set_show_category_product_count()</pre></a></li>
+<li class="method public "><a href="#method_set_spacer_string" title="set_spacer_string :: set spacer string"><span class="description">set spacer string</span><pre>set_spacer_string()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_breadcrumb_separator" title="$breadcrumb_separator :: Breadcrumb separator"><span class="description"></span><pre>$breadcrumb_separator</pre></a></li>
+<li class="property private "><a href="#property_breadcrumb_usage" title="$breadcrumb_usage :: Breadcrumb usage"><span class="description"></span><pre>$breadcrumb_usage</pre></a></li>
+<li class="property private "><a href="#property_category_product_count_end_string" title="$category_product_count_end_string :: category product count end string"><span class="description"></span><pre>$category_product_count_end_string</pre></a></li>
+<li class="property private "><a href="#property_category_product_count_start_string" title="$category_product_count_start_string :: category product count start string"><span class="description"></span><pre>$category_product_count_start_string</pre></a></li>
+<li class="property private "><a href="#property_child_end_string" title="$child_end_string :: Child end string"><span class="description"></span><pre>$child_end_string</pre></a></li>
+<li class="property private "><a href="#property_child_start_string" title="$child_start_string :: Child start string"><span class="description"></span><pre>$child_start_string</pre></a></li>
+<li class="property private "><a href="#property_ci" title="$ci :: Cached data"><span class="description"></span><pre>$ci</pre></a></li>
+<li class="property private "><a href="#property_cpath_array" title="$cpath_array :: Cpath array"><span class="description"></span><pre>$cpath_array</pre></a></li>
+<li class="property private "><a href="#property_cpath_end_string" title="$cpath_end_string :: Cpath end string"><span class="description"></span><pre>$cpath_end_string</pre></a></li>
+<li class="property private "><a href="#property_cpath_start_string" title="$cpath_start_string :: Cpath start string"><span class="description"></span><pre>$cpath_start_string</pre></a></li>
+<li class="property private "><a href="#property_data" title="$data :: Category data"><span class="description"></span><pre>$data</pre></a></li>
+<li class="property private "><a href="#property_follow_cpath" title="$follow_cpath :: Follow cpath"><span class="description"></span><pre>$follow_cpath</pre></a></li>
+<li class="property private "><a href="#property_max_level" title="$max_level :: Category max level"><span class="description"></span><pre>$max_level</pre></a></li>
+<li class="property private "><a href="#property_parent_end_string" title="$parent_end_string :: Parent end string"><span class="description"></span><pre>$parent_end_string</pre></a></li>
+<li class="property private "><a href="#property_parent_group_end_string" title="$parent_group_end_string :: Parent group end string"><span class="description"></span><pre>$parent_group_end_string</pre></a></li>
+<li class="property private "><a href="#property_parent_group_start_string" title="$parent_group_start_string :: Parent group start string"><span class="description"></span><pre>$parent_group_start_string</pre></a></li>
+<li class="property private "><a href="#property_parent_start_string" title="$parent_start_string :: Parent start string"><span class="description"></span><pre>$parent_start_string</pre></a></li>
+<li class="property private "><a href="#property_root_category_id" title="$root_category_id :: Root category id"><span class="description"></span><pre>$root_category_id</pre></a></li>
+<li class="property private "><a href="#property_root_end_string" title="$root_end_string :: Root end string"><span class="description"></span><pre>$root_end_string</pre></a></li>
+<li class="property private "><a href="#property_root_start_string" title="$root_start_string :: Root start string"><span class="description"></span><pre>$root_start_string</pre></a></li>
+<li class="property private "><a href="#property_show_category_product_count" title="$show_category_product_count :: show category product count"><span class="description"></span><pre>$show_category_product_count</pre></a></li>
+<li class="property private "><a href="#property_spacer_multiplier" title="$spacer_multiplier :: Spacer multiplier"><span class="description"></span><pre>$spacer_multiplier</pre></a></li>
+<li class="property private "><a href="#property_spacer_string" title="$spacer_string :: Spacer string"><span class="description"></span><pre>$spacer_string</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\TOC_Category_Tree"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Category_Tree.html">TOC_Category_Tree</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct($config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$config</h4></div>
+</div></div>
+</div>
+<a id="method_buildBranchArray"></a><div class="element clickable method public method_buildBranchArray" data-toggle="collapse" data-target=".method_buildBranchArray .collapse">
+<h2>buildBranchArray()
+        </h2>
+<pre>buildBranchArray($parent_id, $level, $result) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+<div class="subelement argument"><h4>$result</h4></div>
+</div></div>
+</div>
+<a id="method_build_branch"></a><div class="element clickable method public method_build_branch" data-toggle="collapse" data-target=".method_build_branch .collapse">
+<h2>build_branch()
+        </h2>
+<pre>build_branch($parent_id, $level) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+</div></div>
+</div>
+<a id="method_build_branch_array"></a><div class="element clickable method public method_build_branch_array" data-toggle="collapse" data-target=".method_build_branch_array .collapse">
+<h2>build_branch_array()
+        </h2>
+<pre>build_branch_array($parent_id, $level, $result) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+<div class="subelement argument"><h4>$result</h4></div>
+</div></div>
+</div>
+<a id="method_build_bread_crumb"></a><div class="element clickable method public method_build_bread_crumb" data-toggle="collapse" data-target=".method_build_bread_crumb .collapse">
+<h2>build_bread_crumb()
+        </h2>
+<pre>build_bread_crumb($category_id, $level) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+</div></div>
+</div>
+<a id="method_build_breadcrumb"></a><div class="element clickable method public method_build_breadcrumb" data-toggle="collapse" data-target=".method_build_breadcrumb .collapse">
+<h2>build_breadcrumb()
+        </h2>
+<pre>build_breadcrumb($category_id, $level) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+</div></div>
+</div>
+<a id="method_build_check_tree"></a><div class="element clickable method public method_build_check_tree" data-toggle="collapse" data-target=".method_build_check_tree .collapse">
+<h2>build_check_tree()
+        </h2>
+<pre>build_check_tree($parent_id, $checked) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<div class="subelement argument"><h4>$checked</h4></div>
+</div></div>
+</div>
+<a id="method_build_ext_json_tree"></a><div class="element clickable method public method_build_ext_json_tree" data-toggle="collapse" data-target=".method_build_ext_json_tree .collapse">
+<h2>build_ext_json_tree()
+        </h2>
+<pre>build_ext_json_tree($parent_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+</div></div>
+</div>
+<a id="method_build_tree"></a><div class="element clickable method public method_build_tree" data-toggle="collapse" data-target=".method_build_tree .collapse">
+<h2>build_tree()
+        </h2>
+<pre>build_tree() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_calculate_category_product_count"></a><div class="element clickable method public method_calculate_category_product_count" data-toggle="collapse" data-target=".method_calculate_category_product_count .collapse">
+<h2>calculate_category_product_count()
+        </h2>
+<pre>calculate_category_product_count() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_exists"></a><div class="element clickable method public method_exists" data-toggle="collapse" data-target=".method_exists .collapse">
+<h2>exists()
+        </h2>
+<pre>exists($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_get_category_name"></a><div class="element clickable method public method_get_category_name" data-toggle="collapse" data-target=".method_get_category_name .collapse">
+<h2>get_category_name()
+        </h2>
+<pre>get_category_name($cpath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+</div></div>
+</div>
+<a id="method_get_category_url"></a><div class="element clickable method public method_get_category_url" data-toggle="collapse" data-target=".method_get_category_url .collapse">
+<h2>get_category_url()
+        </h2>
+<pre>get_category_url($cpath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+</div></div>
+</div>
+<a id="method_get_children"></a><div class="element clickable method public method_get_children" data-toggle="collapse" data-target=".method_get_children .collapse">
+<h2>get_children()
+        </h2>
+<pre>get_children($category_id, $array) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$array</h4></div>
+</div></div>
+</div>
+<a id="method_get_data"></a><div class="element clickable method public method_get_data" data-toggle="collapse" data-target=".method_get_data .collapse">
+<h2>get_data()
+        </h2>
+<pre>get_data($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_get_full_cpath"></a><div class="element clickable method public method_get_full_cpath" data-toggle="collapse" data-target=".method_get_full_cpath .collapse">
+<h2>get_full_cpath()
+        </h2>
+<pre>get_full_cpath($categories_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$categories_id</h4></div>
+</div></div>
+</div>
+<a id="method_get_number_of_products"></a><div class="element clickable method public method_get_number_of_products" data-toggle="collapse" data-target=".method_get_number_of_products .collapse">
+<h2>get_number_of_products()
+        </h2>
+<pre>get_number_of_products($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_get_parent_categories"></a><div class="element clickable method public method_get_parent_categories" data-toggle="collapse" data-target=".method_get_parent_categories .collapse">
+<h2>get_parent_categories()
+        </h2>
+<pre>get_parent_categories($category_id, $categories) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$categories</h4></div>
+</div></div>
+</div>
+<a id="method_get_tree"></a><div class="element clickable method public method_get_tree" data-toggle="collapse" data-target=".method_get_tree .collapse">
+<h2>get_tree()
+        </h2>
+<pre>get_tree($parent_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+</div></div>
+</div>
+<a id="method_initialize"></a><div class="element clickable method public method_initialize" data-toggle="collapse" data-target=".method_initialize .collapse">
+<h2>initialize()
+        </h2>
+<pre>initialize($config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$config</h4></div>
+</div></div>
+</div>
+<a id="method_reset"></a><div class="element clickable method public method_reset" data-toggle="collapse" data-target=".method_reset .collapse">
+<h2>reset()
+        </h2>
+<pre>reset() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set_breadcrumb_separator"></a><div class="element clickable method public method_set_breadcrumb_separator" data-toggle="collapse" data-target=".method_set_breadcrumb_separator .collapse">
+<h2>set_breadcrumb_separator()
+        </h2>
+<pre>set_breadcrumb_separator($breadcrumb_separator) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$breadcrumb_separator</h4></div>
+</div></div>
+</div>
+<a id="method_set_breadcrumb_usage"></a><div class="element clickable method public method_set_breadcrumb_usage" data-toggle="collapse" data-target=".method_set_breadcrumb_usage .collapse">
+<h2>set_breadcrumb_usage()
+        </h2>
+<pre>set_breadcrumb_usage($breadcrumb_usage) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$breadcrumb_usage</h4></div>
+</div></div>
+</div>
+<a id="method_set_category_path"></a><div class="element clickable method public method_set_category_path" data-toggle="collapse" data-target=".method_set_category_path .collapse">
+<h2>set_category_path()
+        </h2>
+<pre>set_category_path($cpath, $cpath_start_string, $cpath_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<div class="subelement argument"><h4>$cpath_start_string</h4></div>
+<div class="subelement argument"><h4>$cpath_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_category_path_string"></a><div class="element clickable method public method_set_category_path_string" data-toggle="collapse" data-target=".method_set_category_path_string .collapse">
+<h2>set_category_path_string()
+        </h2>
+<pre>set_category_path_string($cpath_start_string, $cpath_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath_start_string</h4></div>
+<div class="subelement argument"><h4>$cpath_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_category_product_count_string"></a><div class="element clickable method public method_set_category_product_count_string" data-toggle="collapse" data-target=".method_set_category_product_count_string .collapse">
+<h2>set_category_product_count_string()
+        </h2>
+<pre>set_category_product_count_string($category_product_count_start_string, $category_product_count_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_product_count_start_string</h4></div>
+<div class="subelement argument"><h4>$category_product_count_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_child_string"></a><div class="element clickable method public method_set_child_string" data-toggle="collapse" data-target=".method_set_child_string .collapse">
+<h2>set_child_string()
+        </h2>
+<pre>set_child_string($child_start_string, $child_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$child_start_string</h4></div>
+<div class="subelement argument"><h4>$child_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_data"></a><div class="element clickable method public method_set_data" data-toggle="collapse" data-target=".method_set_data .collapse">
+<h2>set_data()
+        </h2>
+<pre>set_data($data_array) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data_array</h4></div>
+</div></div>
+</div>
+<a id="method_set_follow_category_path"></a><div class="element clickable method public method_set_follow_category_path" data-toggle="collapse" data-target=".method_set_follow_category_path .collapse">
+<h2>set_follow_category_path()
+        </h2>
+<pre>set_follow_category_path($follow_cpath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$follow_cpath</h4></div>
+</div></div>
+</div>
+<a id="method_set_maximum_level"></a><div class="element clickable method public method_set_maximum_level" data-toggle="collapse" data-target=".method_set_maximum_level .collapse">
+<h2>set_maximum_level()
+        </h2>
+<pre>set_maximum_level($max_level) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$max_level</h4></div>
+</div></div>
+</div>
+<a id="method_set_parent_group_string"></a><div class="element clickable method public method_set_parent_group_string" data-toggle="collapse" data-target=".method_set_parent_group_string .collapse">
+<h2>set_parent_group_string()
+        </h2>
+<pre>set_parent_group_string($parent_group_start_string, $parent_group_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_group_start_string</h4></div>
+<div class="subelement argument"><h4>$parent_group_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_parent_string"></a><div class="element clickable method public method_set_parent_string" data-toggle="collapse" data-target=".method_set_parent_string .collapse">
+<h2>set_parent_string()
+        </h2>
+<pre>set_parent_string($parent_start_string, $parent_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_start_string</h4></div>
+<div class="subelement argument"><h4>$parent_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_root_category_id"></a><div class="element clickable method public method_set_root_category_id" data-toggle="collapse" data-target=".method_set_root_category_id .collapse">
+<h2>set_root_category_id()
+        </h2>
+<pre>set_root_category_id($root_category_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$root_category_id</h4></div>
+</div></div>
+</div>
+<a id="method_set_root_string"></a><div class="element clickable method public method_set_root_string" data-toggle="collapse" data-target=".method_set_root_string .collapse">
+<h2>set_root_string()
+        </h2>
+<pre>set_root_string($root_start_string, $root_end_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$root_start_string</h4></div>
+<div class="subelement argument"><h4>$root_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_show_category_product_count"></a><div class="element clickable method public method_set_show_category_product_count" data-toggle="collapse" data-target=".method_set_show_category_product_count .collapse">
+<h2>set_show_category_product_count()
+        </h2>
+<pre>set_show_category_product_count($show_category_product_count) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$show_category_product_count</h4></div>
+</div></div>
+</div>
+<a id="method_set_spacer_string"></a><div class="element clickable method public method_set_spacer_string" data-toggle="collapse" data-target=".method_set_spacer_string .collapse">
+<h2>set_spacer_string()
+        </h2>
+<pre>set_spacer_string($spacer_string, $spacer_multiplier) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$spacer_string</h4></div>
+<div class="subelement argument"><h4>$spacer_multiplier</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_breadcrumb_separator"> </a><div class="element clickable property private property_breadcrumb_separator" data-toggle="collapse" data-target=".property_breadcrumb_separator .collapse">
+<h2></h2>
+<pre>$breadcrumb_separator </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_breadcrumb_usage"> </a><div class="element clickable property private property_breadcrumb_usage" data-toggle="collapse" data-target=".property_breadcrumb_usage .collapse">
+<h2></h2>
+<pre>$breadcrumb_usage </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_category_product_count_end_string"> </a><div class="element clickable property private property_category_product_count_end_string" data-toggle="collapse" data-target=".property_category_product_count_end_string .collapse">
+<h2></h2>
+<pre>$category_product_count_end_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_category_product_count_start_string"> </a><div class="element clickable property private property_category_product_count_start_string" data-toggle="collapse" data-target=".property_category_product_count_start_string .collapse">
+<h2></h2>
+<pre>$category_product_count_start_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_child_end_string"> </a><div class="element clickable property private property_child_end_string" data-toggle="collapse" data-target=".property_child_end_string .collapse">
+<h2></h2>
+<pre>$child_end_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_child_start_string"> </a><div class="element clickable property private property_child_start_string" data-toggle="collapse" data-target=".property_child_start_string .collapse">
+<h2></h2>
+<pre>$child_start_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ci"> </a><div class="element clickable property private property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_cpath_array"> </a><div class="element clickable property private property_cpath_array" data-toggle="collapse" data-target=".property_cpath_array .collapse">
+<h2></h2>
+<pre>$cpath_array </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_cpath_end_string"> </a><div class="element clickable property private property_cpath_end_string" data-toggle="collapse" data-target=".property_cpath_end_string .collapse">
+<h2></h2>
+<pre>$cpath_end_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_cpath_start_string"> </a><div class="element clickable property private property_cpath_start_string" data-toggle="collapse" data-target=".property_cpath_start_string .collapse">
+<h2></h2>
+<pre>$cpath_start_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_data"> </a><div class="element clickable property private property_data" data-toggle="collapse" data-target=".property_data .collapse">
+<h2></h2>
+<pre>$data </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_follow_cpath"> </a><div class="element clickable property private property_follow_cpath" data-toggle="collapse" data-target=".property_follow_cpath .collapse">
+<h2></h2>
+<pre>$follow_cpath </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_load_all_categories"> </a><div class="element clickable property private property_load_all_categories" data-toggle="collapse" data-target=".property_load_all_categories .collapse">
+<h2></h2>
+<pre>$load_all_categories </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_load_from_cache"> </a><div class="element clickable property private property_load_from_cache" data-toggle="collapse" data-target=".property_load_from_cache .collapse">
+<h2></h2>
+<pre>$load_from_cache </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_load_from_database"> </a><div class="element clickable property private property_load_from_database" data-toggle="collapse" data-target=".property_load_from_database .collapse">
+<h2></h2>
+<pre>$load_from_database </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_max_level"> </a><div class="element clickable property private property_max_level" data-toggle="collapse" data-target=".property_max_level .collapse">
+<h2></h2>
+<pre>$max_level </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parent_end_string"> </a><div class="element clickable property private property_parent_end_string" data-toggle="collapse" data-target=".property_parent_end_string .collapse">
+<h2></h2>
+<pre>$parent_end_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parent_group_end_string"> </a><div class="element clickable property private property_parent_group_end_string" data-toggle="collapse" data-target=".property_parent_group_end_string .collapse">
+<h2></h2>
+<pre>$parent_group_end_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parent_group_start_string"> </a><div class="element clickable property private property_parent_group_start_string" data-toggle="collapse" data-target=".property_parent_group_start_string .collapse">
+<h2></h2>
+<pre>$parent_group_start_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parent_start_string"> </a><div class="element clickable property private property_parent_start_string" data-toggle="collapse" data-target=".property_parent_start_string .collapse">
+<h2></h2>
+<pre>$parent_start_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_root_category_id"> </a><div class="element clickable property private property_root_category_id" data-toggle="collapse" data-target=".property_root_category_id .collapse">
+<h2></h2>
+<pre>$root_category_id </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_root_end_string"> </a><div class="element clickable property private property_root_end_string" data-toggle="collapse" data-target=".property_root_end_string .collapse">
+<h2></h2>
+<pre>$root_end_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_root_start_string"> </a><div class="element clickable property private property_root_start_string" data-toggle="collapse" data-target=".property_root_start_string .collapse">
+<h2></h2>
+<pre>$root_start_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_show_category_product_count"> </a><div class="element clickable property private property_show_category_product_count" data-toggle="collapse" data-target=".property_show_category_product_count .collapse">
+<h2></h2>
+<pre>$show_category_product_count </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_spacer_multiplier"> </a><div class="element clickable property private property_spacer_multiplier" data-toggle="collapse" data-target=".property_spacer_multiplier .collapse">
+<h2></h2>
+<pre>$spacer_multiplier </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_spacer_string"> </a><div class="element clickable property private property_spacer_string" data-toggle="collapse" data-target=".property_spacer_string .collapse">
+<h2></h2>
+<pre>$spacer_string </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+<a id="\TOC_Category_Tree"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/TOC_Category_Tree.html">TOC_Category_Tree</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">TomatoCart Category Tree Class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(c) 2009 - 2013, TomatoCart. All rights reserved.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/TomatoCart.Frontend.Core.Libraries.html">TomatoCart\Frontend\Core\Libraries</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct($load_from_database, $load_all_categories, $load_from_cache) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$load_from_database</h4></div>
+<div class="subelement argument"><h4>$load_all_categories</h4></div>
+<div class="subelement argument"><h4>$load_from_cache</h4></div>
+</div></div>
+</div>
+<a id="method_build_branch"></a><div class="element clickable method public method_build_branch" data-toggle="collapse" data-target=".method_build_branch .collapse">
+<h2>Build branch</h2>
+<pre>build_branch($parent_id, $level) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_build_branch_array"></a><div class="element clickable method public method_build_branch_array" data-toggle="collapse" data-target=".method_build_branch_array .collapse">
+<h2>Build branch as array</h2>
+<pre>build_branch_array($parent_id, $level, $result) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+<div class="subelement argument"><h4>$result</h4></div>
+</div></div>
+</div>
+<a id="method_build_breadcrumb"></a><div class="element clickable method public method_build_breadcrumb" data-toggle="collapse" data-target=".method_build_breadcrumb .collapse">
+<h2>Build category breadcrumb</h2>
+<pre>build_breadcrumb($category_id, $level) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$level</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_build_tree"></a><div class="element clickable method public method_build_tree" data-toggle="collapse" data-target=".method_build_tree .collapse">
+<h2>Build category tree</h2>
+<pre>build_tree() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_calculate_category_product_count"></a><div class="element clickable method public method_calculate_category_product_count" data-toggle="collapse" data-target=".method_calculate_category_product_count .collapse">
+<h2>Calculate category product count</h2>
+<pre>calculate_category_product_count() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_exists"></a><div class="element clickable method public method_exists" data-toggle="collapse" data-target=".method_exists .collapse">
+<h2>Check whether category id exists</h2>
+<pre>exists($id) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_get_category_name"></a><div class="element clickable method public method_get_category_name" data-toggle="collapse" data-target=".method_get_category_name .collapse">
+<h2>get category name</h2>
+<pre>get_category_name($cpath) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_category_url"></a><div class="element clickable method public method_get_category_url" data-toggle="collapse" data-target=".method_get_category_url .collapse">
+<h2>get category url</h2>
+<pre>get_category_url($cpath) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_children"></a><div class="element clickable method public method_get_children" data-toggle="collapse" data-target=".method_get_children .collapse">
+<h2>Get children</h2>
+<pre>get_children($category_id, $array) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$array</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_cid_from_sef_url"></a><div class="element clickable method public method_get_cid_from_sef_url" data-toggle="collapse" data-target=".method_get_cid_from_sef_url .collapse">
+<h2>Get category id from friendly url</h2>
+<pre>get_cid_from_sef_url($url, $parent) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$url</h4></div>
+<div class="subelement argument"><h4>$parent</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_get_data"></a><div class="element clickable method public method_get_data" data-toggle="collapse" data-target=".method_get_data .collapse">
+<h2>Get category data</h2>
+<pre>get_data($id) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_full_cpath"></a><div class="element clickable method public method_get_full_cpath" data-toggle="collapse" data-target=".method_get_full_cpath .collapse">
+<h2>get full cpath</h2>
+<pre>get_full_cpath($categories_id) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$categories_id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_full_cpath_info"></a><div class="element clickable method public method_get_full_cpath_info" data-toggle="collapse" data-target=".method_get_full_cpath_info .collapse">
+<h2>get full cpath info</h2>
+<pre>get_full_cpath_info($cpath) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_number_of_products"></a><div class="element clickable method public method_get_number_of_products" data-toggle="collapse" data-target=".method_get_number_of_products .collapse">
+<h2>Get number of products</h2>
+<pre>get_number_of_products($id) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_get_parent_categories"></a><div class="element clickable method public method_get_parent_categories" data-toggle="collapse" data-target=".method_get_parent_categories .collapse">
+<h2>get category product count string</h2>
+<pre>get_parent_categories($category_id, $categories) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_id</h4></div>
+<div class="subelement argument"><h4>$categories</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_sef_url"></a><div class="element clickable method public method_get_sef_url" data-toggle="collapse" data-target=".method_get_sef_url .collapse">
+<h2>Build search enginee friendly url</h2>
+<pre>get_sef_url($cpath) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_tree"></a><div class="element clickable method public method_get_tree" data-toggle="collapse" data-target=".method_get_tree .collapse">
+<h2>Get category tree</h2>
+<pre>get_tree($parent_id) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_id</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_parse_cpath"></a><div class="element clickable method public method_parse_cpath" data-toggle="collapse" data-target=".method_parse_cpath .collapse">
+<h2>Compile search enginee friendly url</h2>
+<pre>parse_cpath($cpath) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_reset"></a><div class="element clickable method public method_reset" data-toggle="collapse" data-target=".method_reset .collapse">
+<h2>Reset category tree</h2>
+<pre>reset() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_set_breadcrumb_separator"></a><div class="element clickable method public method_set_breadcrumb_separator" data-toggle="collapse" data-target=".method_set_breadcrumb_separator .collapse">
+<h2>set breadcrumb separator</h2>
+<pre>set_breadcrumb_separator($breadcrumb_separator) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$breadcrumb_separator</h4></div>
+</div></div>
+</div>
+<a id="method_set_breadcrumb_usage"></a><div class="element clickable method public method_set_breadcrumb_usage" data-toggle="collapse" data-target=".method_set_breadcrumb_usage .collapse">
+<h2>set breadcrumb usage</h2>
+<pre>set_breadcrumb_usage($breadcrumb_usage) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$breadcrumb_usage</h4></div>
+</div></div>
+</div>
+<a id="method_set_category_path"></a><div class="element clickable method public method_set_category_path" data-toggle="collapse" data-target=".method_set_category_path .collapse">
+<h2>set category path</h2>
+<pre>set_category_path($cpath, $cpath_start_string, $cpath_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath</h4></div>
+<div class="subelement argument"><h4>$cpath_start_string</h4></div>
+<div class="subelement argument"><h4>$cpath_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_category_path_string"></a><div class="element clickable method public method_set_category_path_string" data-toggle="collapse" data-target=".method_set_category_path_string .collapse">
+<h2>set category path string</h2>
+<pre>set_category_path_string($cpath_start_string, $cpath_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cpath_start_string</h4></div>
+<div class="subelement argument"><h4>$cpath_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_category_product_count_string"></a><div class="element clickable method public method_set_category_product_count_string" data-toggle="collapse" data-target=".method_set_category_product_count_string .collapse">
+<h2>set category product count string</h2>
+<pre>set_category_product_count_string($category_product_count_start_string, $category_product_count_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$category_product_count_start_string</h4></div>
+<div class="subelement argument"><h4>$category_product_count_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_child_string"></a><div class="element clickable method public method_set_child_string" data-toggle="collapse" data-target=".method_set_child_string .collapse">
+<h2>set child string</h2>
+<pre>set_child_string($child_start_string, $child_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$child_start_string</h4></div>
+<div class="subelement argument"><h4>$child_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_data"></a><div class="element clickable method public method_set_data" data-toggle="collapse" data-target=".method_set_data .collapse">
+<h2>set_data()
+        </h2>
+<pre>set_data($data_array) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data_array</h4></div>
+</div></div>
+</div>
+<a id="method_set_follow_category_path"></a><div class="element clickable method public method_set_follow_category_path" data-toggle="collapse" data-target=".method_set_follow_category_path .collapse">
+<h2>set follow category path</h2>
+<pre>set_follow_category_path($follow_cpath) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$follow_cpath</h4></div>
+</div></div>
+</div>
+<a id="method_set_maximum_level"></a><div class="element clickable method public method_set_maximum_level" data-toggle="collapse" data-target=".method_set_maximum_level .collapse">
+<h2>set maximum level</h2>
+<pre>set_maximum_level($max_level) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$max_level</h4></div>
+</div></div>
+</div>
+<a id="method_set_parent_group_string"></a><div class="element clickable method public method_set_parent_group_string" data-toggle="collapse" data-target=".method_set_parent_group_string .collapse">
+<h2>set group string</h2>
+<pre>set_parent_group_string($parent_group_start_string, $parent_group_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_group_start_string</h4></div>
+<div class="subelement argument"><h4>$parent_group_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_parent_string"></a><div class="element clickable method public method_set_parent_string" data-toggle="collapse" data-target=".method_set_parent_string .collapse">
+<h2>set parent string</h2>
+<pre>set_parent_string($parent_start_string, $parent_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent_start_string</h4></div>
+<div class="subelement argument"><h4>$parent_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_root_category_id"></a><div class="element clickable method public method_set_root_category_id" data-toggle="collapse" data-target=".method_set_root_category_id .collapse">
+<h2>set root category id</h2>
+<pre>set_root_category_id($root_category_id) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$root_category_id</h4></div>
+</div></div>
+</div>
+<a id="method_set_root_string"></a><div class="element clickable method public method_set_root_string" data-toggle="collapse" data-target=".method_set_root_string .collapse">
+<h2>set root string</h2>
+<pre>set_root_string($root_start_string, $root_end_string) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$root_start_string</h4></div>
+<div class="subelement argument"><h4>$root_end_string</h4></div>
+</div></div>
+</div>
+<a id="method_set_show_category_product_count"></a><div class="element clickable method public method_set_show_category_product_count" data-toggle="collapse" data-target=".method_set_show_category_product_count .collapse">
+<h2>set show category product count</h2>
+<pre>set_show_category_product_count($show_category_product_count) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$show_category_product_count</h4></div>
+</div></div>
+</div>
+<a id="method_set_spacer_string"></a><div class="element clickable method public method_set_spacer_string" data-toggle="collapse" data-target=".method_set_spacer_string .collapse">
+<h2>set spacer string</h2>
+<pre>set_spacer_string($spacer_string, $spacer_multiplier) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$spacer_string</h4></div>
+<div class="subelement argument"><h4>$spacer_multiplier</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_breadcrumb_separator"> </a><div class="element clickable property private property_breadcrumb_separator" data-toggle="collapse" data-target=".property_breadcrumb_separator .collapse">
+<h2></h2>
+<pre>$breadcrumb_separator : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_breadcrumb_usage"> </a><div class="element clickable property private property_breadcrumb_usage" data-toggle="collapse" data-target=".property_breadcrumb_usage .collapse">
+<h2></h2>
+<pre>$breadcrumb_usage : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_category_product_count_end_string"> </a><div class="element clickable property private property_category_product_count_end_string" data-toggle="collapse" data-target=".property_category_product_count_end_string .collapse">
+<h2></h2>
+<pre>$category_product_count_end_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_category_product_count_start_string"> </a><div class="element clickable property private property_category_product_count_start_string" data-toggle="collapse" data-target=".property_category_product_count_start_string .collapse">
+<h2></h2>
+<pre>$category_product_count_start_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_child_end_string"> </a><div class="element clickable property private property_child_end_string" data-toggle="collapse" data-target=".property_child_end_string .collapse">
+<h2></h2>
+<pre>$child_end_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_child_start_string"> </a><div class="element clickable property private property_child_start_string" data-toggle="collapse" data-target=".property_child_start_string .collapse">
+<h2></h2>
+<pre>$child_start_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ci"> </a><div class="element clickable property private property_ci" data-toggle="collapse" data-target=".property_ci .collapse">
+<h2></h2>
+<pre>$ci : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cpath_array"> </a><div class="element clickable property private property_cpath_array" data-toggle="collapse" data-target=".property_cpath_array .collapse">
+<h2></h2>
+<pre>$cpath_array : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cpath_end_string"> </a><div class="element clickable property private property_cpath_end_string" data-toggle="collapse" data-target=".property_cpath_end_string .collapse">
+<h2></h2>
+<pre>$cpath_end_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_cpath_start_string"> </a><div class="element clickable property private property_cpath_start_string" data-toggle="collapse" data-target=".property_cpath_start_string .collapse">
+<h2></h2>
+<pre>$cpath_start_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_data"> </a><div class="element clickable property private property_data" data-toggle="collapse" data-target=".property_data .collapse">
+<h2></h2>
+<pre>$data : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_follow_cpath"> </a><div class="element clickable property private property_follow_cpath" data-toggle="collapse" data-target=".property_follow_cpath .collapse">
+<h2></h2>
+<pre>$follow_cpath : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_max_level"> </a><div class="element clickable property private property_max_level" data-toggle="collapse" data-target=".property_max_level .collapse">
+<h2></h2>
+<pre>$max_level : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_parent_end_string"> </a><div class="element clickable property private property_parent_end_string" data-toggle="collapse" data-target=".property_parent_end_string .collapse">
+<h2></h2>
+<pre>$parent_end_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_parent_group_end_string"> </a><div class="element clickable property private property_parent_group_end_string" data-toggle="collapse" data-target=".property_parent_group_end_string .collapse">
+<h2></h2>
+<pre>$parent_group_end_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_parent_group_start_string"> </a><div class="element clickable property private property_parent_group_start_string" data-toggle="collapse" data-target=".property_parent_group_start_string .collapse">
+<h2></h2>
+<pre>$parent_group_start_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_parent_start_string"> </a><div class="element clickable property private property_parent_start_string" data-toggle="collapse" data-target=".property_parent_start_string .collapse">
+<h2></h2>
+<pre>$parent_start_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_root_category_id"> </a><div class="element clickable property private property_root_category_id" data-toggle="collapse" data-target=".property_root_category_id .collapse">
+<h2></h2>
+<pre>$root_category_id : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_root_end_string"> </a><div class="element clickable property private property_root_end_string" data-toggle="collapse" data-target=".property_root_end_string .collapse">
+<h2></h2>
+<pre>$root_end_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_root_start_string"> </a><div class="element clickable property private property_root_start_string" data-toggle="collapse" data-target=".property_root_start_string .collapse">
+<h2></h2>
+<pre>$root_start_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_show_category_product_count"> </a><div class="element clickable property private property_show_category_product_count" data-toggle="collapse" data-target=".property_show_category_product_count .collapse">
+<h2></h2>
+<pre>$show_category_product_count : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_spacer_multiplier"> </a><div class="element clickable property private property_spacer_multiplier" data-toggle="collapse" data-target=".property_spacer_multiplier .collapse">
+<h2></h2>
+<pre>$spacer_multiplier : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_spacer_string"> </a><div class="element clickable property private property_spacer_string" data-toggle="collapse" data-target=".property_spacer_string .collapse">
+<h2></h2>
+<pre>$spacer_string : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:09+07:00.<br></footer></div>
+</div>
+</body>
+</html>

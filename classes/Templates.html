@@ -1,0 +1,495 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>TomatoCart v2.0-dev API » \Templates</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">TomatoCart v2.0-dev API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/CodeIgniter.html"><i class="icon-folder-open"></i> CodeIgniter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/TomatoCart.html"><i class="icon-folder-open"></i> TomatoCart</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2056</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">2</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_add_template_module" title="add_template_module :: Add a template module to certain group"><span class="description">Add a template module to certain group</span><pre>add_template_module()</pre></a></li>
+<li class="method public "><a href="#method_delete_template_module" title="delete_template_module :: Delete template Module"><span class="description">Delete template Module</span><pre>delete_template_module()</pre></a></li>
+<li class="method public "><a href="#method_get_layout_data" title="get_layout_data :: Get layout data"><span class="description">Get layout data</span><pre>get_layout_data()</pre></a></li>
+<li class="method public "><a href="#method_get_module_params" title="get_module_params :: Get box module parameters"><span class="description">Get box module parameters</span><pre>get_module_params()</pre></a></li>
+<li class="method public "><a href="#method_get_module_title" title="get_module_title :: Get box module Title"><span class="description">Get box module Title</span><pre>get_module_title()</pre></a></li>
+<li class="method public "><a href="#method_get_modules_tree" title="get_modules_tree :: Get modules tree"><span class="description">Get modules tree</span><pre>get_modules_tree()</pre></a></li>
+<li class="method public "><a href="#method_get_pages" title="get_pages :: Get all pages"><span class="description">Get all pages</span><pre>get_pages()</pre></a></li>
+<li class="method public "><a href="#method_get_template_params" title="get_template_params :: Retrieve template params"><span class="description">Retrieve template params</span><pre>get_template_params()</pre></a></li>
+<li class="method public "><a href="#method_install" title="install :: install template"><span class="description">install template</span><pre>install()</pre></a></li>
+<li class="method public "><a href="#method_list_templates" title="list_templates :: List all templates"><span class="description">List all templates</span><pre>list_templates()</pre></a></li>
+<li class="method public "><a href="#method_save_module_settings" title="save_module_settings :: Save box module settings"><span class="description">Save box module settings</span><pre>save_module_settings()</pre></a></li>
+<li class="method public "><a href="#method_save_template_params" title="save_template_params :: Save template params"><span class="description">Save template params</span><pre>save_template_params()</pre></a></li>
+<li class="method public "><a href="#method_set_default" title="set_default :: Set Default Template"><span class="description">Set Default Template</span><pre>set_default()</pre></a></li>
+<li class="method public "><a href="#method_uninstall" title="uninstall :: Uninstall template"><span class="description">Uninstall template</span><pre>uninstall()</pre></a></li>
+<li class="method public "><a href="#method_update_template_module_group" title="update_template_module_group :: Update template module group"><span class="description">Update template module group</span><pre>update_template_module_group()</pre></a></li>
+<li class="method public "><a href="#method_upload_template" title="upload_template :: Upload Template"><span class="description">Upload Template</span><pre>upload_template()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_set_page_title" title="set_page_title :: Set the page title"><span class="description">Set the page title</span><pre>set_page_title()</pre></a></li>
+<li class="method protected inherited"><a href="#method_validate_customer_access" title="validate_customer_access :: Check whether the customer is able to access the page"><span class="description">Check whether the customer is able to access the page</span><pre>validate_customer_access()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_convert_key_value_pairs" title="convert_key_value_pairs :: Convert param array to key value pairs array"><span class="description">Convert param array to key value pairs array</span><pre>convert_key_value_pairs()</pre></a></li>
+<li class="method private "><a href="#method_copy_param_values" title="copy_param_values :: Copy param values from values array to param array"><span class="description">Copy param values from values array to param array</span><pre>copy_param_values()</pre></a></li>
+<li class="method private "><a href="#method_get_medium_modules" title="get_medium_modules :: Get modules for each groups"><span class="description">Get modules for each groups</span><pre>get_medium_modules()</pre></a></li>
+<li class="method private "><a href="#method_get_template_module_info" title="get_template_module_info :: Get certain template module info"><span class="description">Get certain template module info</span><pre>get_template_module_info()</pre></a></li>
+<li class="method private "><a href="#method_get_template_modules_meta_data" title="get_template_modules_meta_data :: Get all template modules meta data"><span class="description">Get all template modules meta data</span><pre>get_template_modules_meta_data()</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Templates"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Templates.html">Templates</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Code here is run before frontend controllers</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>2.0</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">TomatoCart Dev Team &lt;http://tomatocart.com&gt;</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(c) 2009 - 2013, TomatoCart. All rights reserved.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">TomatoCart\Frontend\Core\Controllers</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_add_template_module"></a><div class="element clickable method public method_add_template_module" data-toggle="collapse" data-target=".method_add_template_module .collapse">
+<h2>Add a template module to certain group</h2>
+<pre>add_template_module() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_delete_template_module"></a><div class="element clickable method public method_delete_template_module" data-toggle="collapse" data-target=".method_delete_template_module .collapse">
+<h2>Delete template Module</h2>
+<pre>delete_template_module() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_layout_data"></a><div class="element clickable method public method_get_layout_data" data-toggle="collapse" data-target=".method_get_layout_data .collapse">
+<h2>Get layout data</h2>
+<pre>get_layout_data() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_module_params"></a><div class="element clickable method public method_get_module_params" data-toggle="collapse" data-target=".method_get_module_params .collapse">
+<h2>Get box module parameters</h2>
+<pre>get_module_params() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_module_title"></a><div class="element clickable method public method_get_module_title" data-toggle="collapse" data-target=".method_get_module_title .collapse">
+<h2>Get box module Title</h2>
+<pre>get_module_title(string $code) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_get_modules_tree"></a><div class="element clickable method public method_get_modules_tree" data-toggle="collapse" data-target=".method_get_modules_tree .collapse">
+<h2>Get modules tree</h2>
+<pre>get_modules_tree() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_pages"></a><div class="element clickable method public method_get_pages" data-toggle="collapse" data-target=".method_get_pages .collapse">
+<h2>Get all pages</h2>
+<pre>get_pages() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_template_params"></a><div class="element clickable method public method_get_template_params" data-toggle="collapse" data-target=".method_get_template_params .collapse">
+<h2>Retrieve template params</h2>
+<pre>get_template_params() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_install"></a><div class="element clickable method public method_install" data-toggle="collapse" data-target=".method_install .collapse">
+<h2>install template</h2>
+<pre>install() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_list_templates"></a><div class="element clickable method public method_list_templates" data-toggle="collapse" data-target=".method_list_templates .collapse">
+<h2>List all templates</h2>
+<pre>list_templates() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_save_module_settings"></a><div class="element clickable method public method_save_module_settings" data-toggle="collapse" data-target=".method_save_module_settings .collapse">
+<h2>Save box module settings</h2>
+<pre>save_module_settings() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_save_template_params"></a><div class="element clickable method public method_save_template_params" data-toggle="collapse" data-target=".method_save_template_params .collapse">
+<h2>Save template params</h2>
+<pre>save_template_params() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_set_default"></a><div class="element clickable method public method_set_default" data-toggle="collapse" data-target=".method_set_default .collapse">
+<h2>Set Default Template</h2>
+<pre>set_default() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_uninstall"></a><div class="element clickable method public method_uninstall" data-toggle="collapse" data-target=".method_uninstall .collapse">
+<h2>Uninstall template</h2>
+<pre>uninstall() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_update_template_module_group"></a><div class="element clickable method public method_update_template_module_group" data-toggle="collapse" data-target=".method_update_template_module_group .collapse">
+<h2>Update template module group</h2>
+<pre>update_template_module_group() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_upload_template"></a><div class="element clickable method public method_upload_template" data-toggle="collapse" data-target=".method_upload_template .collapse">
+<h2>Upload Template</h2>
+<pre>upload_template() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_set_page_title"></a><div class="element clickable method protected method_set_page_title" data-toggle="collapse" data-target=".method_set_page_title .collapse">
+<h2>Set the page title</h2>
+<pre>set_page_title($title) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\TOC_Controller::set_page_title()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4><p>page titme</p></div>
+</div></div>
+</div>
+<a id="method_validate_customer_access"></a><div class="element clickable method protected method_validate_customer_access" data-toggle="collapse" data-target=".method_validate_customer_access .collapse">
+<h2>Check whether the customer is able to access the page</h2>
+<pre>validate_customer_access() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\TOC_Controller::validate_customer_access()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_convert_key_value_pairs"></a><div class="element clickable method private method_convert_key_value_pairs" data-toggle="collapse" data-target=".method_convert_key_value_pairs .collapse">
+<h2>Convert param array to key value pairs array</h2>
+<pre>convert_key_value_pairs(array $params) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>param array</p></div>
+</div></div>
+</div>
+<a id="method_copy_param_values"></a><div class="element clickable method private method_copy_param_values" data-toggle="collapse" data-target=".method_copy_param_values .collapse">
+<h2>Copy param values from values array to param array</h2>
+<pre>copy_param_values(array $params, array $values) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>param array</p></div>
+<div class="subelement argument">
+<h4>$values</h4>
+<code>array</code><p>values array</p></div>
+</div></div>
+</div>
+<a id="method_get_medium_modules"></a><div class="element clickable method private method_get_medium_modules" data-toggle="collapse" data-target=".method_get_medium_modules .collapse">
+<h2>Get modules for each groups</h2>
+<pre>get_medium_modules(string $templates_code, string $medium) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$templates_code</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$medium</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_template_module_info"></a><div class="element clickable method private method_get_template_module_info" data-toggle="collapse" data-target=".method_get_template_module_info .collapse">
+<h2>Get certain template module info</h2>
+<pre>get_template_module_info($code) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$code</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get_template_modules_meta_data"></a><div class="element clickable method private method_get_template_modules_meta_data" data-toggle="collapse" data-target=".method_get_template_modules_meta_data .collapse">
+<h2>Get all template modules meta data</h2>
+<pre>get_template_modules_meta_data() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-01T01:50:04+07:00.<br></footer></div>
+</div>
+</body>
+</html>
